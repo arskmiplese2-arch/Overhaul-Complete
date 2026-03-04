@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="verdandi_machinegun_macro" class="weapon">
+    <component ref="verdandi_machinegun" />
+    <properties>
+      <identification name="{555760,11}" basename="{555760,12}" shortname="{555760,12}" makerrace="terran" description="{555760,13}" mk="1" />
+      <bullet class="bullet_verdandi_machinegun_macro" />
+      <heat overheat="10000" cooldelay="1" coolrate="6000" reenable="9000" />
+      <rotationspeed max="150" />
+      <rotationacceleration max="200" />
+      <reload />
+      <hull max="1250" hittable="0" />
+      <effects>
+        <firing start="stopshooting_spl_s_gatling_01_mk1" stop="stopshooting_spl_s_gatling_01_mk1" />
+      </effects>
+      <sounds>
+        <firing ref="verdandi_machinegun" />
+      </sounds>
+    </properties>
+  </macro>
+</macros>

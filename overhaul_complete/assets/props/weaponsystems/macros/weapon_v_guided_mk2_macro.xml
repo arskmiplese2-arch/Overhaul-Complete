@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="weapon_v_guided_mk2_macro" class="missilelauncher">
+    <component ref="weapon_v_guided_mk2" />
+    <properties>
+      <identification name="{20105,1154}" basename="{20105,1151}" shortname="{20105,1155}" description="{20105,1152}" unique="0" mk="2" />
+      <ammunition tags="guided" />
+      <bullet class="missile_guided_light_mk1_macro" />
+      <reload />
+      <hull max="500" hittable="0" />
+    </properties>
+  </macro>
+</macros>

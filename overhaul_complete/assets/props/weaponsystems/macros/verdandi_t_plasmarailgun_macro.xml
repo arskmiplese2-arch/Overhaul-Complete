@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="verdandi_t_plasmarailgun_macro" class="turret">
+    <component ref="verdandi_t_plasmarailgun" />
+    <properties>
+      <identification name="{555760,17}" basename="{555760,18}" shortname="{555760,18}" makerrace="terran" description="{555760,19}" mk="1" />
+      <bullet class="bullet_verdandi_t_plasmarailgun_macro" />
+      <rotationspeed max="175" />
+      <rotationacceleration max="200" />
+      <reload />
+      <hull threshold="0.2" integrated="1" />
+    </properties>
+  </macro>
+</macros>

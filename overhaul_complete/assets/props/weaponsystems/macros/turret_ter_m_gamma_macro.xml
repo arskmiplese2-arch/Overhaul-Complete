@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Gammastrahlenkanone Prototyp -->
+
+<macros>
+  <macro name="turret_ter_m_gamma_macro" class="turret">
+    <component ref="turret_ter_m_gatling_02_mk1" />
+    <properties>
+      <identification name="{9771315,801}" basename="{9771315,801}" shortname="{9771315,801}" description="{9771315,802}" makerrace="terran" />
+      <bullet class="bullet_ter_m_gamma_macro" />
+      <rotationspeed max="60" />
+      <rotationacceleration max="90" />
+      <reload rate="1.33" />
+      <hull max="705" threshold="0.25" />
+    </properties>
+  </macro>
+</macros>

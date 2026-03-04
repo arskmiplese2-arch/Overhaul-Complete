@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="verdandi_photonrailgun_macro" class="weapon">
+    <component ref="verdandi_photonrailgun" />
+    <properties>
+      <identification name="{555760,26}" basename="{555760,27}" shortname="{555760,27}" makerrace="terran" description="{555760,28}" mk="1" />
+      <bullet class="bullet_verdandi_photonrailgun_macro" />
+      <heat overheat="10000" cooldelay="0.25" coolrate="6000" reenable="8500" />
+      <rotationspeed max="100" />
+      <rotationacceleration max="100" />
+      <reload />
+      <hull max="1250" hittable="0" />
+      <effects>
+        <firing stop="stopshooting_xen_m_beam_01_mk1" />
+      </effects>
+      <sounds>
+        <firing ref="photon_railgun" />
+      </sounds>
+    </properties>
+  </macro>
+</macros>

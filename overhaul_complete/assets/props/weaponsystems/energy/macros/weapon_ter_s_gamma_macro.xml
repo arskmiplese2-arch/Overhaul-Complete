@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Gammastrahlenemitter -->
+
+<macros>
+  <macro name="weapon_ter_s_gamma_macro" class="weapon" >
+    <component ref="weapon_ter_s_gamma" />
+    <properties>
+      <identification name="{9771315,92971}" basename="{9771315,92971}" shortname="{9771315,92971}" description="{9771315,92973}" icon="weapon_ter_s_gamma" />
+      <bullet class="bullet_ter_s_gamma_macro" />
+      <heat overheat="12000" cooldelay="0.33" coolrate="5000" reenable="10000" />
+      <rotationspeed max="180" />
+      <rotationacceleration max="90" />
+      <reload />
+      <hull max="650" hittable="0" />
+      <sounds>
+        <firing ref="wpn_beam_khaak" volume="0.03" />
+      </sounds>
+    </properties>
+  </macro>
+</macros>
+

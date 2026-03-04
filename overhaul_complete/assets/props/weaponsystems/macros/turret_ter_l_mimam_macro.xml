@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--MI M/AM-->
+
+<macros>
+  <macro name="turret_ter_l_mimam_macro" class="turret">
+    <component ref="turret_ter_l_beam_01_mk1" />
+    <properties>
+      <identification name="{9771315,711}" basename="{9771315,711}" shortname="{9771315,711}" description="{9771315,712}" makerrace="terran" />
+      <bullet class="bullet_ter_l_mimam_macro" />
+      <rotationspeed max="36" />
+      <rotationacceleration max="40" />
+      <reload rate="0.5" />
+      <hull max="5600" threshold="0.25" />
+    </properties>
+  </macro>
+</macros>

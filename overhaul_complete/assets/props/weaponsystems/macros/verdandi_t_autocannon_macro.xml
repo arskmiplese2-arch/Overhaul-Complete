@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="verdandi_t_autocannon_macro" class="turret">
+    <component ref="verdandi_t_autocannon" />
+    <properties>
+      <identification name="{555760,5}" basename="{555760,6}" shortname="{555760,6}" makerrace="terran" description="{555760,7}" mk="1" />
+      <bullet class="bullet_verdandi_t_autocannon_macro" />
+      <rotationspeed max="150" />
+      <rotationacceleration max="175" />
+      <reload />
+      <hull threshold="0.2" integrated="1" />
+      <sounds>
+        <firing ref="verdandi_t_autocannon" />
+      </sounds>
+    </properties>
+  </macro>
+</macros>

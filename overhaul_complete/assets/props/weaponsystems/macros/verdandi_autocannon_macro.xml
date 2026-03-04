@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="verdandi_autocannon_macro" class="weapon">
+    <component ref="verdandi_autocannon" />
+    <properties>
+      <identification name="{555760,8}" basename="{555760,9}" shortname="{555760,9}" makerrace="terran" description="{555760,10}" mk="1" />
+      <bullet class="bullet_verdandi_autocannon_macro" />
+      <heat overheat="10000" cooldelay="0.5" coolrate="6000" reenable="9500" />
+      <rotationspeed max="125" />
+      <rotationacceleration max="150" />
+      <reload />
+      <hull max="1250" hittable="0" />
+      <effects>
+        <firing start="startshooting_gen_s_laser_01_mk1" stop="stopshooting_gen_s_laser_01_mk1" />
+      </effects>
+      <sounds>
+        <firing ref="gause_autocannon" />
+      </sounds>
+    </properties>
+  </macro>
+</macros>

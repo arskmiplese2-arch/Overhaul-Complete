@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="weapon_v_torpedo_mk2_macro" class="missilelauncher">
+    <component ref="weapon_v_torpedo_mk2" />
+    <properties>
+      <identification name="{20105,1174}" basename="{20105,1171}" shortname="{20105,1175}" description="{20105,1172}" unique="0" mk="2" />
+      <ammunition tags="torpedo" />
+      <bullet class="missile_torpedo_light_mk1_macro" />
+      <reload />
+      <hull max="500" hittable="0" />
+    </properties>
+  </macro>
+</macros>
