@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="shield_xs_verdandi_macro" class="shieldgenerator">
+    <component ref="shield_xs_verdandi" />
+    <properties>
+      <identification name="{555760,20}" basename="{555760,21}" shortname="{555760,21}" makerrace="terran" description="{555760,22}" mk="4" />
+      <recharge max="7500" rate="625" delay="1.5" />
+      <hull integrated="1" />
+    </properties>
+  </macro>
+</macros>

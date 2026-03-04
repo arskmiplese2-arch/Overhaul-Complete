@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<components>
+	<component name="props_surf_ar_docks_size_m" class="destructible">
+		<source geometry="extensions\overhaul_complete\assets\props\surfaceelements\props_surf_ar_docks_size_m_data"/>
+		<properties>
+			<hull integrated="1" />
+		</properties>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"/>
+			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="space" tags="destructible">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part">
+				<parts>
+					<part name="anim_prefab_dock_m_hangar" wreck="part_main_wreck">
+						<size>
+							<max x="43.3611" y="50.3546" z="107.781" />
+							<center x="0" y="0" z="0" />
+						</size>
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="argon.ar_unique_01" />
+									<material id="2" ref="argon.ar_unique_04" />
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="argon.ar_unique_01" />
+									<material id="2" ref="argon.ar_unique_04" />
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="argon.ar_unique_01" />
+									<material id="2" ref="argon.ar_unique_04" />
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="argon.ar_unique_01" />
+									<material id="2" ref="argon.ar_unique_04" />
+								</materials>
+							</lod>							
+						</lods>
+					</part>
+				</parts>
+				<offset>
+					<position x="-0.002459" y="-0.181030" z="-185.745903" />
+				</offset>
+			</connection>
+			<connection name="Connection02" tags="part forceoutline nocollision" parent="anim_prefab_dock_m_hangar">
+				<parts>
+					<part name="iklink_prefab_dock_m_gatea">
+						<size>
+							<max x="43.3611" y="50.3546" z="107.781" />
+							<center x="0" y="0" z="0" />
+						</size>
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="argon.ar_unique_01" />
+								</materials>
+							</lod>
+						</lods>
+					</part>
+				</parts>
+				<offset>
+					<position x="0.767714" y="21.250700" z="-23.551201" />
+				</offset>
+			</connection>
+			<connection name="Connection03" tags="part forceoutline nocollision" parent="anim_prefab_dock_m_hangar">
+				<parts>
+					<part name="iklink_prefab_dock_m_gateb">
+						<size>
+							<max x="43.3611" y="50.3546" z="107.781" />
+							<center x="0" y="0" z="0" />
+						</size>
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="argon.ar_unique_01" />
+								</materials>
+							</lod>
+						</lods>
+					</part>
+				</parts>
+				<offset>
+					<position x="0.767714" y="-21.966000" z="-23.551193" />
+				</offset>
+			</connection>
+			<connection name="Connection04" tags="part forceoutline nocollision" parent="anim_prefab_dock_m_hangar">
+				<parts>
+					<part name="iklink_prefab_dock_m_gatec">
+						<size>
+							<max x="43.3611" y="50.3546" z="107.781" />
+							<center x="0" y="0" z="0" />
+						</size>
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="argon.ar_unique_01" />
+								</materials>
+							</lod>
+						</lods>
+					</part>
+				</parts>
+				<offset>
+					<position x="0.767716" y="5.540299" z="-23.447601" />
+				</offset>
+			</connection>
+			<connection name="Connection05" tags="part forceoutline nocollision" parent="anim_prefab_dock_m_hangar">
+				<parts>
+					<part name="iklink_prefab_dock_m_gated">
+						<size>
+							<max x="43.3611" y="50.3546" z="107.781" />
+							<center x="0" y="0" z="0" />
+						</size>
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="argon.ar_unique_01" />
+								</materials>
+							</lod>
+						</lods>
+					</part>
+				</parts>
+				<offset>
+					<position x="0.767716" y="-6.868320" z="-23.447601" />
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>

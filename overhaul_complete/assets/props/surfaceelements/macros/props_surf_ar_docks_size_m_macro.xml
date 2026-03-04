@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <macro name="props_surf_ar_docks_size_m_macro" class="dockingbay">
+    <component ref="props_surf_ar_docks_size_m" />
+    <properties>
+      <ai>
+        <type global="" local="" />
+      </ai>
+    </properties>
+  </macro>
+</macros>
