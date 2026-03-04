@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="overhaul_complete" name="Overhaul Complete" description="Spawns custom player stations on game start." author="Player" version="100" date="2026-01-31" save="0" enabled="1">
+  <dependency id="ego_dlc_terran" version="100" name="Cradle of Humanity" optional="false"/>
+
+</content>

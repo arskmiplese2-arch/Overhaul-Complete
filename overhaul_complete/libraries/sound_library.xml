@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/soundlibrary">
+	  <sound id="555760_normal" description="Verdandi" repeat="1" is3d="1" preload="0">
+		<sample start="extensions\overhaul_complete\voice\555760\normal"/>
+		<effects>
+		  <filter mode="bandpass" frequency="0.26" oneoverq="1.45"/>
+		  <reverb room="sewer pipe" roomsize="10" drymix="5" density="90"/>
+		</effects>
+	  </sound>
+
+	<sound id="gause_autocannon" description="Autocannon firing loop" repeat="-1" is3d="1" preload="1">
+		<sample start="extensions\overhaul_complete\sfx\gauseautocannon.wav"/>
+		<volume start="1.0" distance="10"/>
+	    <effects>
+		<fade out="0.2"/>
+	    </effects>
+	</sound>
+	<sound id="gause_autocannon_fire" description="gause autocannon shooting" repeat="1" is3d="1" preload="0">
+		<sample selection="random">
+			<select start="extensions\overhaul_complete\sfx\gauseautocannonend.wav"/>
+		</sample>
+			<volume start="0.2" distance="10"/>
+	</sound>
+
+	<sound id="vulcan_fire" description="Vulcan firing loop" repeat="-1" is3d="1" preload="1">
+		<sample start="extensions\overhaul_complete\sfx\vulcan.wav"/>
+		<volume start="1.0" distance="10"/>
+	    <effects>
+		<fade out="0.1"/>
+	    </effects>
+	</sound>
+	<sound id="vulcan_end" description="vulcan shooting" repeat="1" is3d="1" preload="0">
+		<sample selection="random">
+			<select start="extensions\overhaul_complete\sfx\vulcanend.wav"/>
+		</sample>
+			<volume start="0.2" distance="10"/>
+	</sound> 
+
+	<sound id="verdandi_machinegun" description="Machinegun firing loop" repeat="-1" is3d="1" preload="1">
+		<sample start="extensions\overhaul_complete\sfx\bombardmachinegun.wav"/>
+		<volume start="1.0" distance="10"/>
+	    <effects>
+		<fade out="0.1"/>
+	    </effects>
+	</sound>
+
+	<sound id="photon_railgun" description="Autocannon firing loop" repeat="-1" is3d="1" preload="1">
+		<sample start="extensions\overhaul_complete\sfx\photonrailgun.wav"/>
+		<volume start="1.0" distance="25"/>
+	    <effects>
+		<fade out="0.2"/>
+	    </effects>
+	</sound>
+	<sound id="photon_railgun_end" description="gause autocannon shooting" repeat="1" is3d="1" preload="0">
+		<sample selection="random">
+			<select start="extensions\overhaul_complete\sfx\photonrailgunend.wav"/>
+		</sample>
+			<volume start="0.2" distance="25"/>
+	</sound> 
+
+	<sound id="verdandi_t_autocannon" description="Turret Autogun firing loop" repeat="-1" is3d="1" preload="1">
+		<sample start="extensions\overhaul_complete\sfx\impulseautocannon.wav"/>
+		<volume start="1.0" distance="45"/>
+	    <effects>
+		<fade out="0.2"/>
+	    </effects>
+	</sound>
+	<sound id="impulse_autocannon_end" description="impulse autocannon shooting" repeat="1" is3d="1" preload="0">
+		<sample selection="random">
+			<select start="extensions\overhaul_complete\sfx\impulseautocannonend.wav"/>
+		</sample>
+			<volume start="0.2" distance="45"/>
+	</sound> 
+
+	<sound id="verdandi_t_machinegun" description="Turret Machinegun firing loop" repeat="-1" is3d="1" preload="1">
+		<sample start="extensions\overhaul_complete\sfx\flakmachinegun.wav"/>
+		<volume start="1.0" distance="35"/>
+	    <effects>
+		<fade out="0.1"/>
+	    </effects>
+	</sound>
+
+	<sound id="verdandi_t_plasmarailgun" description="Turret Plasma Railgun shooting" repeat="1" is3d="1" preload="0">
+		<sample start="extensions\overhaul_complete\sfx\plasmarailgun.wav"/>
+		<volume start="1.0" distance="55"/>
+	    <effects>
+		<fade out="0.1"/>
+	    </effects>
+	</sound>
+  </add>
+</diff>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+	<add sel = "/index">
+	<entry name="ship_m_verdandi" 					value="extensions\overhaul_complete\assets\units\size_m\ship_m_verdandi"/>
+	<entry name="dock_hidden" 						value="extensions\overhaul_complete\assets\props\surfaceelements\dock_hidden"/>
+	<entry name="shield_xs_verdandi" 				value="extensions\overhaul_complete\assets\props\surfaceelements\shield_xs_verdandi"/>
+	<entry name="shield_xm_verdandi" 				value="extensions\overhaul_complete\assets\props\surfaceelements\shield_xm_verdandi"/>
+	<entry name="engine_xs_combat_mk4" 				value="extensions\overhaul_complete\assets\props\engines\engine_xs_combat_mk4"/>
+	<entry name="verdandi_autocannon" 				value="extensions\overhaul_complete\assets\props\WeaponSystems\verdandi_autocannon"/>
+	<entry name="bullet_verdandi_autocannon" 		value="extensions\overhaul_complete\assets\fx\weaponFx\bullet_verdandi_autocannon"/>
+	<entry name="verdandi_machinegun" 				value="extensions\overhaul_complete\assets\props\WeaponSystems\verdandi_machinegun"/>
+	<entry name="bullet_verdandi_machinegun" 		value="extensions\overhaul_complete\assets\fx\weaponFx\bullet_verdandi_machinegun"/>
+	<entry name="verdandi_photonrailgun" 			value="extensions\overhaul_complete\assets\props\WeaponSystems\verdandi_photonrailgun"/>
+	<entry name="bullet_verdandi_photonrailgun" 	value="extensions\overhaul_complete\assets\fx\weaponFx\bullet_verdandi_photonrailgun"/>
+	<entry name="verdandi_vulcan" 					value="extensions\overhaul_complete\assets\props\WeaponSystems\verdandi_vulcan"/>
+	<entry name="bullet_verdandi_vulcan" 			value="extensions\overhaul_complete\assets\fx\weaponFx\bullet_verdandi_vulcan"/>
+	<entry name="verdandi_t_autocannon" 			value="extensions\overhaul_complete\assets\props\WeaponSystems\verdandi_t_autocannon"/>
+	<entry name="bullet_verdandi_t_autocannon"	 	value="extensions\overhaul_complete\assets\fx\weaponFx\bullet_verdandi_t_autocannon"/>
+	<entry name="verdandi_t_machinegun" 			value="extensions\overhaul_complete\assets\props\WeaponSystems\verdandi_t_machinegun"/>
+	<entry name="bullet_verdandi_t_machinegun"	 	value="extensions\overhaul_complete\assets\fx\weaponFx\bullet_verdandi_t_machinegun"/>
+	<entry name="verdandi_t_plasmarailgun" 			value="extensions\overhaul_complete\assets\props\WeaponSystems\verdandi_t_plasmarailgun"/>
+	<entry name="bullet_verdandi_t_plasmarailgun" 	value="extensions\overhaul_complete\assets\fx\weaponFx\bullet_verdandi_t_plasmarailgun"/>
+	<entry name="weapon_v_dumbfire_mk1" 			value="extensions\overhaul_complete\assets\props\WeaponSystems\weapon_v_dumbfire_mk1"/>
+	<entry name="weapon_v_dumbfire_mk2" 			value="extensions\overhaul_complete\assets\props\WeaponSystems\weapon_v_dumbfire_mk2"/>
+	<entry name="weapon_v_guided_mk1" 				value="extensions\overhaul_complete\assets\props\WeaponSystems\weapon_v_guided_mk1"/>
+	<entry name="weapon_v_guided_mk2" 				value="extensions\overhaul_complete\assets\props\WeaponSystems\weapon_v_guided_mk2"/>
+	<entry name="weapon_v_torpedo_mk1" 				value="extensions\overhaul_complete\assets\props\WeaponSystems\weapon_v_torpedo_mk1"/>
+	<entry name="weapon_v_torpedo_mk2" 				value="extensions\overhaul_complete\assets\props\WeaponSystems\weapon_v_torpedo_mk2"/>
+	<entry name="ship_usc_xl_kyoto_flagg" 			value="extensions\overhaul_complete\assets\units\size_xl\ship_usc_xl_kyoto_flagg" />
+	<entry name="dockarea_usc_xl_kyoto_36s" 		value="extensions\overhaul_complete\assets\structures\dock\dockarea_usc_xl_kyoto_36s"/>
+	<entry name="dockarea_usc_xl_kyoto_5m" 			value="extensions\overhaul_complete\assets\structures\dock\dockarea_usc_xl_kyoto_5m"/>
+	<entry name="dockarea_usc_xl_kyoto_s" 			value="extensions\overhaul_complete\assets\structures\dock\dockarea_usc_xl_kyoto_s"/>
+	<entry name="dockarea_usc_xl_kyoto_s_02" 		value="extensions\overhaul_complete\assets\structures\dock\dockarea_usc_xl_kyoto_s_02"/>
+	<entry name="dockarea_usc_xl_kyoto_s_04" 		value="extensions\overhaul_complete\assets\structures\dock\dockarea_usc_xl_kyoto_s_04" />
+	<entry name="dockarea_usc_xl_kyoto_m" 			value="extensions\overhaul_complete\assets\structures\dock\dockarea_usc_xl_kyoto_m"/>
+	<entry name="pier_kyoto_l" 						value="extensions\overhaul_complete\assets\structures\dock\pier_kyoto_l"/>
+	<entry name="dockingbay_pier_kyoto_l" 			value="extensions\overhaul_complete\assets\structures\dock\dockingbay_pier_kyoto_l"/>
+	<entry name="weapon_ter_xl_gamma" 				value="extensions\overhaul_complete\assets\props\weaponsystems\capital\weapon_ter_xl_gamma"/>
+	<entry name="bullet_ter_xl_gamma" 				value="extensions\overhaul_complete\assets\fx\weaponfx\bullet_ter_xl_gamma"/>
+	<entry name="weapon_ter_xl_mimam" 				value="extensions\overhaul_complete\assets\props\weaponsystems\capital\weapon_ter_xl_mimam"/>
+	<entry name="bullet_ter_xl_mimam" 				value="extensions\overhaul_complete\assets\fx\weaponfx\bullet_ter_xl_mimam"/>
+	<entry name="ishield_kyoto_hp" 					value="extensions\overhaul_complete\assets\props\surfaceelements\ishield_kyoto_hp"/>
+	<entry name="ship_ter_combatdrone" 				value="extensions\overhaul_complete\assets\units\size_s\ship_ter_combatdrone"/>
+	<entry name="weapon_ter_s_gamma" 				value="extensions\overhaul_complete\assets\props\WeaponSystems\energy\weapon_ter_s_gamma"/>
+	<entry name="bullet_ter_s_gamma"				value="extensions\overhaul_complete\assets\fx\weaponFx\bullet_ter_s_gamma"/>
+
+	<entry name="struct_econ_prod_antimattercells" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_antimattercells"/>
+	<entry name="struct_econ_prod_reinforcedmetal" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_reinforcedmetal"/>
+	<entry name="struct_econ_prod_refinedmetals" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_refinedmetals"/>
+	<entry name="struct_econ_prod_siliconwavers" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_siliconwavers"/>
+	<entry name="struct_econ_prod_bioopticwiring" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_bioopticwiring"/>
+	<entry name="struct_econ_prod_hmg" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_hmg"/>
+	<entry name="struct_econ_prod_drones" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_drones"/>
+	<entry name="struct_econ_prod_ter_drones" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_ter_drones"/>
+	<entry name="prod_ter_dronecomponents" value="extensions\overhaul_complete\assets\structures\production\prod_ter_dronecomponents"/>
+	<entry name="struct_econ_prod_bioelectricneurongel" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_bioelectricneurongel"/>
+	<entry name="struct_econ_prod_al_quantumtubes" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_al_quantumtubes"/>
+	<entry name="struct_econ_prod_al_plasmacells" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_al_plasmacells"/>
+	<entry name="struct_econ_prod_al_ioncells" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_al_ioncells"/>
+	
+	<entry name="struct_econ_prod_water" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_water"/>
+	<entry name="struct_econ_prod_emspectrometer" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_emspectrometer"/>
+	<entry name="struct_econ_prod_spacefuel" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_spacefuel"/>
+	<entry name="struct_econ_prod_plasmapumps" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_plasmapumps"/>
+	<entry name="struct_econ_prod_pfr" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_pfr"/>
+	<entry name="struct_econ_prod_nividiumgems" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_nividiumgems"/>
+	<entry name="struct_econ_prod_missiles" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_missiles"/>
+	<entry name="struct_econ_prod_microchips" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_microchips"/>
+	<entry name="struct_econ_prod_ice" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_ice"/>
+	<entry name="prod_ter_missilecomponents" value="extensions\overhaul_complete\assets\structures\production\prod_ter_missilecomponents"/>
+	<entry name="prod_ter_missilecomponents_large" value="extensions\overhaul_complete\assets\structures\production\prod_ter_missilecomponents_large"/>
+	
+	<entry name="struct_econ_prod_food_rations" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_food_rations"/>
+	
+	<!-- energy production -->
+	<entry name="struct_econ_prod_energycells" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_energycells"/>
+	<entry name="struct_econ_prod_energycells_oa" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_energycells_oa"/>
+	<entry name="struct_econ_prod_energycells_ol" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_energycells_ol"/>
+	<entry name="struct_econ_prod_fusion_reactor" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_fusion_reactor"/>
+	<entry name="struct_econ_prod_chemicalcompounds" value="extensions\overhaul_complete\assets\structures\production\struct_econ_prod_chemicalcompounds"/>
+	<entry name="struct_econ_mining_ar_old_solar_a" value="extensions\overhaul_complete\assets\structures\production\struct_econ_mining_ar_old_solar_a"/>
+	
+	<!-- others -->	
+	<entry name="props_surf_ar_docks_size_m" value="extensions\overhaul_complete\assets\props\surfaceelements\props_surf_ar_docks_size_m"/>
+
+	</add>
+</diff>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+<!--
+	<add sel="/modules">
+
+	  <module id="prod_ter_metallicnanoparticles" group="prod_ter_metallicnanoparticles">
+		<category ware="metallicnanoparticles" tags="[production, module]" race="terran" faction="[pioneers, terran]" />
+		<compatibilities>
+		  <limits production="3"/>
+		   <production ware="metallicnanoparticles" chance="20" />
+		</compatibilities>
+	  </module>
+		
+	
+	  <module id="prod_ter_aicores" group="prod_ter_aicores">
+		<category ware="aicores" tags="[production, module]" race="terran" faction="[pioneers, terran]" />
+		<compatibilities>
+		  <limits production="5"/>
+		  <production ware="computronicsubstrate" chance="15" />
+		  <production ware="aicores" chance="20" />
+		</compatibilities>
+	  </module>
+
+	  <module id="prod_ter_missilecomponents" group="prod_ter_missilecomponents">
+		<category ware="missilecomponents" tags="[production, module]" race="terran" faction="[pioneers, terran]" />
+		<compatibilities>
+		  <limits production="3"/>
+		  <production ware="siliconcarbide" chance="15" />
+		  <production ware="missilecomponents" chance="65" />
+		  <production ware="aicores" chance="10" />
+		</compatibilities>
+	  </module>
+	  
+	   <module id="prod_ter_forcefieldunits" group="prod_ter_forcefieldunits">
+		<category ware="forcefieldunits" tags="[production, module]" race="terran" faction="[pioneers, terran]" />
+		<compatibilities>
+		  <limits production="5"/>
+		  <production ware="forcefieldunits" chance="25" />
+		</compatibilities>
+	  </module> 
+
+	  <module id="prod_ter_silicongrids" group="prod_ter_silicongrids">
+		<category ware="silicongrids" tags="[production, module]" race="terran" faction="[pioneers, terran]" />
+		<compatibilities>
+		  <limits production="5"/>
+		  <production ware="siliconcarbide" chance="15" />
+		  <production ware="silicongrids" chance="25" />
+		</compatibilities>
+	  </module>
+
+	  <module id="prod_ter_fusionreactors" group="prod_ter_fusionreactors">
+		<category ware="energycells" tags="[production, module]" race="terran" faction="[pioneers, terran]" />
+		<compatibilities>
+		</compatibilities>
+	  </module>  
+	  
+	  <module id="prod_ter_fusionbatteries" group="prod_ter_fusionbatteries">
+		<category ware="fusionbatteries" tags="[production, module]" race="terran" faction="[pioneers, terran]" />
+		<compatibilities>
+		  <limits production="1"/>
+		  <production ware="fusionbatteries" chance="15" />
+		</compatibilities>
+	  </module>  	  
+	  
+	  <module id="prod_ter_hydrogenextractors" group="prod_ter_hydrogenextractors">
+		<category ware="hydrogen" tags="[production, module]" race="terran" faction="[pioneers, terran]" />
+		<compatibilities>
+		  <limits production="2"/>
+		  <production ware="hydrogen" chance="25" />
+		</compatibilities>
+	  </module>  
+
+	</add>
+	-->
+</diff>

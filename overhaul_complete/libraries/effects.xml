@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+<add sel="/effects"> 
+
+   <effect name="muzzle_verdandi_autocannon_base" alignment="object">
+     <elements>
+       <!-- Muzzle Smoke-->
+       <element id="1" ref="dummyemitter_macro" forkeffect="shotgun_muzzle_smoke_01" alignment="object" duration="1.0" minscale="0.4" maxscale="0.4" forklod="none"></element>
+       <!-- Geometry Light -->
+       <element id="2" ref="impact_light_orange_macro" forkeffect="none" duration="0.1" minscale="0.8" maxscale="0.8" fadein="0.0" fadeout="0.05" forklod="largeffect"></element>
+       <!-- Geometry -->
+       <!-- element id="3" ref="muzzle_gen_s_shotgun_01_mk1_macro" forkeffect="none" duration="0.3" minscale="0.8" maxscale="0.8" forklod="none"></element -->
+       <element id="5" ref="effect_dummy_macro" forkeffect="none" delay="0" duration="0.4" forklod="none">
+         <force range="35" falloff="0.0">
+           <rumble>
+             <camera>
+               <component frequency="2" attackduration="0.1" sustainduration="0" releaseduration="0.3">
+                 <amplitude randomize="false">
+                   <position x="0.00" y="0.00" z="-0.03" />
+                 </amplitude>
+               </component>
+             </camera>
+             <controller>
+               <low amplitude="0.05" attackduration="0.1" sustainduration="0.0" releaseduration="0.1" />
+             </controller>
+           </rumble>
+         </force>
+       </element>
+     </elements>
+   </effect>
+
+   <effect name="muzzle_verdandi_t_autocannon" alignment="object">
+     <references>
+       <reference effect="muzzle_verdandi_autocannon_base"/>
+     </references>
+     <elements>
+       <!-- Geometry -->
+       <element id="3" ref="muzzle_gen_s_shotgun_01_mk1_macro" forkeffect="none" duration="0.3" minscale="0.4" maxscale="0.4" forklod="none"></element>
+       <!-- Sound -->
+       <element id="4" ref="effect_dummy_macro" forkeffect="none" forklod="none">
+         <sound ref="impulse_autocannon_end"></sound>
+       </element>
+     </elements>
+   </effect>
+
+   <effect name="muzzle_verdandi_autocannon" alignment="object">
+     <references>
+       <reference effect="muzzle_verdandi_autocannon_base"/>
+     </references>
+     <elements>
+       <!-- Geometry -->
+       <element id="3" ref="muzzle_gen_s_shotgun_01_mk2_macro" forkeffect="none" duration="0.3" minscale="0.4" maxscale="0.4" forklod="none"></element>
+       <!-- Sound -->
+       <element id="4" ref="effect_dummy_macro" forkeffect="none" forklod="none">
+         <sound ref="gause_autocannon_fire"></sound>
+       </element>
+     </elements>
+   </effect>
+
+   <effect name="muzzle_photonrailgun" alignment="object">
+     <elements>
+       <!-- Muzzle Smoke-->
+       <element id="1" ref="dummyemitter_macro" forkeffect="laser_muzzle_smoke_01" alignment="object" duration="0.2" minscale="0.7" maxscale="0.7" forklod="none"></element>
+       <!-- Geometry Light -->
+       <element id="2" ref="impact_light_blue_macro" forkeffect="none" duration="0.15" minscale="1.0" maxscale="1.0" fadeout="0.05" forklod="none"></element>
+       <!-- Geometry -->
+       <element id="3" ref="muzzle_ter_s_plasma_01_mk1_macro" forkeffect="none" duration="0.12" minscale="0.2" maxscale="0.2" forklod="none"></element>
+       <element id="4" ref="effect_dummy_macro" forkeffect="none" forklod="none">
+         <sound ref="photon_railgun_end"></sound>
+       </element>
+     </elements>
+   </effect>
+
+   <effect name="impact_photonrailgun" alignment="normal">
+     <elements>
+       <!-- Impact Geometry -->
+       <element id="1" ref="impact_ter_s_plasma_01_mk1_macro" forkeffect="none" duration="0.5" minscale="0.5" maxscale="0.5" fadein="0.1" fadeout="0.1" forklod="none"></element>
+       <element id="2" ref="impact_ter_s_plasma_01_a_mk1_macro" forkeffect="none" delay="0.1" duration="0.2" minscale="0.15" maxscale="0.15" fadein="0.1" fadeout="0.1" forklod="none"></element>
+       <!-- Impact Smoke Particles-->
+       <element id="3" ref="dummyemitter_macro" forkeffect="ion_impact_smoke_01" alignment="normal" duration="1.0" minscale="1.0" maxscale="1.3" forklod="none"></element>
+       <!-- Impact Fire Particles-->
+       <element id="4" ref="dummyemitter_macro" forkeffect="laser_impact_fire_01" alignment="normal" duration="2.0" minscale="1.0" maxscale="1.3" fadein="0.0" fadeout="0.5" forklod="none"></element>
+       <!-- Geometry Light -->
+       <element id="5" ref="impact_light_blue_macro" forkeffect="none" duration="0.8" minscale="2.0" maxscale="2.0" fadeout="0.5" forklod="none"></element>
+     </elements>
+   </effect>
+
+  <effect name="muzzle_vulcan" alignment="object">
+    <elements>
+      <!-- Bullet Shells -->
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="gatling_bullet_shells" alignment="object" duration="1.0" minscale="0.2" maxscale="0.2" forklod="none"></element>
+      <!-- Muzzle Smoke-->
+      <element id="2" ref="dummyemitter_up_macro" forkeffect="gatling_muzzle_smoke_01" alignment="object" duration="0.5" minscale="0.5" maxscale="0.5" forklod="none"></element>
+      <!-- Geometry -->
+      <element id="3" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.08" minscale="0.2" maxscale="0.2" fadein="0.0" fadeout="0.0" forklod="none"></element>
+      <!-- Geometry Light -->
+      <element id="4" ref="impact_light_orange_macro" forkeffect="none" duration="0.1" minscale="0.5" maxscale="0.5" fadeout="0.0" forklod="none"></element>
+      <element id="5" ref="effect_dummy_macro" forkeffect="none" delay="0" duration="0.2" forklod="none">
+        <force range="35" falloff="0.0">
+          <rumble>
+            <camera>
+              <component frequency="2" attackduration="0.1" sustainduration="0" releaseduration="0.1">
+                <amplitude randomize="false">
+                  <position x="0.002" y="0.002" z="0.002" />
+                </amplitude>
+              </component>
+            </camera>
+            <controller>
+              <low amplitude="0.025" attackduration="0.1" sustainduration="0.0" releaseduration="0.1" />
+            </controller>
+          </rumble>
+        </force>
+      </element>
+      <!-- Sound -->
+      <element id="6" ref="effect_dummy_macro" forkeffect="none" forklod="none">
+        <sound ref="vulcan_end"></sound>
+      </element>
+    </elements>
+  </effect>
+
+   <effect name="muzzle_vt_plasmarail" alignment="object">
+     <elements>
+       <!-- Muzzle Smoke-->
+       <element id="1" ref="dummyemitter_macro" forkeffect="laser_muzzle_smoke_01" alignment="object" duration="0.2" minscale="0.7" maxscale="0.7" forklod="none"></element>
+       <!-- Geometry Light -->
+       <element id="2" ref="impact_light_blue_macro" forkeffect="none" duration="0.15" minscale="1.0" maxscale="1.0" fadeout="0.05" forklod="none"></element>
+       <!-- Geometry -->
+       <element id="3" ref="muzzle_ter_m_laser_02_mk1_macro" forkeffect="none" duration="0.15" minscale="0.4" maxscale="0.4" forklod="none"></element>
+       <!-- Sound -->
+       <element id="4" ref="effect_dummy_macro" forkeffect="none" forklod="none">
+         <sound ref="verdandi_t_plasmarailgun"></sound>
+       </element>
+     </elements>
+   </effect>
+
+   <effect name="impact_vt_plasmarail_base" alignment="normal">
+     <elements>
+       <!-- Impact Geometry -->
+       <element id="1" ref="impact_ter_m_laser_02_mk1_macro" forkeffect="none" duration="0.60" minscale="1.0" maxscale="1.0" fadein="0.10" fadeout="0.20" forklod="none"></element>
+       <!-- Impact Smoke Particles-->
+       <element id="2" ref="dummyemitter_macro" forkeffect="laser_impact_smoke_01" alignment="normal" duration="3.0" minscale="0.5" maxscale="1.5" forklod="none"></element>
+       <!-- Impact Fire Particles-->
+       <element id="3" ref="dummyemitter_macro" forkeffect="laser_impact_fire_01" alignment="normal" duration="1.0" minscale="0.4" maxscale="0.4" fadein="0.0" fadeout="0.5" forklod="none"></element>
+       <!-- Geometry Light -->
+       <element id="4" ref="impact_light_blue_macro" forkeffect="none" duration="0.2" minscale="1.0" maxscale="1.0" fadeout="0.5" forklod="none"></element>
+     </elements>
+   </effect>
+   <effect name="impact_vt_plasmarail" alignment="normal">
+     <references>
+       <reference effect="impact_vt_plasmarail_base" />
+     </references>
+     <elements>
+       <!-- Sound -->
+       <element id="5" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+         <sound ref="small_energy_impact"></sound>
+       </element>
+     </elements>
+   </effect>
+
+   <effect name="muzzle_vt_plasmarailgun" alignment="object">
+     <elements>
+       <!-- Muzzle Smoke-->
+       <element id="1" ref="dummyemitter_macro" forkeffect="laser_muzzle_smoke_01" alignment="object" duration="0.2" minscale="0.7" maxscale="0.7" forklod="none"></element>
+       <!-- Geometry Light -->
+       <element id="2" ref="impact_light_blue_macro" forkeffect="none" duration="0.15" minscale="1.0" maxscale="1.0" fadeout="0.05" forklod="none"></element>
+       <!-- Geometry -->
+       <element id="3" ref="muzzle_ter_s_laser_02_mk1_macro" forkeffect="none" duration="0.1" minscale="0.1" maxscale="0.15" forklod="none"></element>
+       <!-- Sound -->
+       <element id="4" ref="effect_dummy_macro" forkeffect="none" forklod="none">
+         <sound ref="verdandi_t_plasmarailgun"></sound>
+       </element>
+     </elements>
+   </effect>
+
+   <effect name="impact_vt_plasmarailgun_base" alignment="normal">
+     <elements>
+       <!-- Impact Geometry -->
+       <element id="1" ref="impact_ter_s_laser_02_mk1_macro" alignment="normal" forkeffect="none" duration="1.0" minscale="1.5" maxscale="1.5" fadein="0.1" fadeout="0.1" forklod="none"></element>
+       <!-- Impact Smoke Particles-->
+       <element id="2" ref="dummyemitter_macro" forkeffect="laser_impact_smoke_01" alignment="normal" duration="3.0" minscale="0.5" maxscale="1.5" forklod="none"></element>
+       <!-- Impact Fire Particles-->
+       <element id="3" ref="dummyemitter_macro" forkeffect="laser_impact_fire_01" alignment="normal" duration="1.0" minscale="0.4" maxscale="0.4" fadein="0.0" fadeout="0.5" forklod="none"></element>
+       <!-- Geometry Light -->
+       <element id="4" ref="impact_light_blue_macro" forkeffect="none" duration="0.2" minscale="1.0" maxscale="1.0" fadeout="0.5" forklod="none"></element>
+     </elements>
+   </effect>
+   <effect name="impact_vt_plasmarailgun" alignment="normal">
+     <references>
+       <reference effect="impact_vt_plasmarailgun_base" />
+     </references>
+     <elements>
+       <!-- Sound -->
+       <element id="5" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+         <sound ref="small_energy_impact"></sound>
+       </element>
+     </elements>
+   </effect>
+
+   <effect name="explosion_flak_tv" minscale="3" maxscale="3" forcezonespace="true">
+     <elements>
+       <!-- Area DMG -->
+       <element id="1" ref="dummyemitter_macro" forkeffect="explosion_m_01_distortion01" duration="2.0" forklod="megaeffect">
+         <areadamage range="50" falloff="1.0" duration="1.0" delay="0.0" />
+       </element>
+       <element id="2" ref="dummyemitter_macro" emitterspace="zone" forkeffect="explosion_smoke_new" alignment="random" delay="0" duration="3.0" minscale="2.0" maxscale="4.0" forklod="largeeffect"></element>
+       <element id="3" ref="dummyemitter_macro" emitterspace="zone" forkeffect="explosion_sparks_big" alignment="random" delay="0" duration="3.0" minscale="2.0" maxscale="4.0" forklod="largeeffect"></element>
+       <element id="4" ref="explosion_light_s_01_macro" emitterspace="object" alignment="random" delay="0" duration="1.5" minscale="2.0" maxscale="4.0" fadein="0.1" fadeout="3.0" />
+       <element id="5" ref="effect_dummy_macro" forkeffect="none" duration="6.6" forklod="mediumeffect" delay="0">
+         <sound ref="explosion_small"></sound>
+       </element>
+     </elements>
+   </effect>
+
+   <effect name="explosion_flak_v" minscale="3" maxscale="3" forcezonespace="true">
+     <elements>
+       <!-- Area DMG -->
+       <element id="1" ref="dummyemitter_macro" forkeffect="explosion_m_01_distortion01" duration="2.0" forklod="megaeffect">
+         <areadamage range="25" falloff="1.0" duration="1.0" delay="0.0" />
+       </element>
+       <element id="2" ref="dummyemitter_macro" emitterspace="zone" forkeffect="explosion_smoke_new" alignment="random" delay="0" duration="2.0" minscale="1.5" maxscale="3.0" forklod="largeeffect"></element>
+       <element id="3" ref="dummyemitter_macro" emitterspace="zone" forkeffect="explosion_sparks_big" alignment="random" delay="0" duration="2.0" minscale="1.5" maxscale="3.0" forklod="largeeffect"></element>
+       <element id="4" ref="explosion_light_s_01_macro" emitterspace="object" alignment="random" delay="0" duration="1.0" minscale="1.5" maxscale="3.0" fadein="0.1" fadeout="3.0" />
+       <element id="5" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+         <sound ref="flak_impact"></sound>
+       </element>
+     </elements>
+   </effect>
+ 
+</add>
+</diff>

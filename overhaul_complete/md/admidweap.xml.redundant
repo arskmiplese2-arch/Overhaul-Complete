@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="admidweap_update" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+	<cues>
+
+		<cue name="admidweap_update">
+			<conditions>
+				<check_any>
+					<event_cue_signalled cue="md.Setup.GameStart" />
+					<event_player_created/>
+				</check_any>
+			</conditions>
+			<actions>
+				<set_value name="$versionNumber" exact="1"/>
+				<do_if value="event.param">
+					<show_help duration="20" custom="'{9771315,800} update to version %1 complete.'.[$versionNumber]"/>
+				</do_if>
+				<do_else>
+					<show_help duration="10" custom="'{9771315,800} installiert.'"/>
+				</do_else>
+			</actions>
+		</cue>
+		
+	</cues>
+</mdscript>

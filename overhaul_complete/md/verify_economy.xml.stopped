@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="VerifyCivilianEconomy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+  <cues>
+    <cue name="Read_Only_Verification" instantiate="false">
+      <conditions>
+        <event_game_started />
+      </conditions>
+      <actions>
+        <debug_text text="'[Civilian_Economy] New Game: Identifying Native Hubs...'" filter="general"/>
+        <find_station name="$CivilianStations" group="civilian_economy_group" multiple="true" space="player.galaxy" />
+        
+        <do_if value="$CivilianStations.count gt 0">
+           <do_all exact="$CivilianStations.count" counter="$i">
+            <set_value name="$CurrentStation" exact="$CivilianStations.{$i}" />
+            <set_known object="$CurrentStation" known="true" />
+            <debug_text text="'[Civilian_Economy] Hub ' + $i + ': ' + $CurrentStation.owner.name + ' Owned. Sector: ' + $CurrentStation.sector.knownname + ' | Pos: ' + $CurrentStation.position" filter="general"/>
+          </do_all>
+        </do_if>
+        <debug_text text="'[Civilian_Economy] Scan Complete. ' + $CivilianStations.count + ' Hubs Identified.'" filter="general"/>
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

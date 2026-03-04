@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="Kyoto_Flagg_Spawn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+	<cues>
+		<cue name="KyotoFlagg_Spawn">
+			<conditions>
+				<check_any>
+					<event_cue_signalled cue="md.Setup.GameStart" />
+					<event_player_created/>
+				</check_any>
+			</conditions>
+			<actions>
+				<create_ship name="$NewShip1" macro="ship_usc_xl_kyoto_flagg_macro" zone="player.zone">
+					<owner exact="faction.player" overridenpc="true" />
+					<pilot><select faction="faction.yaki" tags="tag.aipilot"/></pilot>
+					<people>
+						<fillpercent exact="20" />
+						<person role="service" weight="70"><select faction="faction.terran" tags="tag.crew"/></person>
+						<person role="marine" weight="30"><select faction="faction.yaki" tags="tag.marine"/></person>
+					</people>
+					<safepos object="player.ship" x="-10000m" y="0m" z="5000m"/>
+					<rotation value="player.ship.rotation"/>
+				</create_ship>
+				<set_skill entity="$NewShip1.pilot" type="skilltype.piloting" exact="15"/>
+				<set_skill entity="$NewShip1.pilot" type="skilltype.morale" exact="15"/>
+				<set_skill entity="$NewShip1.pilot" type="skilltype.engineering" exact="15"/>
+				<set_skill entity="$NewShip1.pilot" type="skilltype.management" exact="15"/>
+				<set_skill entity="$NewShip1.pilot" type="skilltype.boarding" exact="15"/>
+				<create_order id="'Wait'" object="$NewShip1" default="true"/>
+
+				<create_ship name="$NewShip2" macro="ship_usc_xl_kyoto_flagg_macro" zone="player.zone">
+					<owner exact="faction.player" overridenpc="true" />
+					<pilot><select faction="faction.yaki" tags="tag.aipilot"/></pilot>
+					<people>
+						<fillpercent exact="20" />
+						<person role="service" weight="70"><select faction="faction.terran" tags="tag.crew"/></person>
+						<person role="marine" weight="30"><select faction="faction.yaki" tags="tag.marine"/></person>
+					</people>
+					<safepos object="player.ship" x="-5000m" y="0m" z="5000m"/>
+					<rotation value="player.ship.rotation"/>
+				</create_ship>
+				<set_skill entity="$NewShip2.pilot" type="skilltype.piloting" exact="15"/>
+				<set_skill entity="$NewShip2.pilot" type="skilltype.morale" exact="15"/>
+				<set_skill entity="$NewShip2.pilot" type="skilltype.engineering" exact="15"/>
+				<set_skill entity="$NewShip2.pilot" type="skilltype.management" exact="15"/>
+				<set_skill entity="$NewShip2.pilot" type="skilltype.boarding" exact="15"/>
+				<create_order id="'Wait'" object="$NewShip2" default="true"/>
+
+				<create_ship name="$NewShip3" macro="ship_usc_xl_kyoto_flagg_macro" zone="player.zone">
+					<owner exact="faction.player" overridenpc="true" />
+					<pilot><select faction="faction.yaki" tags="tag.aipilot"/></pilot>
+					<people>
+						<fillpercent exact="20" />
+						<person role="service" weight="70"><select faction="faction.terran" tags="tag.crew"/></person>
+						<person role="marine" weight="30"><select faction="faction.yaki" tags="tag.marine"/></person>
+					</people>
+					<safepos object="player.ship" x="0m" y="0m" z="5000m"/>
+					<rotation value="player.ship.rotation"/>
+				</create_ship>
+				<set_skill entity="$NewShip3.pilot" type="skilltype.piloting" exact="15"/>
+				<set_skill entity="$NewShip3.pilot" type="skilltype.morale" exact="15"/>
+				<set_skill entity="$NewShip3.pilot" type="skilltype.engineering" exact="15"/>
+				<set_skill entity="$NewShip3.pilot" type="skilltype.management" exact="15"/>
+				<set_skill entity="$NewShip3.pilot" type="skilltype.boarding" exact="15"/>
+				<create_order id="'Wait'" object="$NewShip3" default="true"/>
+
+				<create_ship name="$NewShip4" macro="ship_usc_xl_kyoto_flagg_macro" zone="player.zone">
+					<owner exact="faction.player" overridenpc="true" />
+					<pilot><select faction="faction.yaki" tags="tag.aipilot"/></pilot>
+					<people>
+						<fillpercent exact="20" />
+						<person role="service" weight="70"><select faction="faction.terran" tags="tag.crew"/></person>
+						<person role="marine" weight="30"><select faction="faction.yaki" tags="tag.marine"/></person>
+					</people>
+					<safepos object="player.ship" x="5000m" y="0m" z="5000m"/>
+					<rotation value="player.ship.rotation"/>
+				</create_ship>
+				<set_skill entity="$NewShip4.pilot" type="skilltype.piloting" exact="15"/>
+				<set_skill entity="$NewShip4.pilot" type="skilltype.morale" exact="15"/>
+				<set_skill entity="$NewShip4.pilot" type="skilltype.engineering" exact="15"/>
+				<set_skill entity="$NewShip4.pilot" type="skilltype.management" exact="15"/>
+				<set_skill entity="$NewShip4.pilot" type="skilltype.boarding" exact="15"/>
+				<create_order id="'Wait'" object="$NewShip4" default="true"/>
+
+				<create_ship name="$NewShip5" macro="ship_usc_xl_kyoto_flagg_macro" zone="player.zone">
+					<owner exact="faction.player" overridenpc="true" />
+					<pilot><select faction="faction.yaki" tags="tag.aipilot"/></pilot>
+					<people>
+						<fillpercent exact="20" />
+						<person role="service" weight="70"><select faction="faction.terran" tags="tag.crew"/></person>
+						<person role="marine" weight="30"><select faction="faction.yaki" tags="tag.marine"/></person>
+					</people>
+					<safepos object="player.ship" x="10000m" y="0m" z="5000m"/>
+					<rotation value="player.ship.rotation"/>
+				</create_ship>
+				<set_skill entity="$NewShip5.pilot" type="skilltype.piloting" exact="15"/>
+				<set_skill entity="$NewShip5.pilot" type="skilltype.morale" exact="15"/>
+				<set_skill entity="$NewShip5.pilot" type="skilltype.engineering" exact="15"/>
+				<set_skill entity="$NewShip5.pilot" type="skilltype.management" exact="15"/>
+				<set_skill entity="$NewShip5.pilot" type="skilltype.boarding" exact="15"/>
+				<create_order id="'Wait'" object="$NewShip5" default="true"/>
+
+				<remove_value name="$NewShip1" />
+				<remove_value name="$NewShip2" />
+				<remove_value name="$NewShip3" />
+				<remove_value name="$NewShip4" />
+				<remove_value name="$NewShip5" />
+			</actions>
+		</cue>
+	</cues>
+</mdscript>

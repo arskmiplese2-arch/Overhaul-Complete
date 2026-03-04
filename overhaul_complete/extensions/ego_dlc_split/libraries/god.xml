@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+    <replace sel="/god/products/product[@id='spl_hullparts']/quotas/quota">
+		<quota galaxy="28" sector="6" />
+	</replace>
+	<replace sel="/god/products/product[@id='frf_hullparts']/quotas/quota">
+		<quota galaxy="28" sector="6" />
+	</replace>
+
+    <replace sel="/god/products/product[@id='spl_energycells']/quotas/quota">
+		<quota galaxy="24" sector="6" />
+	</replace>
+	<replace sel="/god/products/product[@id='frf_energycells']/quotas/quota">
+		<quota galaxy="20" sector="6" />
+	</replace>
+	
+	
+	<replace sel="/god/products/product[@id='spl_turretcomponents']/quotas/quota">
+		<quota galaxy="4" />
+	</replace>
+	<replace sel="/god/products/product[@id='frf_turretcomponents']/quotas/quota">
+		<quota galaxy="4" />
+	</replace>
+	
+	
+	<replace sel="/god/products/product[@id='spl_shieldcomponents']/quotas/quota">
+		<quota galaxy="3" />
+	</replace>
+	<replace sel="/god/products/product[@id='frf_shieldcomponents']/quotas/quota">
+		<quota galaxy="3" />
+	</replace>
+
+	
+	<replace sel="/god/products/product[@id='spl_claytronics']/quotas/quota">
+		<quota galaxy="9" />
+	</replace>
+	<replace sel="/god/products/product[@id='frf_claytronics']/quotas/quota">
+		<quota galaxy="8" />
+	</replace>	
+	
+	<replace sel="/god/products/product[@id='spl_fieldcoils']/quotas/quota">
+		<quota galaxy="3" />
+	</replace>
+	<replace sel="/god/products/product[@id='frf_fieldcoils']/quotas/quota">
+		<quota galaxy="2" />
+	</replace>
+</diff>

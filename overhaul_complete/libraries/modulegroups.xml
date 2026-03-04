@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<diff>
+
+
+
+
+
+<!--These are from the Terran mid level production goods mod and need to be looked at-->
+	<!-- TEL and PAR solar collectors -->
+	<add sel="/groups">
+		  <group name="prod_telpar_energycells">
+			<select macro="struct_econ_mining_ar_old_solar_a_macro" />
+			<select macro="struct_econ_prod_energycells_oa_macro" />
+		  </group>
+    </add>
+
+	<!-- ARG and SPL solar collectors -->
+
+	<replace sel="/groups/group[@name='prod_gen_energycells']">
+		<group name="prod_gen_energycells">
+			<select macro="prod_gen_energycells_macro" />
+			<select macro="struct_econ_prod_energycells_ol_macro" />
+			<select macro="struct_econ_prod_energycells_macro" />
+		</group>
+	</replace>
+
+	<!-- Methane Powerplant -->
+	<add sel="/groups">
+		  <group name="prod_gen_powerplant">
+			<select macro="struct_econ_prod_plasmapumps_macro" />
+		  </group>
+    </add>		
+	
+	<!-- Antimatter for TEL PAR -->
+	<!--
+	<add sel="/groups">
+		  <group name="prod_telpar_antimattercells">
+			<select macro="prod_gen_antimattercells_macro" />
+		  </group>
+    </add>	
+	-->	
+	<!-- Graphene for TEL PAR -->
+	
+	<add sel="/groups">
+		  <group name="prod_telpar_graphene">
+			<select macro="prod_gen_graphene_macro" />
+		  </group>
+    </add>			
+	
+	<!-- Superfluids for TEL PAR -->
+	<!--
+	<add sel="/groups">
+		  <group name="prod_telpar_superfluidcoolant">
+			<select macro="prod_gen_superfluidcoolant_macro" />
+		  </group>
+    </add>	
+	-->
+	
+	<!-- large versions added to existing ones -->
+	<replace sel="/groups/group[@name='prod_gen_hullparts']">
+		<group name="prod_gen_hullparts">
+			<select macro="prod_gen_hullparts_macro" weight="100"/>
+			<select macro="struct_econ_prod_reinforcedmetal_macro" weight="20"/>
+		</group>
+	 </replace>	
+	
+	<replace sel="/groups/group[@name='prod_gen_refinedmetals']">
+		  <group name="prod_gen_refinedmetals">
+			<select macro="prod_gen_refinedmetals_macro" weight="100"/>
+			<select macro="struct_econ_prod_refinedmetals_macro" weight="20"/>
+		  </group>
+	 </replace>	
+
+	<replace sel="/groups/group[@name='prod_gen_siliconwafers']">
+		<group name="prod_gen_siliconwafers">
+			<select macro="prod_gen_siliconwafers_macro" weight="100"/>
+			<select macro="struct_econ_prod_microchips_macro" weight="20"/>
+		</group>
+	 </replace>	
+
+	<replace sel="/groups/group[@name='prod_gen_water']">
+		<group name="prod_gen_water">
+			<select macro="prod_gen_water_macro" weight="100"/>
+			<select macro="struct_econ_prod_water_macro" weight="20"/>
+		</group>
+	 </replace>	
+
+	<replace sel="/groups/group[@name='prod_gen_missilecomponents']">
+		<group name="prod_gen_missilecomponents">
+			<select macro="prod_gen_missilecomponents_macro" weight="100"/>
+			<select macro="struct_econ_prod_missiles_macro" weight="20"/>
+		</group>
+	 </replace>	
+
+	<replace sel="/groups/group[@name='prod_gen_dronecomponents']">
+		<group name="prod_gen_dronecomponents">
+			<select macro="prod_gen_dronecomponents_macro" weight="100"/>
+			<select macro="struct_econ_prod_drones_macro" weight="30"/>
+		</group>
+	 </replace>	
+
+	<replace sel="/groups/group[@name='prod_gen_quantumtubes']">
+		<group name="prod_gen_quantumtubes">
+			<select macro="prod_gen_quantumtubes_macro" weight="100"/>
+			<select macro="struct_econ_prod_al_quantumtubes_macro" weight="20"/>
+		</group>
+	 </replace>	
+
+	<replace sel="/groups/group[@name='prod_gen_superfluidcoolant']">
+		<group name="prod_gen_superfluidcoolant">
+			<select macro="prod_gen_superfluidcoolant_macro" weight="100"/>
+			<select macro="struct_econ_prod_al_plasmacells_macro" weight="20"/>
+		</group>
+	 </replace>	
+
+	<replace sel="/groups/group[@name='prod_gen_antimattercells']">
+		<group name="prod_gen_antimattercells">
+			<select macro="prod_gen_antimattercells_macro" weight="100"/>
+			<select macro="struct_econ_prod_antimattercells_macro" weight="20"/>
+		</group>
+	 </replace>	
+
+	<replace sel="/groups/group[@name='prod_gen_microchips']">
+		<group name="prod_gen_microchips">
+			<select macro="prod_gen_microchips_macro" weight="100"/>
+			<select macro="struct_econ_prod_bioelectricneurongel_macro" weight="20"/>
+		</group>
+	 </replace>	
+
+	<replace sel="/groups/group[@name='prod_gen_turretcomponents']">
+		<group name="prod_gen_turretcomponents">
+			<select macro="prod_gen_turretcomponents_macro" weight="100"/>
+			<select macro="struct_econ_prod_reinforcedmetal_macro" weight="20"/>
+		</group>
+	 </replace>	
+
+	<!-- terran groups -->
+	
+	<add sel="/groups">
+	  <group name="prod_ter_metallicnanoparticles">
+		 <select macro="struct_econ_prod_food_rations_macro" /> 
+	  </group>
+
+	  <group name="prod_ter_aicores">
+		 <select macro="struct_econ_prod_hmg_macro" /> 
+	  </group>
+	  
+	  <group name="prod_ter_missilecomponents">
+		 <select macro="prod_ter_missilecomponents_macro" weight="3"/> 
+		 <select macro="prod_ter_missilecomponents_large_macro" /> 
+	  </group>
+	  
+	  <group name="prod_ter_dronecomponents">
+		 <select macro="prod_ter_dronecomponents_macro" weight="1"/> 
+	  </group>
+	  
+
+	  <group name="prod_ter_forcefieldunits">
+		 <select macro="struct_econ_prod_emspectrometer_macro" /> 
+	  </group>
+
+	  <group name="prod_ter_silicongrids">
+		 <select macro="struct_econ_prod_nividiumgems_macro" /> 
+	  </group>
+
+	  <group name="prod_ter_fusionreactors">
+		 <select macro="struct_econ_prod_fusion_reactor_macro" /> 
+	  </group>  
+
+	  <group name="prod_ter_fusionbatteries">
+		 <select macro="struct_econ_prod_pfr_macro" /> 
+	  </group> 	  
+	  
+	  <group name="prod_ter_hydrogenextractors">
+		 <select macro="struct_econ_prod_ice_macro" /> 
+	  </group> 
+
+	</add>
+	
+	
+	<add>
+		<group name="xcg_prod_gen_glass">
+			<select macro="xcg_prod_gen_glass_macro" />
+		</group>
+	</add>
+</diff>
+  
+  
+ 

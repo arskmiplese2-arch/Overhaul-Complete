@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="Kyoto_Flagg_Spawn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+  <cues>
+    
+    <cue name="KyotoFlagg_Spawn">
+      <conditions>
+        <check_any>
+          <event_cue_signalled cue="md.Setup.GameStart" />
+          <event_player_created/>
+        </check_any>
+      </conditions>
+      <actions>
+<!--Testing Cheats-->
+<reward_player money="50000000000L" />
+<add_blueprint sector="player.sector" macro="macro.xcg_module_gen_prod_glass_01_macro" />
+
+        <find_sector name="$AllSectors" multiple="true" />
+        <do_all exact="33" counter="$i">
+          <set_value name="$RandomSector" exact="$AllSectors.random"/>
+          <create_ship name="$NewShip" macro="ship_usc_xl_kyoto_flagg_macro" zone="player.zone">
+            <owner exact="faction.player" overridenpc="true" />
+            <pilot><select faction="faction.yaki" tags="tag.aipilot"/></pilot>
+            <people>
+              <fillpercent exact="100" />
+              <person role="service" weight="80"><select faction="faction.terran" tags="tag.crew"/></person>
+              <person role="marine" weight="20"><select faction="faction.yaki" tags="tag.marine"/></person>
+            </people>
+            <ammunition><ammunition macro="ware_deployable_satellite_advanced_01_macro" exact="50" /></ammunition>
+            <safepos x="10km" y="0m" z="10km"/>
+          </create_ship>
+          <set_skill entity="$NewShip.pilot" type="skilltype.piloting" exact="15"/>
+          <create_order id="'Wait'" object="$NewShip" default="true"/>
+          <do_all exact="30">
+            <create_ship name="$Wingman" macro="ship_yak_s_fighter_01_a_macro" zone="$NewShip.zone" docked="true">
+              <owner exact="faction.player" overridenpc="true" />
+              <commander exact="$NewShip" assignment="assignment.interception" />
+              <pilot><select faction="faction.yaki" tags="tag.aipilot"/></pilot>
+              <people><fillpercent exact="100" /></people>
+              <ammunition><ammunition macro="ware_deployable_satellite_advanced_01_macro" exact="10" /></ammunition>
+              <loadout level="1" />
+			  <safepos object="$NewShip" radius="2000m" />
+            </create_ship>
+            <set_skill entity="$Wingman.pilot" type="skilltype.piloting" exact="15"/>
+			<set_object_commander object="$Wingman" commander="$NewShip" assignment="assignment.interception" />
+			<create_order id="'DockAt'" object="$Wingman">
+				<param name="destination" value="$NewShip" />
+			</create_order>
+            <create_order id="'Wait'" object="$Wingman" default="true"/>
+          </do_all>
+        </do_all>
+			<create_ship name="$PhoenixChicken" macro="macro.ship_m_verdandi_macro" zone="player.zone">
+				<owner exact="faction.player" overridenpc="true" />
+				<pilot><select faction="faction.terran" tags="tag.aipilot"/></pilot>
+				<safepos object="player.entity" radius="500m" />
+			</create_ship>
+			<set_object_name object="$PhoenixChicken" name="'Phoenix Chicken'"/>
+			<create_ship name="$GoldenEgg" macro="macro.ship_gen_s_fighter_01_a_macro" zone="player.zone">
+				<owner exact="faction.player" overridenpc="true" />
+				<pilot><select faction="faction.yaki" tags="tag.aipilot"/></pilot>
+				<loadout id="'default'" /> 
+				<safepos object="player.entity" radius="600m" />
+			</create_ship>
+			<set_object_name object="$GoldenEgg" name="'Golden Egg'"/>
+		<do_all exact="20">
+          <create_ship name="$HynGasMine" macro="ship_arg_l_miner_liquid_01_a_macro" zone="player.zone">
+            <owner exact="faction.player" overridenpc="true" />
+            <pilot><select faction="faction.terran" tags="tag.aipilot"/></pilot>
+            <people><fillpercent exact="100" /></people>
+            <loadout level="1" />
+            <safepos object="player.entity" radius="5km" />
+          </create_ship>
+          <create_order id="'Wait'" object="$HynGasMine" default="true"/>
+        </do_all>
+        <do_all exact="20">
+          <create_ship name="$HynMinMine" macro="ship_par_l_miner_solid_01_a_macro" zone="player.zone">
+            <owner exact="faction.player" overridenpc="true" />
+            <pilot><select faction="faction.terran" tags="tag.aipilot"/></pilot>
+            <people><fillpercent exact="100" /></people>
+            <loadout level="1" />
+            <safepos object="player.entity" radius="6km" />
+          </create_ship>
+          <create_order id="'Wait'" object="$HynMinMine" default="true"/>
+        </do_all>
+        <do_all exact="40">
+          <create_ship name="$HynTrader" macro="ship_ter_l_trans_container_01_a_macro" zone="player.zone">
+            <owner exact="faction.player" overridenpc="true" />
+            <pilot><select faction="faction.terran" tags="tag.aipilot"/></pilot>
+            <people><fillpercent exact="100" /></people>
+            <loadout level="1" />
+            <safepos object="player.entity" radius="7km" />
+          </create_ship>
+          <create_order id="'Wait'" object="$HynTrader" default="true"/>
+        </do_all>
+        <do_all exact="20">
+          <create_ship name="$HynXLMil" macro="ship_spl_xl_battleship_01_a_macro" zone="player.zone">
+            <owner exact="faction.player" overridenpc="true" />
+            <pilot><select faction="faction.terran" tags="tag.aipilot"/></pilot>
+            <people><fillpercent exact="100" /></people>
+            <loadout level="1" />
+            <safepos object="player.entity" radius="10km" />
+          </create_ship>
+          <create_order id="'Wait'" object="$HynXLMil" default="true"/>
+        </do_all>
+        <do_all exact="10">
+          <create_ship name="$HynLMil" macro="ship_ter_l_destroyer_01_a_macro" zone="player.zone">
+            <owner exact="faction.player" overridenpc="true" />
+            <pilot><select faction="faction.terran" tags="tag.aipilot"/></pilot>
+            <people><fillpercent exact="100" /></people>
+            <loadout level="1" />
+            <safepos object="player.entity" radius="8km" />
+          </create_ship>
+          <create_order id="'Wait'" object="$HynLMil" default="true"/>
+        </do_all>
+        <do_all exact="100">
+          <create_ship name="$HynSMil" macro="ship_yak_s_fighter_02_a_macro" zone="player.zone">
+            <owner exact="faction.player" overridenpc="true" />
+            <pilot><select faction="faction.yaki" tags="tag.aipilot"/></pilot>
+            <people><fillpercent exact="100" /></people>
+            <loadout level="1" />
+            <safepos object="player.entity" radius="4km" />
+          </create_ship>
+          <create_order id="'Wait'" object="$HynSMil" default="true"/>
+        </do_all>
+		<signal_cue cue="Player_Ship_Hardware_Audit" />
+      </actions>
+    </cue>
+	<cue name="Player_Ship_Hardware_Audit">
+      <conditions>
+        <event_cue_signalled cue="Player_Ship_Hardware_Audit" />
+      </conditions>
+      <actions>
+        <write_to_logbook category="general" title="'Hardware Audit'" text="'[START] Auditing player fleet for missing engines...'" />
+
+        <find_ship groupname="$PlayerFleet" space="player.galaxy" multiple="true">
+            <match owner="faction.player" />
+        </find_ship>
+
+        <do_all exact="$PlayerFleet.count" counter="$i">
+          <set_value name="$CurrentShip" exact="$PlayerFleet.{$i}" />
+          
+          <do_if value="$CurrentShip.engines.count == 0">
+            <do_if value="$CurrentShip.isclass.ship_s">
+              <add_equipment object="$CurrentShip" macro="macro.engine_ter_s_combat_01_mk3_macro" />
+            </do_if>
+            <do_elif value="$CurrentShip.isclass.ship_m">
+              <add_equipment object="$CurrentShip" macro="macro.engine_ter_m_combat_01_mk3_macro" />
+            </do_elif>
+            <do_elif value="$CurrentShip.isclass.ship_l">
+              <add_equipment object="$CurrentShip" macro="macro.engine_ter_l_allround_01_mk1_macro" />
+            </do_elif>
+            <do_elif value="$CurrentShip.isclass.ship_xl">
+              <add_equipment object="$CurrentShip" macro="macro.engine_xen_xl_allround_01_mk1_macro" />
+            </do_elif>
+            
+            <add_equipment object="$CurrentShip" default="true" />
+            <write_to_logbook category="general" title="'Hardware Audit'" text="'[FIXED] ' + $CurrentShip.knownname + ' (' + $CurrentShip.idcode + ') had no engines. Hardware injected.'" />
+          </do_if>
+        </do_all>
+        <write_to_logbook category="general" title="'Hardware Audit'" text="'[FINISH] Audit complete. All player ships should now be mobile.'" />
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

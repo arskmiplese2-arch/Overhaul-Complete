@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<language id="49">
+      <page id="9771315"  voice="yes">
+
+<!-- ADDITIONAL WEAPON -->	  
+	 <t id="800">\033RCapitalweapon\033X \033YPrototypes\033X (M-turrets)</t>
+	 
+	 <t id="801">\033RGammaraybeamcannon\033X \033YPrototype\033X M</t>
+	 <t id="802">After the great success of the large gamma ray cannon \033Y(early prototype)\033X, an adaptation to the M turrets was obvious. Nevertheless, much is still not known about this weapon. However, it is now known that it has a relatively long range and, thanks to sophisticated AI control, absolute precision - ideal for defense against fast fighters and scout ships. This system also represents the new benchmark for drone and missile defense.\n\nIn the early stages of development, it was probably based on the Khaak gamma kyon emitter.\n\nThis beam cannon emits a barely perceptible high-energy beam. The visible portion of the beam is created by ionizing matter along the beam, while the actual gamma beam is invisible. However, the fact that the beam is barely visible very easily belies its destructive effect. This unfolds, as we know, in the invisible range of the gamma ray, which is always absolutely lethal. However, a hit target does not "suffer" because its matter instantly vaporizes.</t>
+
+	 <t id="811">\033RMI M/AM-Cannon\033X \033YPrototype\033X M</t>
+	 <t id="812">After succeeding in creating the 700mm large-caliber cannon based on the Targonturrets and later developing a so-called Multi Impact M/AM weapon system from it (we remember: M/AM weapons were used on capital ships in \033Y "Terran Conflict"\033X), a variant adapted to the M turrets has now been adapted here as well.</t>
+
+	</page>
+	
+</language>

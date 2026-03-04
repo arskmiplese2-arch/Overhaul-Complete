@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+
+<!-- xenon Jobs -->
+	<replace sel="/jobs/job[@id='xenon_carrier_patrol_xl_border_cluster']/quota/@galaxy">3</replace>
+
+	<add sel="/jobs/job[@id='xenon_carrier_patrol_xl_border_cluster']/subordinates">
+<subordinate job="xenon_destroyer_escort_xl"/>
+<subordinate job="xenon_destroyer_escort_xl"/>
+	</add>
+
+	<replace sel="/jobs/job[@id='xenon_carrier_patrol_xl_zone_defence']/quota/@galaxy">12</replace>
+	<replace sel="/jobs/job[@id='xenon_carrier_patrol_xl_zone_defence']/quota/@sector">2</replace>
+	
+	<add sel="/jobs/job[@id='xenon_carrier_patrol_xl_zone_defence']/subordinates">
+<subordinate job="xenon_destroyer_escort_xl"/>
+<subordinate job="xenon_destroyer_escort_xl"/>
+	</add>
+
+
+	<replace sel="/jobs/job[@id='xenon_destroyer_patrol_xl_cluster']/quota/@galaxy">8</replace>
+	<replace sel="/jobs/job[@id='xenon_destroyer_patrol_xl_cluster']/quota/@sector">3</replace>
+	
+  	<add sel="/jobs/job[@id='xenon_destroyer_patrol_xl_cluster']/subordinates">
+	  <subordinate job="xenon_frigate_escort_m"/>
+	</add>
+  
+  	<replace sel="/jobs/job[@id='xenon_destroyer_patrol_xl_defence']/quota/@galaxy">12</replace>
+	<replace sel="/jobs/job[@id='xenon_destroyer_patrol_xl_defence']/quota/@cluster">4</replace>
+	
+  	<add sel="/jobs/job[@id='xenon_destroyer_patrol_xl_defence']/subordinates">
+	  <subordinate job="xenon_frigate_escort_m"/>
+	</add>
+  
+	
+	<replace sel="/jobs/job[@id='xenon_destroyer_patrol_xl_defence']/quota/@galaxy">3</replace>
+	<replace sel="/jobs/job[@id='xenon_destroyer_patrol_xl_defence']/quota/@cluster">3</replace>
+	
+	
+	
+	
+<!--  Argon  -->
+<replace sel="/jobs/job[@id='argon_bio_trader_l']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='argon_bio_trader_m']/quota/@galaxy">36</replace>
+<replace sel="/jobs/job[@id='argon_food_trader_s']/quota/@galaxy">42</replace>
+<replace sel="/jobs/job[@id='argon_medical_trader_s']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='argon_energycell_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='argon_energycell_trader_m']/quota/@galaxy">30</replace>
+<replace sel="/jobs/job[@id='argon_energycell_trader_s']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='argon_equipment_trader_l']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='argon_equipment_trader_m']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='argon_construction_trader_l']/quota/@galaxy">7</replace>
+<replace sel="/jobs/job[@id='argon_construction_trader_m']/quota/@galaxy">21</replace>
+<replace sel="/jobs/job[@id='argon_ship_construction_trader_l']/quota/@galaxy">2</replace>
+<replace sel="/jobs/job[@id='argon_ship_construction_trader_m']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='argon_refinedgas_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='argon_refinedgas_trader_m']/quota/@galaxy">21</replace>
+<replace sel="/jobs/job[@id='argon_refinedmineral_trader_l']/quota/@galaxy">7</replace>
+<replace sel="/jobs/job[@id='argon_refinedmineral_trader_m']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='argon_tech_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='argon_tech_trader_m']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='argon_tech_trader_s']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='argon_water_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='argon_water_trader_m']/quota/@galaxy">12</replace>
+<!--  Station Trader Jobs, by request only  -->
+<replace sel="/jobs/job[@id='argon_stationtrader_m']/quota/@maxgalaxy">13</replace>
+<replace sel="/jobs/job[@id='argon_stationtrader_l']/quota/@maxgalaxy">5</replace>
+<!--  Mining Jobs  -->
+<replace sel="/jobs/job[@id='argon_free_miner_l_liquid']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='argon_free_miner_m_liquid']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='argon_free_miner_l_mineral']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='argon_free_miner_m_mineral']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='argon_free_miner_s_mineral']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='argon_free_miner_l_ice']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='argon_free_miner_m_ice']/quota/@galaxy">9</replace>
+<!--  Antigone  -->
+<replace sel="/jobs/job[@id='antigone_bio_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='antigone_bio_trader_m']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='antigone_food_trader_s']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='antigone_medical_trader_s']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='antigone_energycell_trader_l']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='antigone_energycell_trader_m']/quota/@galaxy">16</replace>
+<replace sel="/jobs/job[@id='antigone_energycell_trader_s']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='antigone_equipment_trader_l']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='antigone_equipment_trader_m']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='antigone_construction_trader_l']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='antigone_construction_trader_m']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='antigone_ship_construction_trader_l']/quota/@galaxy">2</replace>
+<replace sel="/jobs/job[@id='antigone_ship_construction_trader_m']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='antigone_refinedgas_trader_l']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='antigone_refinedgas_trader_m']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='antigone_refinedmineral_trader_l']/quota/@galaxy">2</replace>
+<replace sel="/jobs/job[@id='antigone_refinedmineral_trader_m']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='antigone_tech_trader_l']/quota/@galaxy">2</replace>
+<replace sel="/jobs/job[@id='antigone_tech_trader_m']/quota/@galaxy">8</replace>
+<!--  Station Trader Jobs, by request only  -->
+<replace sel="/jobs/job[@id='antigone_stationtrader_m']/quota/@maxgalaxy">13</replace>
+<replace sel="/jobs/job[@id='antigone_stationtrader_l']/quota/@maxgalaxy">5</replace>
+<!--  Mining Jobs  -->
+<replace sel="/jobs/job[@id='antigone_free_miner_m_liquid']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='antigone_free_miner_m_mineral']/quota/@galaxy">15</replace>
+<replace sel="/jobs/job[@id='antigone_free_miner_m_ice']/quota/@galaxy">8</replace>
+<!--  Godrealm  -->
+<replace sel="/jobs/job[@id='paranid_bio_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='paranid_bio_trader_m']/quota/@galaxy">18</replace>
+<replace sel="/jobs/job[@id='paranid_food_trader_s']/quota/@galaxy">36</replace>
+<replace sel="/jobs/job[@id='paranid_medical_trader_s']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='paranid_energycell_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='paranid_energycell_trader_m']/quota/@galaxy">18</replace>
+<replace sel="/jobs/job[@id='paranid_energycell_trader_s']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='paranid_equipment_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='paranid_equipment_trader_m']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='paranid_construction_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='paranid_construction_trader_m']/quota/@galaxy">18</replace>
+<replace sel="/jobs/job[@id='paranid_ship_construction_trader_l']/quota/@galaxy">2</replace>
+<replace sel="/jobs/job[@id='paranid_ship_construction_trader_m']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='paranid_refinedgas_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='paranid_refinedgas_trader_m']/quota/@galaxy">18</replace>
+<replace sel="/jobs/job[@id='paranid_refinedmineral_trader_l']/quota/@galaxy">5</replace>
+<replace sel="/jobs/job[@id='paranid_refinedmineral_trader_m']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='paranid_tech_trader_l']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='paranid_tech_trader_m']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='paranid_tech_trader_s']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='paranid_water_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='paranid_water_trader_m']/quota/@galaxy">12</replace>
+<!--  Station Trader Jobs, by request only  -->
+<replace sel="/jobs/job[@id='paranid_stationtrader_m']/quota/@maxgalaxy">13</replace>
+<replace sel="/jobs/job[@id='paranid_stationtrader_l']/quota/@maxgalaxy">5</replace>
+<!--  Mining Jobs  -->
+<replace sel="/jobs/job[@id='paranid_free_miner_l_liquid']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_m_liquid']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_l_mineral']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_m_mineral']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_s_mineral']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_l_ice']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_m_ice']/quota/@galaxy">6</replace>
+<!--  Holy Order  -->
+<replace sel="/jobs/job[@id='holyorder_bio_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='holyorder_bio_trader_m']/quota/@galaxy">18</replace>
+<replace sel="/jobs/job[@id='holyorder_food_trader_s']/quota/@galaxy">25</replace>
+<replace sel="/jobs/job[@id='holyorder_medical_trader_s']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='holyorder_energycell_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='holyorder_energycell_trader_m']/quota/@galaxy">18</replace>
+<replace sel="/jobs/job[@id='holyorder_energycell_trader_s']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='holyorder_equipment_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='holyorder_equipment_trader_m']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='holyorder_construction_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='holyorder_construction_trader_m']/quota/@galaxy">18</replace>
+<replace sel="/jobs/job[@id='holyorder_ship_construction_trader_l']/quota/@galaxy">2</replace>
+<replace sel="/jobs/job[@id='holyorder_ship_construction_trader_m']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='holyorder_refinedgas_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='holyorder_refinedgas_trader_m']/quota/@galaxy">18</replace>
+<replace sel="/jobs/job[@id='holyorder_refinedmineral_trader_l']/quota/@galaxy">5</replace>
+<replace sel="/jobs/job[@id='holyorder_refinedmineral_trader_m']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='holyorder_tech_trader_l']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='holyorder_tech_trader_m']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='holyorder_tech_trader_s']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='holyorder_water_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='holyorder_water_trader_m']/quota/@galaxy">12</replace>
+<!--  Station Trader Jobs, by request only  -->
+<replace sel="/jobs/job[@id='holyorder_stationtrader_m']/quota/@maxgalaxy">13</replace>
+<replace sel="/jobs/job[@id='holyorder_stationtrader_l']/quota/@maxgalaxy">5</replace>
+<!--  Mining Jobs  -->
+<replace sel="/jobs/job[@id='holyorder_free_miner_l_liquid']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_m_liquid']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_l_mineral']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_m_mineral']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_s_mineral']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_l_ice']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_m_ice']/quota/@galaxy">6</replace>
+<!--  Trinity  -->
+<replace sel="/jobs/job[@id='trinity_bio_trader_l']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='trinity_bio_trader_m']/quota/@galaxy">28</replace>
+<replace sel="/jobs/job[@id='trinity_food_trader_s']/quota/@galaxy">45</replace>
+<replace sel="/jobs/job[@id='trinity_medical_trader_s']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='trinity_energycell_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='trinity_energycell_trader_m']/quota/@galaxy">28</replace>
+<replace sel="/jobs/job[@id='trinity_energycell_trader_s']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='trinity_equipment_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='trinity_equipment_trader_m']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='trinity_construction_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='trinity_construction_trader_m']/quota/@galaxy">28</replace>
+<replace sel="/jobs/job[@id='trinity_ship_construction_trader_l']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='trinity_ship_construction_trader_m']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='trinity_refinedgas_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='trinity_refinedgas_trader_m']/quota/@galaxy">28</replace>
+<replace sel="/jobs/job[@id='trinity_refinedmineral_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='trinity_refinedmineral_trader_m']/quota/@galaxy">28</replace>
+<replace sel="/jobs/job[@id='trinity_tech_trader_l']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='trinity_tech_trader_m']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='trinity_tech_trader_s']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='trinity_water_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='trinity_water_trader_m']/quota/@galaxy">20</replace>
+<!--  Station Trader Jobs, by request only  -->
+<replace sel="/jobs/job[@id='trinity_stationtrader_m']/quota/@maxgalaxy">20</replace>
+<replace sel="/jobs/job[@id='trinity_stationtrader_l']/quota/@maxgalaxy">6</replace>
+<!--  Mining Jobs  -->
+<replace sel="/jobs/job[@id='trinity_free_miner_l_liquid']/quota/@galaxy">5</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_m_liquid']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_l_mineral']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_m_mineral']/quota/@galaxy">18</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_s_mineral']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_l_ice']/quota/@galaxy">5</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_m_ice']/quota/@galaxy">8</replace>
+<!--  Teladi  -->
+<replace sel="/jobs/job[@id='teladi_bio_trader_l']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='teladi_bio_trader_m']/quota/@galaxy">36</replace>
+<replace sel="/jobs/job[@id='teladi_medical_trader_s']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='teladi_energycell_trader_l']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='teladi_energycell_trader_m']/quota/@galaxy">48</replace>
+<replace sel="/jobs/job[@id='teladi_energycell_trader_s']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='teladi_equipment_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='teladi_equipment_trader_m']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='teladi_construction_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='teladi_construction_trader_m']/quota/@galaxy">36</replace>
+<replace sel="/jobs/job[@id='teladi_construction_exporter_l']/quota/@galaxy">5</replace>
+<replace sel="/jobs/job[@id='teladi_construction_exporter_m']/quota/@galaxy">15</replace>
+<replace sel="/jobs/job[@id='teladi_construction_importer_l']/quota/@galaxy">5</replace>
+<replace sel="/jobs/job[@id='teladi_construction_importer_m']/quota/@galaxy">15</replace>
+<replace sel="/jobs/job[@id='teladi_ship_construction_trader_l']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='teladi_ship_construction_trader_m']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='teladi_refinedgas_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='teladi_refinedgas_trader_m']/quota/@galaxy">18</replace>
+<replace sel="/jobs/job[@id='teladi_refinedmineral_trader_l']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='teladi_refinedmineral_trader_m']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='teladi_tech_trader_l']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='teladi_tech_trader_m']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='teladi_tech_trader_s']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='teladi_water_trader_l']/quota/@galaxy">8</replace>
+<!--  Station Trader Jobs, by request only  -->
+<replace sel="/jobs/job[@id='teladi_stationtrader_m']/quota/@maxgalaxy">18</replace>
+<replace sel="/jobs/job[@id='teladi_stationtrader_l']/quota/@maxgalaxy">8</replace>
+<!--  Mining Jobs  -->
+<replace sel="/jobs/job[@id='teladi_free_miner_l_liquid']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_m_liquid']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_l_mineral']/quota/@galaxy">15</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_m_mineral']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_s_mineral']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_l_ice']/quota/@galaxy">5</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_m_ice']/quota/@galaxy">10</replace>
+<!--  Ministry  -->
+<replace sel="/jobs/job[@id='ministry_tech_trader_m']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='ministry_food_trader_s']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='ministry_medical_trader_s']/quota/@galaxy">8</replace>
+<!--  Station Trader Jobs, by request only  -->
+<replace sel="/jobs/job[@id='ministry_stationtrader_m']/quota/@maxgalaxy">13</replace>
+<replace sel="/jobs/job[@id='ministry_stationtrader_l']/quota/@maxgalaxy">5</replace>
+<!--  Zyarth  -->
+<replace sel="/jobs/job[@id='zyarth_food_trader_l']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='zyarth_food_trader_m']/quota/@galaxy">36</replace>
+<replace sel="/jobs/job[@id='zyarth_food_trader_s']/quota/@galaxy">42</replace>
+<replace sel="/jobs/job[@id='zyarth_medical_trader_s']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='zyarth_energycell_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='zyarth_energycell_trader_m']/quota/@galaxy">30</replace>
+<replace sel="/jobs/job[@id='zyarth_energycell_trader_s']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='zyarth_equipment_trader_l']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='zyarth_equipment_trader_m']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='zyarth_construction_trader_l']/quota/@galaxy">7</replace>
+<replace sel="/jobs/job[@id='zyarth_construction_trader_m']/quota/@galaxy">21</replace>
+<replace sel="/jobs/job[@id='zyarth_ship_construction_trader_l']/quota/@galaxy">2</replace>
+<replace sel="/jobs/job[@id='zyarth_ship_construction_trader_m']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='zyarth_refinedgas_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='zyarth_refinedgas_trader_m']/quota/@galaxy">21</replace>
+<replace sel="/jobs/job[@id='zyarth_refinedmineral_trader_l']/quota/@galaxy">7</replace>
+<replace sel="/jobs/job[@id='zyarth_refinedmineral_trader_m']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='zyarth_tech_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='zyarth_tech_trader_m']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='zyarth_tech_trader_s']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='zyarth_water_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='zyarth_water_trader_m']/quota/@galaxy">12</replace>
+<!--  Station Trader Jobs, by request only  -->
+<replace sel="/jobs/job[@id='zyarth_stationtrader_m']/quota/@maxgalaxy">13</replace>
+<replace sel="/jobs/job[@id='zyarth_stationtrader_l']/quota/@maxgalaxy">5</replace>
+<!--  Mining Jobs  -->
+<replace sel="/jobs/job[@id='zyarth_free_miner_l_liquid']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_m_liquid']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_l_mineral']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_m_mineral']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_s_mineral']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_l_ice']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_m_ice']/quota/@galaxy">9</replace>
+<!--  Curb have no job files!?!:O  -->
+<!--  Free Families  -->
+<replace sel="/jobs/job[@id='freesplit_food_trader_l']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='freesplit_food_trader_m']/quota/@galaxy">36</replace>
+<replace sel="/jobs/job[@id='freesplit_food_trader_s']/quota/@galaxy">42</replace>
+<replace sel="/jobs/job[@id='freesplit_medical_trader_s']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='freesplit_energycell_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='freesplit_energycell_trader_m']/quota/@galaxy">30</replace>
+<replace sel="/jobs/job[@id='freesplit_energycell_trader_s']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='freesplit_equipment_trader_l']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='freesplit_equipment_trader_m']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='freesplit_construction_trader_l']/quota/@galaxy">7</replace>
+<replace sel="/jobs/job[@id='freesplit_construction_trader_m']/quota/@galaxy">21</replace>
+<replace sel="/jobs/job[@id='freesplit_ship_construction_trader_l']/quota/@galaxy">2</replace>
+<replace sel="/jobs/job[@id='freesplit_ship_construction_trader_m']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='freesplit_refinedgas_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='freesplit_refinedgas_trader_m']/quota/@galaxy">21</replace>
+<replace sel="/jobs/job[@id='freesplit_refinedmineral_trader_l']/quota/@galaxy">7</replace>
+<replace sel="/jobs/job[@id='freesplit_refinedmineral_trader_m']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='freesplit_tech_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='freesplit_tech_trader_m']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='freesplit_tech_trader_s']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='freesplit_water_trader_l']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='freesplit_water_trader_m']/quota/@galaxy">12</replace>
+<!--  Station Trader Jobs, by request only  -->
+<replace sel="/jobs/job[@id='freesplit_stationtrader_m']/quota/@maxgalaxy">13</replace>
+<replace sel="/jobs/job[@id='freesplit_stationtrader_l']/quota/@maxgalaxy">5</replace>
+<!--  Mining Jobs  -->
+<replace sel="/jobs/job[@id='freesplit_free_miner_l_liquid']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_m_liquid']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_l_mineral']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_m_mineral']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_s_mineral']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_l_ice']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_m_ice']/quota/@galaxy">9</replace>
+<!--  Terran Protectorate -->
+<replace sel="/jobs/job[@id='terran_food_trader_l']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='terran_food_trader_m']/quota/@galaxy">36</replace>
+<replace sel="/jobs/job[@id='terran_food_trader_s']/quota/@galaxy">40</replace>
+<replace sel="/jobs/job[@id='terran_medical_trader_s']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='terran_energycell_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='terran_energycell_trader_m']/quota/@galaxy">26</replace>
+<replace sel="/jobs/job[@id='terran_energycell_trader_s']/quota/@galaxy">8</replace>
+<replace sel="/jobs/job[@id='terran_energycell_trader_l_longrange']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='terran_energycell_trader_m_longrange']/quota/@galaxy">24</replace>
+<replace sel="/jobs/job[@id='terran_equipment_trader_l']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='terran_equipment_trader_m']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='terran_construction_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='terran_construction_trader_m']/quota/@galaxy">21</replace>
+<replace sel="/jobs/job[@id='terran_ship_construction_trader_l']/quota/@galaxy">2</replace>
+<replace sel="/jobs/job[@id='terran_ship_construction_trader_m']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='terran_tech_trader_l']/quota/@galaxy">21</replace>
+<replace sel="/jobs/job[@id='terran_tech_trader_m']/quota/@galaxy">45</replace>
+<replace sel="/jobs/job[@id='terran_tech_trader_s']/quota/@galaxy">12</replace>
+<!--  Station Trader Jobs, by request only  -->
+<replace sel="/jobs/job[@id='terran_stationtrader_m']/quota/@maxgalaxy">13</replace>
+<replace sel="/jobs/job[@id='terran_stationtrader_l']/quota/@maxgalaxy">5</replace>
+<!--  Mining Jobs  -->
+<replace sel="/jobs/job[@id='terran_free_miner_l_liquid']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_m_liquid']/quota/@galaxy">15</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_l_mineral']/quota/@galaxy">48</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_m_mineral']/quota/@galaxy">60</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_s_mineral']/quota/@galaxy">24</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_l_ice']/quota/@galaxy">5</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_m_ice']/quota/@galaxy">10</replace>
+<!--  Segaris Pioneers  -->
+<replace sel="/jobs/job[@id='pioneers_medical_trader_s']/quota/@galaxy">10</replace>
+<replace sel="/jobs/job[@id='pioneers_equipment_trader_l']/quota/@galaxy">3</replace>
+<replace sel="/jobs/job[@id='pioneers_equipment_trader_m']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='pioneers_construction_trader_l']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='pioneers_construction_trader_m']/quota/@galaxy">21</replace>
+<replace sel="/jobs/job[@id='pioneers_ship_construction_trader_l']/quota/@galaxy">2</replace>
+<replace sel="/jobs/job[@id='pioneers_ship_construction_trader_m']/quota/@galaxy">4</replace>
+<replace sel="/jobs/job[@id='pioneers_tech_trader_l']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='pioneers_tech_trader_m']/quota/@galaxy">15</replace>
+<replace sel="/jobs/job[@id='pioneers_tech_trader_s']/quota/@galaxy">12</replace>
+<replace sel="/jobs/job[@id='pioneers_smuggler_s']/quota/@galaxy">8</replace>
+<!--  Station Trader Jobs, by request only  -->
+<replace sel="/jobs/job[@id='pioneers_stationtrader_m']/quota/@maxgalaxy">13</replace>
+<replace sel="/jobs/job[@id='terran_stationtrader_l']/quota/@maxgalaxy">5</replace>
+<!--  Mining Jobs  -->
+<replace sel="/jobs/job[@id='pioneers_free_miner_l_liquid']/quota/@galaxy">6</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_m_liquid']/quota/@galaxy">15</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_l_mineral']/quota/@galaxy">36</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_m_mineral']/quota/@galaxy">44</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_s_mineral']/quota/@galaxy">20</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_l_ice']/quota/@galaxy">5</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_m_ice']/quota/@galaxy">10</replace>
+
+
+<!-- Argon -->
+<!-- Civillian -->
+<replace sel="/jobs/job[@id='argon_refinedgas_trader_l']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='argon_refinedgas_trader_m']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='argon_refinedmineral_trader_l']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='argon_refinedmineral_trader_l']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='argon_refinedmineral_trader_m']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='argon_refinedmineral_trader_m']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='argon_free_miner_l_liquid']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="80"/>
+</replace>
+<replace sel="/jobs/job[@id='argon_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='argon_free_miner_l_mineral']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='argon_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='argon_free_miner_l_ice']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='argon_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<!-- military -->
+<replace sel="/jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/quota">
+<quota galaxy="2" maxgalaxy="20" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/subordinates">
+<subordinates>
+<subordinate job="argon_destroyer_escort_l" assignment="attack"/>
+<subordinate job="argon_frigate_escort_m" assignment="attack"/>
+<subordinate job="argon_fighter_escort_s_carrier" assignment="attack"/>
+<subordinate job="argon_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="argon_fighter_escort_s_patrol" assignment="attack"/>
+<subordinate job="argon_resupplier_escort_xl" assignment="supplyfleet" group="10"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='argon_destroyer_patrol_l_sector']/quota">
+<quota galaxy="3" maxgalaxy="30" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='argon_destroyer_patrol_l_sector']/subordinates">
+<subordinates>
+<subordinate job="argon_destroyer_escort_l" assignment="attack"/>
+<subordinate job="argon_frigate_escort_m" assignment="attack"/>
+<subordinate job="argon_fighter_escort_s_carrier" assignment="attack"/>
+<subordinate job="argon_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="argon_fighter_escort_s_patrol" assignment="attack"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='argon_destroyer_escort_l']/quota">
+<quota wing="4" variation="2"/>
+</replace>
+<replace sel="/jobs/job[@id='argon_destroyer_escort_l']/subordinates">
+<subordinates>
+<subordinate job="argon_fighter_escort_s_carrier" assignment="attack"/>
+<subordinate job="argon_frigate_escort_m" assignment="attack"/>
+<subordinate job="argon_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="argon_fighter_escort_s_patrol" assignment="attack"/>
+</subordinates>
+</replace>
+<!-- Antigone -->
+<!-- Civillian -->
+<replace sel="/jobs/job[@id='antigone_refinedgas_trader_l']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='antigone_refinedgas_trader_m']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='antigone_refinedmineral_trader_l']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='antigone_refinedmineral_trader_l']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='antigone_refinedmineral_trader_m']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='antigone_refinedmineral_trader_m']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='antigone_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='antigone_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='antigone_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<!-- military -->
+<replace sel="/jobs/job[@id='antigone_destroyer_patrol_l_border_sector']/quota">
+<quota galaxy="2" maxgalaxy="30" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='antigone_destroyer_patrol_l_border_sector']/subordinates">
+<subordinates>
+<subordinate job="antigone_destroyer_escort_l" assignment="attack"/>
+<subordinate job="antigone_frigate_escort_m" assignment="attack"/>
+<subordinate job="antigone_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="antigone_fighter_escort_s_patrol" assignment="attack"/>
+<subordinate job="antigone_resupplier_escort_xl" assignment="supplyfleet" group="10"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='antigone_destroyer_escort_l']/quota">
+<quota wing="4" variation="2"/>
+</replace>
+<replace sel="/jobs/job[@id='antigone_destroyer_escort_l']/subordinates">
+<subordinates>
+<subordinate job="antigone_frigate_escort_m" assignment="attack"/>
+<subordinate job="antigone_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="antigone_fighter_escort_s_patrol" assignment="attack"/>
+</subordinates>
+</replace>
+<!-- Paranid -->
+<!-- Civillian -->
+<replace sel="/jobs/job[@id='paranid_refinedgas_trader_l']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_refinedgas_trader_m']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_refinedmineral_trader_l']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_refinedmineral_trader_l']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_refinedmineral_trader_m']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_refinedmineral_trader_m']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_l_liquid']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="80"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_l_mineral']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_l_ice']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<!-- military -->
+<replace sel="/jobs/job[@id='paranid_carrier_patrol_xl_cluster']/quota">
+<quota galaxy="2" maxgalaxy="20" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_carrier_patrol_xl_cluster']/subordinates">
+<subordinates>
+<subordinate job="paranid_destroyer_escort_l" assignment="attack"/>
+<subordinate job="paranid_frigate_escort_m" assignment="attack"/>
+<subordinate job="paranid_fighter_escort_s_carrier" assignment="attack"/>
+<subordinate job="paranid_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="paranid_fighter_escort_s_patrol" assignment="attack"/>
+<subordinate job="paranid_resupplier_escort_xl" assignment="supplyfleet" group="10"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='paranid_destroyer_patrol_l_sector_exp']/quota">
+<quota galaxy="3" maxgalaxy="30" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='paranid_destroyer_patrol_l_sector_exp']/subordinates">
+<subordinates>
+<subordinate job="paranid_destroyer_escort_l" assignment="attack"/>
+<subordinate job="paranid_frigate_escort_m" assignment="attack"/>
+<subordinate job="paranid_fighter_escort_s_carrier" assignment="attack"/>
+<subordinate job="paranid_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="paranid_fighter_escort_s_patrol" assignment="attack"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='paranid_destroyer_escort_l']/quota">
+<quota wing="6" variation="2"/>
+</replace>
+<!-- holyorder -->
+<!-- Civillian -->
+<replace sel="/jobs/job[@id='holyorder_refinedgas_trader_l']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_refinedgas_trader_m']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_refinedmineral_trader_l']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_refinedmineral_trader_l']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_refinedmineral_trader_m']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_refinedmineral_trader_m']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_l_liquid']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="80"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_l_mineral']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_l_ice']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<!-- military -->
+<replace sel="/jobs/job[@id='holyorder_destroyer_patrol_l_cluster_exp']/quota">
+<quota galaxy="3" maxgalaxy="30" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_destroyer_patrol_l_cluster_exp']/subordinates">
+<subordinates>
+<subordinate job="holyorder_destroyer_escort_l" assignment="attack"/>
+<subordinate job="holyorder_frigate_escort_m" assignment="attack"/>
+<subordinate job="holyorder_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="holyorder_fighter_escort_s_patrol" assignment="attack"/>
+<subordinate job="holyorder_resupplier_escort_xl" assignment="supplyfleet" group="10"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_destroyer_escort_l']/quota">
+<quota wing="4" variation="2"/>
+</replace>
+<replace sel="/jobs/job[@id='holyorder_destroyer_escort_l']/subordinates">
+<subordinates>
+<subordinate job="holyorder_frigate_escort_m" assignment="attack"/>
+<subordinate job="holyorder_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="holyorder_fighter_escort_s_patrol" assignment="attack"/>
+</subordinates>
+</replace>
+<!-- trinity -->
+<!-- Civillian -->
+<replace sel="/jobs/job[@id='trinity_refinedgas_trader_l']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_refinedgas_trader_m']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_refinedmineral_trader_l']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_refinedmineral_trader_l']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_refinedmineral_trader_m']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_refinedmineral_trader_m']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_l_liquid']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="80"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_l_mineral']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_l_ice']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<!-- military -->
+<replace sel="/jobs/job[@id='trinity_carrier_patrol_xl_cluster']/quota">
+<quota galaxy="2" maxgalaxy="25" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='trinity_carrier_patrol_xl_cluster']/subordinates">
+<subordinates>
+<subordinate job="trinity_destroyer_escort_l_par" assignment="attack"/>
+<subordinate job="trinity_destroyer_escort_l_hop" assignment="attack"/>
+<subordinate job="trinity_frigate_escort_m" assignment="attack"/>
+<subordinate job="trinity_fighter_escort_s_carrier" assignment="attack"/>
+<subordinate job="trinity_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="trinity_fighter_escort_s_patrol" assignment="attack"/>
+<subordinate job="trinity_resupplier_escort_xl" assignment="supplyfleet" group="10"/>
+</subordinates>
+</replace>
+<add sel="/jobs/job[@id='trinity_destroyer_escort_l_par']">
+<subordinates>
+<subordinate job="trinity_fighter_escort_s_carrier" assignment="attack"/>
+<subordinate job="trinity_frigate_escort_m" assignment="attack"/>
+<subordinate job="trinity_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="trinity_fighter_escort_s_patrol" assignment="attack"/>
+</subordinates>
+</add>
+<add sel="/jobs/job[@id='trinity_destroyer_escort_l_hop']">
+<subordinates>
+<subordinate job="trinity_fighter_escort_s_carrier" assignment="attack"/>
+<subordinate job="trinity_frigate_escort_m" assignment="attack"/>
+<subordinate job="trinity_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="trinity_fighter_escort_s_patrol" assignment="attack"/>
+</subordinates>
+</add>
+<!-- teladi -->
+<!-- Civillian -->
+<replace sel="/jobs/job[@id='teladi_refinedgas_trader_l']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_refinedgas_trader_m']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_refinedmineral_trader_l']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_refinedmineral_trader_l']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_refinedmineral_trader_m']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_refinedmineral_trader_m']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_l_liquid']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="80"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_l_mineral']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_l_ice']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<!-- military -->
+<replace sel="/jobs/job[@id='teladi_carrier_patrol_xl_cluster']/quota">
+<quota galaxy="2" maxgalaxy="20" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_carrier_patrol_xl_cluster']/subordinates">
+<subordinates>
+<subordinate job="teladi_destroyer_escort_l" assignment="attack"/>
+<subordinate job="teladi_frigate_escort_m" assignment="attack"/>
+<subordinate job="teladi_fighter_escort_s_carrier" assignment="attack"/>
+<subordinate job="teladi_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="teladi_fighter_escort_s_patrol" assignment="attack"/>
+<subordinate job="teladi_resupplier_escort_xl" assignment="supplyfleet" group="10"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='teladi_destroyer_patrol_l_border_cluster']/quota">
+<quota galaxy="3" maxgalaxy="30" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_destroyer_patrol_l_border_cluster']/subordinates">
+<subordinates>
+<subordinate job="teladi_destroyer_escort_l" assignment="attack"/>
+<subordinate job="teladi_frigate_escort_m" assignment="attack"/>
+<subordinate job="teladi_fighter_escort_s_carrier" assignment="attack"/>
+<subordinate job="teladi_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="teladi_fighter_escort_s_patrol" assignment="attack"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='teladi_destroyer_escort_l']/quota">
+<quota wing="6" variation="3"/>
+</replace>
+<replace sel="/jobs/job[@id='teladi_destroyer_escort_l']/subordinates">
+<subordinates>
+<subordinate job="teladi_fighter_escort_s_carrier" assignment="attack"/>
+<subordinate job="teladi_frigate_escort_m" assignment="attack"/>
+<subordinate job="teladi_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="teladi_fighter_escort_s_patrol" assignment="attack"/>
+</subordinates>
+</replace>
+<!-- ministry -->
+<!-- Civillian -->
+<replace sel="/jobs/job[@id='ministry_tech_trader_m']/quota">
+<quota galaxy="30" maxgalaxy="120" sector="60"/>
+</replace>
+<replace sel="/jobs/job[@id='ministry_food_trader_s']/quota">
+<quota galaxy="30" maxgalaxy="120" sector="60"/>
+</replace>
+<replace sel="/jobs/job[@id='ministry_medical_trader_s']/quota">
+<quota galaxy="30" maxgalaxy="120" sector="60"/>
+</replace>
+<!-- military -->
+<replace sel="/jobs/job[@id='ministry_destroyer_patrol_l_comp']/quota">
+<quota galaxy="2" maxgalaxy="20" sector="2"/>
+</replace>
+<add sel="/jobs/job[@id='ministry_destroyer_patrol_l_comp']">
+<subordinates>
+<subordinate job="ministry_destroyer_escort_l_reinforced" assignment="attack"/>
+<subordinate job="ministry_destroyer_escort_l" assignment="attack"/>
+<subordinate job="ministry_frigate_escort_m" assignment="attack"/>
+<subordinate job="ministry_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="ministry_fighter_escort_s_patrol" assignment="attack"/>
+</subordinates>
+</add>
+<replace sel="/jobs/job[@id='ministry_destroyer_escort_l_reinforced']/quota">
+<quota wing="6" variation="3"/>
+</replace>
+<replace sel="/jobs/job[@id='ministry_destroyer_escort_l_reinforced']/subordinates">
+<subordinates>
+<subordinate job="ministry_destroyer_escort_l" assignment="attack"/>
+<subordinate job="ministry_frigate_escort_m" assignment="attack"/>
+<subordinate job="ministry_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="ministry_fighter_escort_s_patrol" assignment="attack"/>
+</subordinates>
+</replace>
+<!-- zyarth -->
+<!-- Civillian -->
+<replace sel="/jobs/job[@id='zyarth_refinedgas_trader_l']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_refinedgas_trader_m']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_refinedmineral_trader_l']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_refinedmineral_trader_l']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_refinedmineral_trader_m']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_refinedmineral_trader_m']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_l_liquid']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="80"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_l_mineral']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_l_ice']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<!-- military -->
+<replace sel="/jobs/job[@id='zyarth_carrier_patrol_xl_center']/quota">
+<quota galaxy="2" maxgalaxy="20" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_carrier_patrol_xl_center']/location">
+<location class="galaxy" macro="xu_ep2_universe_macro" faction="split" relation="self" comparison="exact"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_carrier_patrol_xl_center']/subordinates">
+<subordinates>
+<subordinate job="zyarth_destroyer_escort_l_noescort" assignment="attack"/>
+<subordinate job="zyarth_corvette_escort_m" assignment="attack"/>
+<subordinate job="zyarth_frigate_escort_m" assignment="attack"/>
+<subordinate job="zyarth_escort_m_carrier" assignment="attack"/>
+<subordinate job="zyarth_fighter_escort_s_carrier_wing" assignment="attack"/>
+<subordinate job="zyarth_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="zyarth_fighter_escort_s_patrol" assignment="attack"/>
+<subordinate job="zyarth_resupplier_escort_xl" assignment="supplyfleet" group="10"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_destroyer_patrol_l_border_sector']/quota">
+<quota galaxy="3" maxgalaxy="30" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_destroyer_patrol_l_border_sector']/subordinates">
+<subordinates>
+<subordinate job="zyarth_destroyer_escort_l_noescort" assignment="attack"/>
+<subordinate job="zyarth_corvette_escort_m" assignment="attack"/>
+<subordinate job="zyarth_frigate_escort_m" assignment="attack"/>
+<subordinate job="zyarth_escort_m_carrier" assignment="attack"/>
+<subordinate job="zyarth_fighter_escort_s_carrier_wing" assignment="attack"/>
+<subordinate job="zyarth_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="zyarth_fighter_escort_s_patrol" assignment="attack"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='zyarth_destroyer_escort_l_noescort']/quota">
+<quota wing="6" variation="3"/>
+</replace>
+<add sel="/jobs/job[@id='zyarth_destroyer_escort_l_noescort']">
+<subordinates>
+<subordinate job="zyarth_fighter_escort_s_carrier_wing" assignment="attack"/>
+<subordinate job="zyarth_corvette_escort_m" assignment="attack"/>
+<subordinate job="zyarth_frigate_escort_m" assignment="attack"/>
+<subordinate job="zyarth_escort_m_carrier" assignment="attack"/>
+</subordinates>
+</add>
+<!-- COURT -->
+<!-- military -->
+<replace sel="/jobs/job[@id='court_carrier_patrol_xl_center']/quota">
+<quota galaxy="2" maxgalaxy="20" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='court_carrier_patrol_xl_center']/subordinates">
+<subordinates>
+<subordinate job="court_destroyer_escort_l_noescort" assignment="attack"/>
+<subordinate job="court_corvette_escort_m" assignment="attack"/>
+<subordinate job="court_frigate_escort_m" assignment="attack"/>
+<subordinate job="court_escort_m_carrier" assignment="attack"/>
+<subordinate job="court_fighter_escort_s_carrier_wing" assignment="attack"/>
+<subordinate job="court_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="court_fighter_escort_s_patrol" assignment="attack"/>
+<subordinate job="court_resupplier_escort_xl" assignment="supplyfleet" group="10"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='court_destroyer_patrol_l_border_sector']/quota">
+<quota galaxy="3" maxgalaxy="30" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='court_destroyer_patrol_l_border_sector']/subordinates">
+<subordinates>
+<subordinate job="court_destroyer_escort_l_noescort" assignment="attack"/>
+<subordinate job="court_corvette_escort_m" assignment="attack"/>
+<subordinate job="court_frigate_escort_m" assignment="attack"/>
+<subordinate job="court_escort_m_carrier" assignment="attack"/>
+<subordinate job="court_fighter_escort_s_carrier_wing" assignment="attack"/>
+<subordinate job="court_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="court_fighter_escort_s_patrol" assignment="attack"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='court_destroyer_escort_l_noescort']/quota">
+<quota wing="6" variation="3"/>
+</replace>
+<add sel="/jobs/job[@id='court_destroyer_escort_l_noescort']">
+<subordinates>
+<subordinate job="court_fighter_escort_s_carrier_wing" assignment="attack"/>
+<subordinate job="court_corvette_escort_m" assignment="attack"/>
+<subordinate job="court_frigate_escort_m" assignment="attack"/>
+<subordinate job="court_escort_m_carrier" assignment="attack"/>
+</subordinates>
+</add>
+<!-- freesplit -->
+<!-- Civillian -->
+<replace sel="/jobs/job[@id='freesplit_refinedgas_trader_l']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='freesplit_refinedgas_trader_m']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='freesplit_refinedmineral_trader_l']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='freesplit_refinedmineral_trader_l']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='freesplit_refinedmineral_trader_m']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='freesplit_refinedmineral_trader_m']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_l_liquid']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="80"/>
+</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_l_mineral']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_l_ice']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='freesplit_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<!-- terran -->
+<!-- Civillian -->
+<replace sel="/jobs/job[@id='terran_equipment_trader_l']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='terran_equipment_trader_l']/basket">
+<basket basket="all_container_terran"/>
+</replace>
+<replace sel="/jobs/job[@id='terran_equipment_trader_m']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='terran_equipment_trader_m']/basket">
+<basket basket="all_container_terran"/>
+</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_l_liquid']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="80"/>
+</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_l_mineral']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_l_ice']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='terran_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<!-- military -->
+<replace sel="/jobs/job[@id='terran_carrier_intervention_xl']/quota">
+<quota galaxy="2" maxgalaxy="40" sector="3"/>
+</replace>
+<replace sel="/jobs/job[@id='terran_carrier_intervention_xl']/subordinates">
+<subordinates>
+<subordinate job="terran_destroyer_escort_l" assignment="attack"/>
+<subordinate job="terran_destroyer_escort_l_noescort" assignment="attack"/>
+<subordinate job="terran_corvette_escort_m" assignment="attack"/>
+<subordinate job="terran_frigate_escort_m" assignment="attack"/>
+<subordinate job="terran_escort_m_carrier" assignment="attack"/>
+<subordinate job="terran_fighter_escort_s_carrier_wing" assignment="attack"/>
+<subordinate job="terran_fighter_escort_s_frigate" assignment="attack"/>
+<subordinate job="terran_fighter_escort_s_patrol" assignment="attack"/>
+<subordinate job="terran_resupplier_escort_xl" assignment="supplyfleet" group="10"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='terran_battleship_intervention_xl']/quota">
+<quota galaxy="3" maxgalaxy="40" sector="3"/>
+</replace>
+<replace sel="/jobs/job[@id='terran_battleship_intervention_xl']/subordinates">
+<subordinates>
+<subordinate job="terran_destroyer_escort_l_atf_noescort" assignment="attack" group="1"/>
+<subordinate job="terran_destroyer_escort_l_atf_noescort" assignment="attack" group="2"/>
+<subordinate job="terran_destroyer_escort_l_atf_noescort" assignment="attack" group="3"/>
+<subordinate job="terran_corvette_escort_m" assignment="attack"/>
+<subordinate job="terran_frigate_escort_m" assignment="attack"/>
+<subordinate job="terran_escort_m_carrier" assignment="attack"/>
+<subordinate job="terran_fighter_escort_s_carrier_wing" assignment="attack"/>
+<subordinate job="terran_resupplier_escort_xl" assignment="supplyfleet" group="10"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='terran_destroyer_escort_l_atf_noescort']/quota">
+<quota wing="3" variation="1"/>
+</replace>
+<!-- pioneers -->
+<!-- Civillian -->
+<replace sel="/jobs/job[@id='pioneers_refinedgas_trader_l']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_refinedgas_trader_m']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_refinedmineral_trader_l']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_refinedmineral_trader_l']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_refinedmineral_trader_m']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_refinedmineral_trader_m']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_l_liquid']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="80"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_l_mineral']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_l_ice']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<!-- military -->
+<replace sel="/jobs/job[@id='pioneers_destroyer_patrol_l_exp']/quota">
+<quota galaxy="3" maxgalaxy="30" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='pioneers_destroyer_patrol_l_exp']/subordinates">
+<subordinates>
+<subordinate job="pioneers_corvette_escort_m" assignment="attack"/>
+<subordinate job="pioneers_fighter_escort_s" assignment="attack"/>
+</subordinates>
+</replace>
+<!-- yaki -->
+<!-- military -->
+<replace sel="/jobs/job[@id='yaki_raider_m_sector']/quota">
+<quota galaxy="8" maxgalaxy="100" sector="10"/>
+</replace>
+<replace sel="/jobs/job[@id='yaki_raider_m_sector']/subordinates">
+<subordinates>
+<subordinate job="yaki_fighter_escort_mixed" assignment="attack"/>
+<subordinate job="yaki_fighter_escort_s_escort" assignment="attack"/>
+</subordinates>
+</replace>
+<!-- boron -->
+<!-- Civillian -->
+<replace sel="/jobs/job[@id='boron_refinedgas_trader_l']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_refinedgas_trader_m']/basket">
+<basket basket="refined"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_refinedmineral_trader_l']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_refinedmineral_trader_l']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_refinedmineral_trader_m']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_refinedmineral_trader_m']/basket">
+<basket basket="all_container"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_free_miner_l_liquid']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="80"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_free_miner_m_liquid']/quota">
+<quota galaxy="50" maxgalaxy="200" sector="150"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_free_miner_l_mineral']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="120"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_free_miner_m_mineral']/quota">
+<quota galaxy="20" maxgalaxy="250" sector="200"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_free_miner_l_ice']/quota">
+<quota galaxy="20" maxgalaxy="100" sector="40"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_free_miner_m_ice']/quota">
+<quota galaxy="30" maxgalaxy="100" sector="100"/>
+</replace>
+<!-- military -->
+<replace sel="/jobs/job[@id='boron_carrier_patrol_xl_flagship']/quota">
+<quota galaxy="3" maxgalaxy="30" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_carrier_patrol_xl_flagship']/location">
+<location class="galaxy" macro="xu_ep2_universe_macro" faction="boron" relation="self" comparison="exact"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_carrier_patrol_xl_flagship']/subordinates">
+<subordinates>
+<subordinate job="boron_carrier_escort_l_flagship" assignment="attack" group="1"/>
+<subordinate job="boron_carrier_escort_l_flagship" assignment="attack" group="2"/>
+<subordinate job="boron_carrier_escort_l_flagship" assignment="attack" group="3"/>
+<subordinate job="boron_carrier_escort_l_flagship" assignment="attack" group="4"/>
+<subordinate job="boron_destroyer_escort_l" assignment="attack" group="5"/>
+<subordinate job="boron_corvette_escort_m" assignment="attack"/>
+<subordinate job="boron_gunboat_escort_m" assignment="attack"/>
+<subordinate job="boron_fighter_escort_s_carrier_flagship" assignment="attack" group="6"/>
+<subordinate job="boron_resupplier_escort_xl" assignment="supplyfleet" group="10"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='boron_carrier_patrol_l_sector']/quota">
+<quota galaxy="3" maxgalaxy="40" sector="2"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_carrier_patrol_l_sector']/subordinates">
+<subordinates>
+<subordinate job="boron_carrier_escort_l_flagship" assignment="attack"/>
+<subordinate job="boron_destroyer_escort_l" assignment="attack"/>
+<subordinate job="boron_corvette_escort_m" assignment="attack"/>
+<subordinate job="boron_gunboat_escort_m" assignment="attack"/>
+<subordinate job="boron_fighter_escort_s_carrier_flagship" assignment="attack"/>
+</subordinates>
+</replace>
+<replace sel="/jobs/job[@id='boron_destroyer_escort_l']/quota">
+<quota wing="6" variation="2"/>
+</replace>
+<replace sel="/jobs/job[@id='boron_destroyer_escort_l']/subordinates">
+<subordinates>
+<subordinate job="boron_fighter_escort_s_carrier" assignment="attack"/>
+<subordinate job="boron_corvette_escort_m" assignment="attack"/>
+<subordinate job="boron_gunboat_escort_m" assignment="attack"/>
+<subordinate job="boron_fighter_escort_s_carrier" assignment="attack"/>
+</subordinates>
+</replace>
+
+
+</diff>

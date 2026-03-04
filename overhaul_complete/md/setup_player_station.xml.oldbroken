@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="SetupPlayerStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+  <cues>
+    <cue name="Spawn_Station_On_Start">
+      <conditions>
+        <event_game_started />
+      </conditions>
+      <actions>
+        <debug_text text="'[Overhaul_Complete] 1. Script triggered. searching for sector...'" filter="general"/>
+
+        <find_sector name="$TargetSector" macro="macro.Cluster_18_Sector001_macro"/>
+
+        <do_if value="$TargetSector">
+          <debug_text text="'[Overhaul_Complete] 2. Sector found: ' + $TargetSector.knownname" filter="general"/>
+
+          <create_station name="$MyStation" sector="$TargetSector" owner="faction.player">
+            <safepos x="0" y="0" z="0"/>
+          </create_station>
+
+          <do_if value="$MyStation.exists">
+             <debug_text text="'[Overhaul_Complete] 3. SUCCESS. Station plot created. UUID: ' + $MyStation.uuid" filter="general"/>
+
+             <set_object_name object="$MyStation" name="'Terran HQ Plot'" />
+             <set_known object="$MyStation" known="true" />
+             
+             <debug_text text="'[Overhaul_Complete] 4. Visibility set. End of Script.'" filter="general"/>
+          </do_if>
+          <do_else>
+             <debug_text text="'[Overhaul_Complete] CRITICAL ERROR: Station object is NULL after creation attempt.'" filter="error"/>
+          </do_else>
+        </do_if>
+        
+        <do_else>
+          <debug_text text="'[Overhaul_Complete] CRITICAL ERROR: Target Sector not found!'" filter="error"/>
+        </do_else>
+
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

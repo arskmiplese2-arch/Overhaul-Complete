@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/materiallibrary" pos="prepend">
+    <collection name="atfusc">
+      <material name="metal_argon_trims_09" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_trims_09_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_trims_09_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_trims_09_bump"/>
+          <property type="BitMap" name="color_glow_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_trims_09_light"/>
+        </properties>
+      </material>
+      <material name="metal_argon_lattice_grid" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_lattice_grid_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_lattice_grid_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_lattice_grid_bump"/>
+          <property type="BitMap" name="color_glow_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_lattice_grid_light"/>
+        </properties>
+      </material>
+      <material name="metal_argon_exhaust_source_02" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_exhaust_trims_02_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_exhaust_trims_02_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_exhaust_trims_02_bump"/>
+          <property type="BitMap" name="color_glow_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_exhaust_trims_02_light"/>
+        </properties>
+      </material>
+      <material name="metal_argon_vent" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_vent_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_vent_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_vent_bump"/>
+        </properties>
+      </material>
+      <material name="metal_argon_apartments_labs" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_apartments_labs_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_apartments_labs_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_apartments_labs_bump"/>
+          <property type="BitMap" name="color_glow_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_apartments_labs_light"/>
+        </properties>
+      </material>
+      <material name="terran_alphasheet" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\terran_alphasheet_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\terran_alphasheet_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\none_black"/>
+          <property type="BitMap" name="color_glow_map" value="extensions\overhaul_complete\assets\textures\terran\terran_alphasheet_light"/>
+        </properties>
+      </material>
+      <material name="terran_platesheet_dark" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\terran_platesheet_dark_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\terran_platesheet_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\terran_platesheet_bump"/>
+          <property type="Float" name="Smoothness" value="0.3"/>
+          <property type="Float" name="Metallness" value="0.25"/>
+        </properties>
+      </material>
+      <material name="terran_platesheet_red" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\terran_platesheet_red_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\terran_platesheet_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\terran_platesheet_bump"/>
+          <property type="Float" name="Smoothness" value="0.3"/>
+          <property type="Float" name="Metallness" value="0.25"/>
+        </properties>
+      </material>
+      <material name="terran_platesheet_white" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\terran_platesheet_white_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\terran_platesheet_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\terran_platesheet_bump"/>
+          <property type="Float" name="Smoothness" value="0.3"/>
+          <property type="Float" name="Metallness" value="0.25"/>
+        </properties>
+      </material>
+      <material name="terran_techsheet" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\terran_techsheet_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\terran_techsheet_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\terran_techsheet_bump"/>
+          <property type="BitMap" name="color_glow_map" value="extensions\overhaul_complete\assets\textures\terran\terran_techsheet_light"/>
+        </properties>
+      </material>
+      <material name="terran_windowsheet" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\terran_windowsheet_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\terran_windowsheet_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\terran_windowsheet_bump"/>
+          <property type="BitMap" name="color_glow_map" value="extensions\overhaul_complete\assets\textures\terran\terran_techsheet_light"/>
+          <property type="Float" name="color_glowStr" value="1.05"/>
+        </properties>
+      </material>
+      <material name="generic_p1_hullpattern_terran" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="assets\textures\generic\generic_p1_hullpattern_02_diff"/>
+          <property type="BitMap" name="normal_map" value="assets\textures\generic\generic_p1_hullpattern_02_normal"/>
+          <property type="Float" name="diffuse_detailStr" value="1.0"/>
+          <property type="Float" name="diffuse_paintStr" value="1.0"/>
+          <property type="Float" name="diffuseStr" value="1.0"/>
+          <property type="Float" name="diffuse_detailStr" value="1.0"/>
+          <property type="Float" name="diffuse_paintStr" value="1.0"/>
+          <property type="Float" name="normalStr" value="1.0"/>
+          <property type="Float" name="normal_detail_tiling" value="5.0"/>
+          <property type="Float" name="normal_detail_tiling_v" value="5.0"/>
+          <property type="Float" name="normal_detailStr" value="0.1"/>
+          <property type="Float" name="color_glowStr" value="1.0"/>
+          <property type="Float" name="environmentStr" value="1.0"/>
+          <property type="Float" name="Smoothness" value="0.5"/>
+          <property type="Float" name="Metallness" value="1"/>
+          <property type="Float" name="AnisoX" value="0.5"/>
+          <property type="Float" name="AnisoY" value="0.5"/>
+        </properties>
+      </material>
+      <material name="metal_argon_base_metal_plating_v2" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_base_metal_plating_v2_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_base_metal_plating_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\metal_argon_base_metal_plating_bump"/>
+          <property type="Float" name="Smoothness" value="0.8"/>
+          <property type="Float" name="Metallness" value="0.75"/>
+          <property type="Float" name="AnisoX" value="1.0"/>
+          <property type="Float" name="AnisoY" value="1.0"/>
+        </properties>
+      </material>
+      <material name="agi_m3_body" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\agi_m3-body_diff"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\agi_m3-body_bump"/>
+          <property type="Float" name="Smoothness" value="0.8"/>
+          <property type="Float" name="Metallness" value="0.75"/>
+          <property type="Float" name="AnisoX" value="1.0"/>
+          <property type="Float" name="AnisoY" value="1.0"/>
+        </properties>
+      </material>
+      <material name="agi_m3_lights" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\agi_m3-lights_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\agi_m3-lights_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\agi_m3-lights_bump"/>
+          <property type="BitMap" name="color_glow_map" value="extensions\overhaul_complete\assets\textures\terran\agi_m3-lights_light"/>
+          <property type="Float" name="color_glowStr" value="1.5"/>
+        </properties>
+      </material>
+      <material name="agi_m3_wing" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\agi_m3-wing_diff"/>
+          <property type="BitMap" name="color_glow_map" value="extensions\overhaul_complete\assets\textures\terran\agi_m3-wing_light"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\agi_m3-wing_bump"/>
+          <property type="Float" name="Smoothness" value="0.8"/>
+          <property type="Float" name="Metallness" value="0.75"/>
+          <property type="Float" name="AnisoX" value="1.0"/>
+          <property type="Float" name="AnisoY" value="1.0"/>
+        </properties>
+      </material>
+      <material name="terran_frigate_color" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\terran_frigate_color"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\terran_frigate_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\terran_frigate_bump"/>
+          <property type="BitMap" name="color_glow_map" value="extensions\overhaul_complete\assets\textures\terran\terran_frigate_glow"/>
+          <property type="Float" name="Smoothness" value="0.8"/>
+          <property type="Float" name="Metallness" value="0.75"/>
+          <property type="Float" name="AnisoX" value="1.0"/>
+          <property type="Float" name="AnisoY" value="1.0"/>
+        </properties>
+      </material>
+      <material name="unique_terran_m3_cockpit" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m3-cockpit_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m3-cockpit_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m3-cockpit_bump"/>
+          <property type="Float" name="Smoothness" value="0.8"/>
+          <property type="Float" name="Metallness" value="0.75"/>
+          <property type="Float" name="AnisoX" value="1.0"/>
+          <property type="Float" name="AnisoY" value="1.0"/>
+        </properties>
+      </material>
+      <material name="unique_terran_m3_m5_lights" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m3-m5-lights_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m3-m5-lights_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m3-m5-lights_bump"/>
+          <property type="BitMap" name="color_glow_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m3-m5-lights_light"/>
+          <property type="Float" name="color_glowStr" value="1.25"/>
+        </properties>
+      </material>
+      <material name="unique_terran_m3_wing" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m3-wing_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m3-wing_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m3-wing_bump"/>
+          <property type="Float" name="Smoothness" value="0.8"/>
+          <property type="Float" name="Metallness" value="0.75"/>
+          <property type="Float" name="AnisoX" value="1.0"/>
+          <property type="Float" name="AnisoY" value="1.0"/>
+        </properties>
+      </material>
+      <material name="unique_terran_m5_wings" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m5-wings_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m5-wings_spec"/>
+          <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m5-wings_bump"/>
+          <property type="Float" name="Smoothness" value="0.8"/>
+          <property type="Float" name="Metallness" value="0.75"/>
+          <property type="Float" name="AnisoX" value="1.0"/>
+          <property type="Float" name="AnisoY" value="1.0"/>
+        </properties>
+      </material>
+      <material name="unique_terran_m3_windows" shader="P1_complex_surface" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m3-windows_diff"/>
+          <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\textures\terran\unique_terran_m3-windows_spec"/>
+          <property type="Float" name="Smoothness" value=".75"/>
+          <property type="Float" name="Metallness" value=".75"/>
+          <property type="Float" name="AnisoX" value="1.0"/>
+          <property type="Float" name="AnisoY" value="1.0"/>
+        </properties>
+      </material>
+      <material name="generic_p1_hullpattern_atf" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="smooth_map" value="assets\textures\generic\generic_p1_hullpattern_smooth"/>
+          <property type="BitMap" name="metal_map" value="assets\textures\generic\generic_p1_hullpattern_metal"/>
+          <property type="BitMap" name="diffuse_map" value="assets\textures\generic\generic_p1_hullpattern_diff"/>
+          <property type="BitMap" name="normal_map" value="assets\textures\generic\generic_p1_hullpattern_normal"/>
+          <property type="BitMap" name="diffuse_paint_map" value="assets\textures\generic\generic_p1_dirt_01_diff"/>
+          <property type="BitMap" name="color_dirt_map" value="assets\textures\generic\generic_p1_dirt_02_diff"/>
+          <property type="BitMap" name="diffuse_detail_map" value="assets\textures\generic\generic_p1_detail_01_diff"/>
+          <property type="BitMap" name="normal_detail_map" value="assets\textures\generic\generic_p1_detail_01_normal"/>
+          <property type="Float" name="diffuse_detail_tiling" value="5"/>
+          <property type="Float" name="diffuse_detail_tiling_v" value="5.0"/>
+          <property type="Float" name="diffuse_detailStr" value="1.0"/>
+          <property type="Float" name="diffuse_paintStr" value="1.0"/>
+          <property type="Float" name="diffuseStr" value="1.0"/>
+          <property type="Float" name="diffuse_detailStr" value="1.0"/>
+          <property type="Float" name="diffuse_paintStr" value="1.0"/>
+          <property type="Float" name="normalStr" value="1.0"/>
+          <property type="Float" name="normal_detail_tiling" value="5.0"/>
+          <property type="Float" name="normal_detail_tiling_v" value="5.0"/>
+          <property type="Float" name="normal_detailStr" value="0.1"/>
+          <property type="Float" name="color_glowStr" value="1.0"/>
+          <property type="Float" name="color_dirt_tiling" value="5.0"/>
+          <property type="Float" name="color_dirt_tiling_v" value="5.0"/>
+          <property type="Float" name="color_dirtStr" value="1.0"/>
+          <property type="Float" name="environmentStr" value="1.0"/>
+          <property type="Float" name="Smoothness" value="1.0"/>
+          <property type="Float" name="Metallness" value="1.0"/>
+          <property type="Float" name="AnisoX" value="0.5"/>
+          <property type="Float" name="AnisoY" value="0.5"/>
+        </properties>
+      </material>
+      <material name="generic_p1_hullpattern_02_atf" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="smooth_map" value="assets\textures\generic\generic_p1_hullpattern_02_smooth"/>
+          <property type="BitMap" name="metal_map" value="assets\textures\generic\generic_p1_hullpattern_02_metal"/>
+          <property type="BitMap" name="diffuse_map" value="assets\textures\generic\generic_p1_hullpattern_02_diff"/>
+          <property type="BitMap" name="normal_map" value="assets\textures\generic\generic_p1_hullpattern_02_normal"/>
+          <property type="BitMap" name="diffuse_paint_map" value="assets\textures\generic\generic_p1_dirt_01_diff"/>
+          <property type="BitMap" name="color_dirt_map" value="assets\textures\generic\generic_p1_dirt_02_diff"/>
+          <property type="BitMap" name="diffuse_detail_map" value="assets\textures\generic\generic_p1_detail_01_diff"/>
+          <property type="BitMap" name="normal_detail_map" value="assets\textures\generic\generic_p1_detail_01_normal"/>
+          <property type="Float" name="diffuse_detail_tiling" value="5"/>
+          <property type="Float" name="diffuse_detail_tiling_v" value="5.0"/>
+          <property type="Float" name="diffuse_detailStr" value="1.0"/>
+          <property type="Float" name="diffuse_paintStr" value="1.0"/>
+          <property type="Float" name="diffuseStr" value="1.0"/>
+          <property type="Float" name="diffuse_detailStr" value="1.0"/>
+          <property type="Float" name="diffuse_paintStr" value="1.0"/>
+          <property type="Float" name="normalStr" value="1.0"/>
+          <property type="Float" name="normal_detail_tiling" value="5.0"/>
+          <property type="Float" name="normal_detail_tiling_v" value="5.0"/>
+          <property type="Float" name="normal_detailStr" value="0.1"/>
+          <property type="Float" name="color_glowStr" value="1.0"/>
+          <property type="Float" name="color_dirt_tiling" value="5.0"/>
+          <property type="Float" name="color_dirt_tiling_v" value="5.0"/>
+          <property type="Float" name="color_dirtStr" value="1.0"/>
+          <property type="Float" name="environmentStr" value="1.0"/>
+          <property type="Float" name="Smoothness" value="0.75"/>
+          <property type="Float" name="Metallness" value="0.6"/>
+          <property type="Float" name="AnisoX" value="0.5"/>
+          <property type="Float" name="AnisoY" value="0.5"/>
+        </properties>
+      </material>
+    </collection>
+  </add>
+
+  <add sel="/materiallibrary">
+    <collection name="terran">
+      <material name="terran_hulls_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\x4_economyoverhaul_textures\textures\argon\ar_hullpattern_05_diff"/>
+          <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\x4_economyoverhaul_textures\textures\argon\ar_hullpattern_05_smooth"/>
+          <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\x4_economyoverhaul_textures\textures\argon\ar_hullpattern_05_metal"/>
+          <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_hullpattern_05_bump"/>
+          <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+          <property type="Float" name="diffuseStr" value="1.0"/>
+          <property type="Float" name="AnisoX" value="0.50"/>
+          <property type="Float" name="AnisoY" value="0.50"/>
+          <property type="Float" name="Smoothness" value="1.00"/>
+          <property type="Float" name="Metallness" value="0.60"/>
+          <property type="Float" name="environmentStr" value="0.7"/>
+          <property type="Float" name="color_glowStr" value="1.0"/>
+          <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+          <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+          <property type="Float" name="diffuse_detailStr" value="1.0"/>
+        </properties>
+      </material>
+      <material name="terran_tech_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+        <properties>
+          <property type="Float" name="AnisoX" value="0.50"/>
+          <property type="Float" name="AnisoY" value="0.50"/>
+          <property type="Float" name="Smoothness" value="1.0"/>
+          <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\generic_tech_01_smooth"/>
+          <property type="Float" name="Metallness" value="1.0"/>
+          <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\generic_tech_01_metal"/>
+          <property type="BitMap" name="diffuse_map" value="assets\legacy\textures\generic\generic_tech_01_diff"/>
+          <property type="Float" name="diffuseStr" value="1.0"/>
+          <property type="BitMap" name="normal_map" value="assets\textures\Generic\generic_tech_01_bump"/>
+          <property type="Float" name="normalStr" value="1.0"/>
+          <property type="BitMap" name="color_glow_map" value="assets\textures\Generic\generic_tech_01_glow"/>
+          <property type="Float" name="color_glowstr" value="3.0"/>
+          <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+          <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+          <property type="Float" name="diffuse_paintStr" value="1.2"/>
+          <property type="Float" name="environmentStr" value="1.0"/>
+        </properties>
+      </material>
+      <material name="terran_trims_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+        <properties>
+          <property type="Float" name="AnisoX" value="0.50"/>
+          <property type="Float" name="AnisoY" value="0.50"/>
+          <property type="Float" name="Smoothness" value="1.0"/>
+          <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\generic_tech_01_smooth"/>
+          <property type="Float" name="Metallness" value="1.0"/>
+          <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\generic_tech_01_metal"/>
+          <property type="BitMap" name="diffuse_map" value="assets\legacy\textures\generic\generic_tech_01_diff"/>
+          <property type="Float" name="diffuseStr" value="1.0"/>
+          <property type="BitMap" name="normal_map" value="assets\textures\Generic\generic_tech_01_bump"/>
+          <property type="Float" name="normalStr" value="1.0"/>
+          <property type="BitMap" name="color_glow_map" value="assets\textures\Generic\generic_tech_01_glow"/>
+          <property type="Float" name="color_glowstr" value="3.0"/>
+          <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+          <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+          <property type="Float" name="diffuse_paintStr" value="1.2"/>
+          <property type="Float" name="environmentStr" value="1.0"/>
+        </properties>
+      </material>
+      <material name="terran_windows_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\argon\ar_trims_01_diff"/>
+          <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\ar_trims_01_smooth"/>
+          <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\ar_trims_01_metal"/>
+          <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_trims_01_bump"/>
+          <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+          <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+          <property type="Float" name="diffuseStr" value="1.0"/>
+          <property type="Float" name="AnisoX" value="0.50"/>
+          <property type="Float" name="AnisoY" value="0.50"/>
+          <property type="Float" name="Smoothness" value="0.70"/>
+          <property type="Float" name="Metallness" value="0.80"/>
+          <property type="Float" name="environmentStr" value="0.7"/>
+          <property type="Float" name="color_glowStr" value="1.0"/>
+          <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+          <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+          <property type="Float" name="diffuse_detailStr" value="1.0"/>
+        </properties>
+      </material>
+    </collection>
+  </add>
+
+  <add sel="/materiallibrary/collection[@name='argon']">
+    <material name="ar_hulls_10" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="BitMap" name="smooth_map" value="extensions\ego_dlc_terran\assets\textures\terran\ter_p1_hullpattern_01_smooth"/>
+        <property type="BitMap" name="diffuse_map" value="extensions\ego_dlc_terran\assets\textures\terran\ar_hulls_09_diff"/>
+        <property type="BitMap" name="normal_map" value="extensions\ego_dlc_terran\assets\textures\terran\ar_hulls_02_bump"/>
+        <property type="BitMap" name="metal_map" value="extensions\ego_dlc_terran\assets\textures\terran\ter_p1_hullpattern_01_metal"/>
+        <property type="BitMap" name="color_glow_map" value="assets\legacy\textures\Argon\ar_hulls_02_glow"/>
+        <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+        <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+        <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+        <property type="Float" name="diffuse_detailStr" value="1.0"/>
+        <property type="Float" name="diffuse_paintStr" value="1.0"/>
+        <property type="Float" name="normalStr" value="1.0"/>
+        <property type="Float" name="normal_detail_tiling" value="20.0"/>
+        <property type="Float" name="normal_detail_tiling_v" value="20.0"/>
+        <property type="Float" name="normal_detailStr" value="0.3"/>
+        <property type="Float" name="color_glowStr" value="0.0"/>
+        <property type="Float" name="color_dirt_tiling" value="5.0"/>
+        <property type="Float" name="color_dirt_tiling_v" value="5.0"/>
+        <property type="Float" name="color_dirtStr" value="1.0"/>
+        <property type="Float" name="environmentStr" value="1.0"/>
+        <property type="Float" name="Smoothness" value="1.0"/>
+        <property type="Float" name="Metallness" value="1.0"/>
+      </properties>
+    </material>
+    <material name="ar_hulls_09" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hulls_02_smooth"/>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hulls_09_diff"/>
+        <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_hulls_02_bump"/>
+        <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hulls_02_metal"/>
+        <property type="BitMap" name="diffuse_detail_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hulls_09_diff"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling_v" value="1.0"/>
+        <property type="Float" name="diffuse_detailStr" value="1.0"/>
+        <property type="Float" name="diffuse_paintStr" value="1.0"/>
+        <property type="Float" name="normalStr" value="1.0"/>
+        <property type="Float" name="color_glowStr" value="0.0"/>
+        <property type="Float" name="color_dirt_tiling" value="1.0"/>
+        <property type="Float" name="color_dirt_tiling_v" value="1.0"/>
+        <property type="Float" name="color_dirtStr" value="1.0"/>
+        <property type="Float" name="environmentStr" value="1.0"/>
+        <property type="Float" name="Smoothness" value="1.0"/>
+        <property type="Float" name="Metallness" value="1.0"/>
+      </properties>
+    </material>
+  </add>
+
+  <replace sel="/materiallibrary/collection[@name='argon']/material[@name='ar_hullpattern_05b']">
+    <material name="ar_hullpattern_05b" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\x4_economyoverhaul_textures\textures\argon\ar_hullpattern_05_diff"/>
+        <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\x4_economyoverhaul_textures\textures\argon\ar_hullpattern_05_smooth"/>
+        <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\x4_economyoverhaul_textures\textures\argon\ar_hullpattern_05_metal"/>
+        <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_hullpattern_05_bump"/>
+        <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+        <property type="Float" name="Smoothness" value="1.00"/>
+        <property type="Float" name="Metallness" value="0.60"/>
+        <property type="Float" name="environmentStr" value="0.7"/>
+        <property type="Float" name="color_glowStr" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+        <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+        <property type="Float" name="diffuse_detailStr" value="1.0"/>
+      </properties>
+    </material>
+  </replace>
+  <replace sel="/materiallibrary/collection[@name='argon']/material[@name='ar_trims_01b']">
+    <material name="ar_trims_01b" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\x4_economyoverhaul_textures\textures\argon\ar_trims_01b_diff"/>
+        <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\x4_economyoverhaul_textures\textures\argon\ar_hullpattern_05_smooth"/>
+        <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\x4_economyoverhaul_textures\textures\argon\ar_hullpattern_05_metal"/>
+        <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_hullpattern_05_bump"/>
+        <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+        <property type="Float" name="Smoothness" value="0.90"/>
+        <property type="Float" name="Metallness" value="0.65"/>
+        <property type="Float" name="environmentStr" value="0.7"/>
+        <property type="Float" name="color_glowStr" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+        <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+        <property type="Float" name="diffuse_detailStr" value="1.0"/>
+      </properties>
+    </material>
+  </replace>
+  <replace sel="/materiallibrary/collection[@name='argon']/material[@name='ar_hulls_01']">
+    <material name="ar_hulls_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hulls_01_diff"/>
+        <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hulls_01_smooth"/>
+        <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hulls_01_metal"/>
+        <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_hulls_01_bump"/>
+        <property type="BitMap" name="color_glow_map" value="assets\legacy\textures\Argon\ar_hulls_01_glow"/>
+        <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+        <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+        <property type="Float" name="Smoothness" value="0.70"/>
+        <property type="Float" name="Metallness" value="0.80"/>
+        <property type="Float" name="environmentStr" value="0.7"/>
+        <property type="Float" name="color_glowStr" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+        <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+        <property type="Float" name="diffuse_detailStr" value="1.0"/>
+      </properties>
+    </material>
+  </replace>
+  <replace sel="/materiallibrary/collection[@name='argon']/material[@name='ar_trims_01']">
+    <material name="ar_trims_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\argon\ar_trims_01_diff"/>
+        <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\ar_trims_01_smooth"/>
+        <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\ar_trims_01_metal"/>
+        <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_trims_01_bump"/>
+        <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+        <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+        <property type="Float" name="Smoothness" value="0.70"/>
+        <property type="Float" name="Metallness" value="0.80"/>
+        <property type="Float" name="environmentStr" value="0.7"/>
+        <property type="Float" name="color_glowStr" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+        <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+        <property type="Float" name="diffuse_detailStr" value="1.0"/>
+      </properties>
+    </material>
+  </replace>
+  <replace sel="/materiallibrary/collection[@name='argon']/material[@name='ar_unique_01']">
+    <material name="ar_unique_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\argon\ar_unique_01_diff"/>
+        <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\ar_unique_01_smooth"/>
+        <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\ar_unique_01_metal"/>
+        <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_unique_01_bump"/>
+        <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+        <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+        <property type="Float" name="Smoothness" value="0.80"/>
+        <property type="Float" name="Metallness" value="0.90"/>
+        <property type="Float" name="environmentStr" value="0.7"/>
+        <property type="Float" name="color_glowStr" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+        <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+        <property type="Float" name="diffuse_detailStr" value="1.0"/>
+      </properties>
+    </material>
+  </replace>
+  <replace sel="/materiallibrary/collection[@name='argon']/material[@name='ar_unique_02']">
+    <material name="ar_unique_02" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\argon\ar_unique_02_diff"/>
+        <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\ar_unique_02_smooth"/>
+        <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\ar_unique_02_metal"/>
+        <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_unique_02_bump"/>
+        <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+        <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+        <property type="Float" name="Smoothness" value="0.80"/>
+        <property type="Float" name="Metallness" value="0.90"/>
+        <property type="Float" name="environmentStr" value="0.7"/>
+        <property type="Float" name="color_glowStr" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+        <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+        <property type="Float" name="diffuse_detailStr" value="1.0"/>
+      </properties>
+    </material>
+  </replace>
+  <replace sel="/materiallibrary/collection[@name='argon']/material[@name='ar_unique_03']">
+    <material name="ar_unique_03" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\argon\ar_unique_03_diff"/>
+        <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\ar_unique_03_smooth"/>
+        <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\ar_unique_03_metal"/>
+        <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_unique_03_bump"/>
+        <property type="BitMap" name="color_glow_map" value="assets\legacy\textures\Argon\ar_unique_03_glow"/>
+        <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+        <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+        <property type="Float" name="Smoothness" value="0.80"/>
+        <property type="Float" name="Metallness" value="0.90"/>
+        <property type="Float" name="environmentStr" value="0.7"/>
+        <property type="Float" name="color_glowStr" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+        <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+        <property type="Float" name="diffuse_detailStr" value="1.0"/>
+      </properties>
+    </material>
+  </replace>
+  <replace sel="/materiallibrary/collection[@name='argon']/material[@name='ar_hullpattern_01']">
+    <material name="ar_hullpattern_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_01_diff"/>
+        <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_01_smooth"/>
+        <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_01_metal"/>
+        <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_hullpattern_01_bump"/>
+        <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+        <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+        <property type="Float" name="Smoothness" value="0.80"/>
+        <property type="Float" name="Metallness" value="0.90"/>
+        <property type="Float" name="environmentStr" value="0.7"/>
+        <property type="Float" name="color_glowStr" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+        <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+        <property type="Float" name="diffuse_detailStr" value="1.0"/>
+      </properties>
+    </material>
+  </replace>
+  <replace sel="/materiallibrary/collection[@name='argon']/material[@name='ar_hullpattern_02']">
+    <material name="ar_hullpattern_02" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_02_diff"/>
+        <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_02_smooth"/>
+        <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_02_metal"/>
+        <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_hullpattern_02_bump"/>
+        <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+        <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+        <property type="Float" name="Smoothness" value="0.80"/>
+        <property type="Float" name="Metallness" value="0.90"/>
+        <property type="Float" name="environmentStr" value="0.7"/>
+        <property type="Float" name="color_glowStr" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+        <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+        <property type="Float" name="diffuse_detailStr" value="1.0"/>
+      </properties>
+    </material>
+  </replace>
+  <replace sel="/materiallibrary/collection[@name='argon']/material[@name='ar_hullpattern_03']">
+    <material name="ar_hullpattern_03" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_03_diff"/>
+        <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_03_smooth"/>
+        <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_03_metal"/>
+        <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_hullpattern_03_bump"/>
+        <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+        <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+        <property type="Float" name="Smoothness" value="0.80"/>
+        <property type="Float" name="Metallness" value="0.90"/>
+        <property type="Float" name="environmentStr" value="0.7"/>
+        <property type="Float" name="color_glowStr" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+        <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+        <property type="Float" name="diffuse_detailStr" value="1.0"/>
+      </properties>
+    </material>
+  </replace>
+  <replace sel="/materiallibrary/collection[@name='argon']/material[@name='ar_hullpattern_04']">
+    <material name="ar_hullpattern_04" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_04_diff"/>
+        <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_04_smooth"/>
+        <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_04_metal"/>
+        <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_hullpattern_04_bump"/>
+        <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+        <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+        <property type="Float" name="Smoothness" value="0.80"/>
+        <property type="Float" name="Metallness" value="0.90"/>
+        <property type="Float" name="environmentStr" value="0.7"/>
+        <property type="Float" name="color_glowStr" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+        <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+        <property type="Float" name="diffuse_detailStr" value="1.0"/>
+      </properties>
+    </material>
+  </replace>
+  <replace sel="/materiallibrary/collection[@name='argon']/material[@name='ar_hullpattern_05']">
+    <material name="ar_hullpattern_05" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_05_diff"/>
+        <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_05_smooth"/>
+        <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\ar_hullpattern_05_metal"/>
+        <property type="BitMap" name="normal_map" value="assets\legacy\textures\Argon\ar_hullpattern_05_bump"/>
+        <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+        <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+        <property type="Float" name="Smoothness" value="0.60"/>
+        <property type="Float" name="Metallness" value="0.70"/>
+        <property type="Float" name="environmentStr" value="0.9"/>
+        <property type="Float" name="color_glowStr" value="1.0"/>
+        <property type="Float" name="diffuse_detail_tiling" value="3.0"/>
+        <property type="Float" name="diffuse_detail_tiling_v" value="3.0"/>
+        <property type="Float" name="diffuse_detailStr" value="1.0"/>
+      </properties>
+    </material>
+  </replace>
+
+  <add sel="/*/collection[@name='generic']">
+    <material name="generic_engines_11" shader="XU_surface_test.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\x4_economyoverhaul_textures\Generic\generic_engines_01_diff"/>
+        <property type="BitMap" name="specular_map" value="extensions\overhaul_complete\assets\x4_economyoverhaul_textures\Generic\generic_engines_01_spec"/>
+        <property type="BitMap" name="normal_map" value="extensions\overhaul_complete\assets\x4_economyoverhaul_textures\Generic\generic_engines_01_bump"/>
+        <property type="BitMap" name="color_glow_map" value="extensions\overhaul_complete\assets\x4_economyoverhaul_textures\Generic\generic_engines_01_glow"/>
+        <property type="BitMap" name="environment_map" value="extensions\overhaul_complete\assets\x4_economyoverhaul_textures\textures\envmap_lightbrown"/>
+      </properties>
+    </material>
+  </add>
+  <replace sel="/materiallibrary/collection[@name='generic']/material[@name='generic_tech_01']">
+    <material name="generic_tech_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+        <property type="Float" name="Smoothness" value="1.0"/>
+        <property type="BitMap" name="smooth_map" value="extensions\overhaul_complete\assets\textures\argon\generic_tech_01_smooth"/>
+        <property type="Float" name="Metallness" value="1.0"/>
+        <property type="BitMap" name="metal_map" value="extensions\overhaul_complete\assets\textures\argon\generic_tech_01_metal"/>
+        <property type="BitMap" name="diffuse_map" value="assets\legacy\textures\generic\generic_tech_01_diff"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="BitMap" name="normal_map" value="assets\textures\Generic\generic_tech_01_bump"/>
+        <property type="Float" name="normalStr" value="1.0"/>
+        <property type="BitMap" name="color_glow_map" value="assets\textures\Generic\generic_tech_01_glow"/>
+        <property type="Float" name="color_glowstr" value="3.0"/>
+        <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+        <property type="BitMap" name="diffuse_paint_map" value="assets\legacy\textures\paint\ar_paintoverlays"/>
+        <property type="Float" name="diffuse_paintStr" value="1.2"/>
+        <property type="Float" name="environmentStr" value="1.0"/>
+      </properties>
+    </material>
+  </replace>
+  <replace sel="/materiallibrary/collection[@name='generic']/material[@name='generic_techtrims_01']">
+    <material name="generic_techtrims_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="Float" name="Smoothness" value="1.0"/>
+        <property type="BitMap" name="smooth_map" value="assets\textures\Generic\generic_techtrims_01_smooth"/>
+        <property type="Float" name="Metallness" value="1.0"/>
+        <property type="BitMap" name="metal_map" value="assets\textures\Generic\generic_techtrims_01_metal"/>
+        <property type="BitMap" name="diffuse_map" value="assets\legacy\textures\generic\generic_techtrims_01_diff"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="BitMap" name="normal_map" value="assets\textures\Generic\generic_techtrims_01_bump"/>
+        <property type="Float" name="normalStr" value="1.0"/>
+        <property type="BitMap" name="color_dirt_map" value="assets\fx\textures\dirt_diff"/>
+        <property type="Float" name="environmentStr" value="1.0"/>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+      </properties>
+    </material>
+  </replace>
+  <replace sel="/materiallibrary/collection[@name='generic']/material[@name='generic_techtrims_02']">
+    <material name="generic_techtrims_02" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+      <properties>
+        <property type="Float" name="Smoothness" value="1.0"/>
+        <property type="BitMap" name="smooth_map" value="assets\legacy\textures\Generic\generic_techtrims_02_spec"/>
+        <property type="Float" name="Metallness" value="1"/>
+        <property type="BitMap" name="diffuse_map" value="assets\legacy\textures\Generic\generic_techtrims_02_diff"/>
+        <property type="Float" name="diffuseStr" value="1.0"/>
+        <property type="BitMap" name="normal_map" value="assets\legacy\textures\Generic\generic_techtrims_02_bump"/>
+        <property type="Float" name="normalStr" value="1.0"/>
+        <property type="Float" name="environmentStr" value="1.0"/>
+        <property type="Float" name="AnisoX" value="0.50"/>
+        <property type="Float" name="AnisoY" value="0.50"/>
+      </properties>
+    </material>
+  </replace>
+
+  <add sel="/materiallibrary/collection[@name='effects']">
+    <material name="turbolaser_v" shader="P1_simple_unlit_scaling.fx" blendmode="ADDITIVE" preview="none">
+      <properties>
+        <property type="BitMap" name="diffuse_map" value="extensions\overhaul_complete\assets\fx\textures\turbolaser_v_diff"/>
+        <property type="Float" name="diffuseStr" value="7.0"/>
+        <property type="Float" name="camera_fade_range_near_start" value="25000.0"/>
+        <property type="Float" name="camera_fade_range_near_end" value="50000.0"/>
+        <property type="Float" name="camera_fade_range_far_start" value="50000.0"/>
+        <property type="Float" name="camera_fade_range_far_end" value="100000.0"/>
+      </properties>
+    </material>
+  </add>
+</diff>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<diff>
+	<add sel="/groups">
+	  <group name="prod_ter_metallicnanoparticles">
+		 <select macro="struct_econ_prod_bioelectricneurongel_macro" /> 
+	  </group>
+
+	  <group name="prod_ter_aicores">
+		 <select macro="struct_econ_prod_hmg_macro" /> 
+	  </group>
+	  
+	  <group name="prod_ter_missilecomponents">
+		 <select macro="prod_gen_missilecomponents_macro" /> 
+	  </group>
+
+	  <group name="prod_ter_antimattercells">
+		 <select macro="prod_gen_antimattercells_macro" /> 
+	  </group> 
+
+	  <group name="prod_ter_forcefieldunits">
+		 <select macro="struct_econ_prod_emspectrometer_macro" /> 
+	  </group>
+
+	  <group name="prod_ter_silicongrids">
+		 <select macro="struct_econ_prod_nividiumgems_macro" /> 
+	  </group>
+
+	  <group name="prod_ter_fusionreactors">
+		 <select macro="struct_econ_prod_fusion_reactor_macro" /> 
+	  </group>  
+
+	</add>
+</diff>

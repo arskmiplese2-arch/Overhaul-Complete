@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="X4_Bar" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+    <cues>
+        <cue name="Init">
+            <conditions>
+                <check_any>
+					<event_game_loaded />
+					<event_game_started />
+                    <event_player_created />
+					<event_cue_signalled cue="md.Setup.Start" />
+				</check_any>
+            </conditions>
+            <delay exact="2s"/>
+            <actions>
+                <show_help duration="6s" custom="'X4_Bar Mod installed.'"/>
+				<set_value name="$Debug" exact="false"/>
+                <set_value name="$X4CorridorMacro" exact="null"/>
+                <set_value name="$X4RoomMacro" exact="null"/>
+				<set_value name="$Station" exact="player.station"/>
+				<set_value name="$PlayerShip" exact="player.ship"/>
+                <set_value name="$X4Interior" exact="null"/>
+				<set_value name="$Corridor" exact="null"/>
+				<set_value name="$Room" exact="null"/>
+				<set_value name="$MainHQ" exact="md.X4Ep1_Mentor_Subscriptions.Start.$HQ"/>
+                <set_value name="$DebugFileName" exact="md.$SystemTimeAtGamestart" comment="Name of the file where the log will be saved." />
+                <set_value name="$DebugDirectory" exact="'bar'" comment="Directory where log files should be stored." />
+                <set_value name="$DebugOutput" exact="false" comment="Whether the log file should also be sent to VS output - Ensure this is false for release builds." />
+				<set_value name="$ShadyGuyBar" exact="null"/>
+				<get_room_definition macro="$X4CorridorMacro" tags="tag.corridor" />
+				<get_room_definition macro="$X4RoomMacro" tags="tag.bar" />
+				<signal_cue_instantly cue="Save_Log" param="'X4_Bar Start.'"/>
+				<set_value name="$StationTable" exact="null"/>
+				<set_value name="$StationInterior" exact="null"/>
+				<signal_cue_instantly cue="Check_Player" />
+            </actions>
+            <cues>
+
+			<cue name="Remove_X4Interior" instantiate="true">
+				<conditions>
+					<event_cue_signalled/>
+				</conditions>
+				<actions>
+					<set_value name="$Obj" exact="event.param.{1}"/>
+					<set_value name="$Interior" exact="event.param.{2}"/>
+					<remove_dynamic_interior object="$Obj" interior="$Interior" />
+					<destroy_object object="$Interior"/>
+					<signal_cue_instantly cue="Save_Log" param="'Bar in ' + $Interior + ' ' + $Obj.name + ' removed'" />
+					<remove_value name="$Interior"/>
+					<remove_value name="$Corridor"/>
+					<remove_value name="$Room"/>
+				</actions>
+			</cue>
+
+                <cue name="Setup_All" instantiate="true">
+                    <conditions>
+						<event_object_changed_object object="player.entity" />
+                    </conditions>
+                    <actions>
+						<set_value name="$Debug" exact="false"/>
+						<set_value name="$MainHQ" exact="md.X4Ep1_Mentor_Subscriptions.Start.$HQ"/>
+						<set_value name="$Station" exact="player.station"/>
+						<set_value name="$PlayerShip" exact="player.ship"/>
+						<set_value name="$X4Interior" exact="null"/>
+						<set_value name="$Corridor" exact="null"/>
+						<set_value name="$Room" exact="null"/>
+						<signal_cue_instantly cue="Check_Player" />
+                    </actions>
+                </cue>
+				
+				<cue name="Check_Player" instantiate="true">
+					<conditions>
+						<check_any>
+							<event_cue_signalled />
+						</check_any>
+					</conditions>
+					<actions>
+						<do_if value="$PlayerShip">
+							<signal_cue_instantly cue="Place_Ship" />
+                        </do_if>
+						<do_else>
+							<do_if value="$Station">
+								<do_if value="$Station == $MainHQ">
+									<signal_cue_instantly cue="Place_HQ" />
+								</do_if>
+								<do_else>
+									<signal_cue_instantly cue="Place_Station" />
+								</do_else>
+							</do_if>
+						</do_else>
+					</actions>
+				</cue>
+
+				<cue name="Find_Slot_of_Room" instantiate="true">
+					<conditions>
+						<event_cue_signalled/>
+					</conditions>
+					<actions>
+						<set_value name="$RoomSlots" exact="event.param.{1}"/>
+						<set_value name="$Tag" exact="event.param.{2}"/>
+						<set_value name="$Men" exact="event.param.{3}"/>
+            
+						<find_npc_slot name="$RoomSlots" object="$MainHQ" tags="$Tag" />
+						<do_if value="$RoomSlots">
+							<signal_cue_instantly cue="Save_Log" param="'Found a free slot in the room for ' + $Men.knownname + ' ' + $RoomSlots" />
+							<add_actor_to_room actor="$Men" slot="$RoomSlots" />
+						</do_if>
+						<do_else>
+							<signal_cue_instantly cue="Save_Log" param="'Could not create a slot in the room for ' + $Men.knownname" />
+						</do_else> 
+					</actions>
+				</cue>
+
+				<cue name="Save_Log" instantiate="true">
+					<conditions>
+						<event_cue_signalled/>
+					</conditions>
+					<actions>
+						<set_value name="$Text" exact="event.param"/>
+						<do_if value="$Debug">
+							<debug_to_file name="$DebugFileName" directory="$DebugDirectory" text="'' + $Text" output="$DebugOutput" />
+						</do_if>
+					</actions>
+				</cue>
+				
+				<cue name="Place_Station" instantiate="true">
+                    <conditions>
+						<event_cue_signalled/>
+                    </conditions>
+                    <actions>
+						<signal_cue_instantly cue="Save_Log" param="'Player arrived at station [%s]'.[$Station.name]" />
+						<do_if value="$StationInterior">
+							<signal_cue_instantly cue="Remove_X4Interior" param="[$StationTable, $StationInterior]"/>
+						</do_if>
+
+						<create_dynamic_interior object="$Station" corridor="$X4CorridorMacro" room="$X4RoomMacro" name="readtext.{20007}.{1031}" interiorname="$X4Interior" corridorname="$Corridor" roomname="$Room" roomtype="roomtype.bar" />
+						<do_if value="$X4Interior">
+							<signal_cue_instantly cue="Save_Log" param="'Bar in ' + $Station.name + ' created'"/>
+							<signal_cue_instantly cue="Save_Log" param="'$Corridor =  ' + $Corridor + ' $Room = ' + $Room + ' $X4Interior = ' + $X4Interior" />
+						</do_if>
+						<do_else>
+							<signal_cue_instantly cue="Save_Log" param="'Failed to create Bar in ' + $Station.name"/>
+						</do_else>
+						<set_value name="$StationTable" exact="$Station"/>
+						<set_value name="$StationInterior" exact="$X4Interior"/>
+						<set_value name="$X4Interior" exact="null"/>
+                    </actions>
+                </cue>
+				
+				<cue name="Place_Ship" instantiate="true">
+                    <conditions>
+						<event_cue_signalled/>
+                    </conditions>
+                    <actions>
+						<signal_cue_instantly cue="Save_Log" param="'Player arrived on ship [%s]'.[$PlayerShip.name]" />
+						<do_if value="$StationInterior">
+							<signal_cue_instantly cue="Remove_X4Interior" param="[$StationTable, $StationInterior]"/>
+						</do_if>
+
+						<create_dynamic_interior object="$PlayerShip" corridor="$X4CorridorMacro" room="$X4RoomMacro" name="readtext.{20007}.{1031}" interiorname="$X4Interior" corridorname="$Corridor" roomname="$Room" roomtype="roomtype.bar" />
+						<do_if value="$X4Interior">
+							<signal_cue_instantly cue="Save_Log" param="'Bar on ' + $PlayerShip.name + ' created'"/>
+							<signal_cue_instantly cue="Save_Log" param="'$Corridor =  ' + $Corridor + ' $Room = ' + $Room + ' $X4Interior = ' + $X4Interior" />
+						</do_if>
+						<do_else>
+							<signal_cue_instantly cue="Save_Log" param="'Failed to create Bar on ' + $PlayerShip.name"/>
+						</do_else>
+						<set_value name="$StationTable" exact="$PlayerShip"/>
+						<set_value name="$StationInterior" exact="$X4Interior"/>
+						<set_value name="$X4Interior" exact="null"/>
+                    </actions>
+                </cue>
+
+                <cue name="Place_HQ" instantiate="true">
+                    <conditions>
+                        <check_any>
+                            <event_cue_signalled/>
+                        </check_any>
+                    </conditions>
+                    <actions>
+						<signal_cue_instantly cue="Save_Log" param="'Player arrived at base [%s]'.[$Station.name]" />
+						<do_if value="$StationInterior">
+							<signal_cue_instantly cue="Remove_X4Interior" param="[$StationTable, $StationInterior]"/>
+						</do_if>
+						
+						<create_dynamic_interior object="$MainHQ" corridor="$X4CorridorMacro" room="$X4RoomMacro" name="readtext.{20007}.{1031}" interiorname="$X4Interior" corridorname="$Corridor" roomname="$Room" roomtype="roomtype.bar" seed="$MainHQ.spawnsourceseed + lookup.roomtype.list.indexof.{roomtype.bar}" />
+						<do_if value="$X4Interior">
+							<signal_cue_instantly cue="Save_Log" param="'Bar in ' + $MainHQ.knownname + ' created'"/>
+						</do_if>
+						<do_else>
+							<signal_cue_instantly cue="Save_Log" param="'Failed to create Bar $MainHQ'"/>
+						</do_else>
+						
+						<set_value name="$StationTable" exact="$MainHQ"/>
+						<set_value name="$StationInterior" exact="$X4Interior"/>
+						<set_value name="$X4Interior" exact="null"/>
+						<set_value name="$ShadyGuyBar" exact="null"/>
+						<do_if value="$StationInterior">
+							<create_cue_actor name="$ShadyGuyBar" cue="this">
+								<select tags="tag.shadyguy" />
+								<owner exact="faction.player"/>
+								<select race="race.argon"/>
+								<skills>
+									<skill type="management" exact="15"/>
+									<skill type="morale" exact="0"/>
+									<skill type="piloting" exact="4"/>
+									<skill type="engineering" exact="6"/>
+									<skill type="boarding" exact="0"/>
+								</skills>
+							</create_cue_actor>
+							<do_if value="$ShadyGuyBar">
+								<assign_control_entity actor="$ShadyGuyBar" object="$MainHQ" post="controlpost.shadyguy"/>
+								<signal_cue_instantly cue="md.NPC_Itemtrader.OnPlatformPopulation_Itemtrader" param="[$ShadyGuyBar]" />
+								<signal_cue_instantly cue="Save_Log" param="'Created character ' + $ShadyGuyBar + ' ' + $ShadyGuyBar.knownname + ' in ' + $MainHQ + ' ' + $MainHQ.knownname" />
+							</do_if>
+							<do_else>
+								<signal_cue_instantly cue="Save_Log" param="'Failed to create character $ShadyGuyBar.'" />
+							</do_else>
+							<signal_cue_instantly cue="Find_Slot_of_Room" param="[$MainHQ, tag.stand_leanrail_f, $ShadyGuyBar]"/>
+						</do_if>
+					</actions>
+                </cue>
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

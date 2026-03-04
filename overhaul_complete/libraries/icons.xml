@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+	<add sel="/icons" pos="prepend">
+		<icon name="x4_economyoverhaul"		texture="extensions\overhaul_complete\assets\fx\gui\textures\shipicon\x4_economyoverhaul.dds" height="256" width="256"></icon>
+	<!--shipicon-->
+		<icon name="kyotoflaggicon"			texture="extensions\overhaul_complete\assets\fx\gui\textures\shipicon\kyotoflaggicon.tga" height="128" 	width="128"></icon>
+		<icon name="atf_m_fighter" 			texture="extensions\overhaul_complete\assets\fx\gui\textures\shipicon\atf_m_fighter.tga" height="128" width="128"></icon>
+	<!--playerhuds-->
+		<icon name="bullet_gamma"			 texture="extensions\overhaul_complete\assets\fx\gui\textures\PlayerHud\bullet_gamma.tga" height="32" width="64"></icon>
+		<icon name="bullet_mimam"			 texture="extensions\overhaul_complete\assets\fx\gui\textures\PlayerHud\bullet_mimam.tga" height="32" width="64"></icon>
+		<icon name="bullet_xl_gamma"		texture="extensions\overhaul_complete\assets\fx\gui\textures\PlayerHud\bullet_xl_gamma.tga" height="32" width="64">	</icon>
+		<icon name="bullet_xl_mimam"		texture="extensions\overhaul_complete\assets\fx\gui\textures\PlayerHud\bullet_xl_mimam.tga" height="32" width="64">	</icon>
+	<!--Combat Drone-->
+		<icon name="ship_ter_combatdrone" 	texture="extensions\overhaul_complete\assets\fx\gui\textures\shipicon\ship_ter_combatdrone.tga" height="128" width="128"></icon>
+	<!--upgrades-->
+		<icon name="weapon_ter_xl_gamma" 	texture="extensions\overhaul_complete\assets\fx\gui\textures\upgrades\weapon_ter_xl_gamma.tga" height="256" width="256"></icon>
+		<icon name="weapon_ter_xl_mimam" 	texture="extensions\overhaul_complete\assets\fx\gui\textures\upgrades\weapon_ter_xl_mimam.tga" height="256" width="256"></icon>
+		<icon name="weapon_ter_s_gamma"		texture="extensions\overhaul_complete\assets\fx\gui\textures\upgrades\weapon_ter_s_gamma.tga" height="256" width="256"></icon>
+	<!--Station-->
+	<icon name="module_*" texture="extensions\overhaul_complete\assets\fx\gui\textures\stationmodules\*.png" height="256" width="256"></icon>
+	<icon name="module_xcg_prod_gen_glass_macro" texture="extensions\overhaul_complete\assets\fx\gui\textures\xcg_prod_gen_glass_macro.dds" height="256" width="256"></icon>
+
+	</add>
+</diff>

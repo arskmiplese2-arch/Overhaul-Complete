@@ -1,0 +1,98 @@
+<mdscript name="tradestationaddwares" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=""> 
+<cues>
+<!-- this script will add new terran wares to all terran tradestations, even when the game was started without this mod. But in this case, the trade stations have to fill their storages first. -->
+	<cue name="TradestationAddWares" version="1">
+		<conditions>
+			<check_any>
+				<event_game_loaded />
+				<event_cue_signalled cue="md.Setup.Start" />
+			</check_any>
+		</conditions>
+		<delay exact="if (player.age lt 0) then 0s else 0s"/>
+		<actions>
+			<find_station name="$TerranStations" space="player.galaxy" macro="macro.station_ter_tradestation_base_01_macro" multiple="true"/>
+			  <debug_text text="'Terran tradestations found...' + TerranStation.count " />
+			  <do_all exact="$TerranStations.count" counter="$i">
+				<set_value name="$controllable" exact="$TerranStations.{$i}" />
+				  <!--
+				  <add_tradeware object="$controllable" ware="ware.energycells" allowbuy="true" allowsell="true" lockavgprice="true" />
+				  -->
+				  <add_tradeware object="$controllable" ware="ware.fusionbatteries" allowbuy="true" allowsell="true" lockavgprice="false" />
+				  <add_tradeware object="$controllable" ware="ware.aicores" allowbuy="true" allowsell="true" lockavgprice="false" />
+				  <add_tradeware object="$controllable" ware="ware.metallicnanoparticles" allowbuy="true" allowsell="true" lockavgprice="false" />
+				  <add_tradeware object="$controllable" ware="ware.forcefieldunits" allowbuy="true" allowsell="true" lockavgprice="false" />
+				  <add_tradeware object="$controllable" ware="ware.silicongrids" allowbuy="true" allowsell="true" lockavgprice="false" />
+				  <add_tradeware object="$controllable" ware="ware.missilecomponents" allowbuy="true" allowsell="true" lockavgprice="false" />
+				  <add_tradeware object="$controllable" ware="ware.dronecomponents" allowbuy="true" allowsell="true" lockavgprice="false" />
+			  </do_all>
+		</actions>
+    </cue>
+	<!--
+	<cue name="OnceAfterLoading" version="1" instantiate="true">
+			<conditions>
+				<check_any>
+					<event_game_loaded />
+					<event_cue_signalled cue="md.Setup.Start" />
+				</check_any>
+			</conditions>
+            <actions>
+				<debug_text text="'Starting script for fusionbatteries'" filter="general" chance="100" />
+                <find_station name="$TerranStations" space="player.galaxy" faction="faction.terran" multiple="true" />
+				<debug_text text="'Terran fusionreactors found...' + TerranStation.count " filter="general" chance="100"/>
+                <do_all exact="$TerranStations.count" counter="$i">
+				    <set_value name="$controllable" exact="$TerranStations.{$i}" />
+					
+					<set_value name="$TradeWares" exact="$controllable.tradewares.list"/>
+					<set_value name="$Wares" exact="$controllable.wares.list"/>
+					  <do_if value="$TradeWares.count">
+						<do_all exact="$TradeWares.count" counter="$TradeWareIdx">
+						  <set_value name="$Ware" exact="$TradeWares.{$TradeWareIdx}" />
+						  <debug_text text="'TradeWareID =' + $Ware" filter="general" chance="100"  />
+						  <do_if value="$Ware == ware.fusionbatteries">
+								
+								<debug_text text="'TradeWareID fusionbatteries found'" filter="general" chance="100"  />
+								
+								<remove_tradeware object="$controllable" ware="ware.fusionbatteries"></remove_tradeware>
+								<add_tradeware object="$controllable" ware="ware.condensedantimattercells" allowbuy="false" allowsell="true" lockavgprice="false" />
+							</do_if>	
+
+						</do_all>	
+					</do_if>
+					<do_if value="$Wares.count">
+						<do_all exact="$Wares.count" counter="$WareIdx">
+						  <set_value name="$Ware" exact="$Wares.{$WareIdx}" />
+						  <debug_text text="'WareID =' + $Ware" filter="general" chance="100"  />
+						  <do_if value="$Ware == ware.fusionbatteries">
+								<debug_text text="'WareID fusionbatteries found'" filter="general" chance="100"  />
+								<remove_ware object="$controllable" ware="ware.fusionbatteries"></remove_ware>
+								<add_ware object="$controllable" ware="ware.condensedantimattercells" allowbuy="false" allowsell="true" lockavgprice="false" />
+							</do_if>	
+						</do_all>	
+					</do_if>
+				</do_all>
+            </actions>
+        </cue>	
+	
+	
+	<cue name="Start" version="1" checktime="5s" checkinterval="3600s" instantiate="true">
+		<actions>
+			<find_station name="$TerranStations" space="player.galaxy" macro="macro.station_ter_tradestation_base_01_macro" multiple="true" />
+			<debug_text text="'Terran tradestations found...' + TerranStation.count " filter="general" chance="100" />
+			<do_all exact="$TerranStations.count" counter="$i">
+				<set_value name="$controllable" exact="$TerranStations.{$i}" />
+				<add_tradeware object="$controllable" ware="ware.condensedantimattercells" allowbuy="true" allowsell="true" lockavgprice="false" />
+				<add_tradeware object="$controllable" ware="ware.aicores" allowbuy="true" allowsell="true" lockavgprice="false" />
+				<add_tradeware object="$controllable" ware="ware.metallicnanoparticles" allowbuy="true" allowsell="true" lockavgprice="false" />
+				<add_tradeware object="$controllable" ware="ware.forcefieldunits" allowbuy="true" allowsell="true" lockavgprice="false" />
+				<add_tradeware object="$controllable" ware="ware.silicongrids" allowbuy="true" allowsell="true" lockavgprice="false" />
+				<add_tradeware object="$controllable" ware="ware.missilecomponents" allowbuy="true" allowsell="true" lockavgprice="false" />
+				<add_tradeware object="$controllable" ware="ware.dronecomponents" allowbuy="true" allowsell="true" lockavgprice="false" />
+				<remove_station name="$controllable"/> 
+			</do_all>
+		</actions>
+	</cue>
+	-->
+	
+</cues>
+	
+</mdscript>

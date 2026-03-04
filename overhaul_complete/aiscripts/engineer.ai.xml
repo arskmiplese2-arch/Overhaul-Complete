@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<diff>
+  <add sel="//actions/do_if[@value='not $CurrentElement.exists and (this.defensible.isclass.station or this.defensible.hullpercentage ge $hulldamagelimit)']" pos="before">
+    <do_if value="this.isplayerowned and not $CurrentElement.exists and (this.defensible.isclass.station or this.defensible.hullpercentage ge $hulldamagelimit)">
+      <do_all exact="this.defensible.subordinates.count" counter="$i">
+        <do_if value="[class.ship_s, class.ship_m].indexof.{this.defensible.subordinates.{$i}.class} and this.defensible.subordinates.{$i}.hullpercentage lt 100 and this.defensible.units.{unitcategory.repair}.count">
+          <do_if value="this.defensible.subordinates.{$i}.hullpercentage le (100 - (this.defensible.combinedskill / 5)i)">
+            <set_object_hull object="this.defensible.subordinates.{$i}" exact="this.defensible.subordinates.{$i}.hullpercentage + (this.defensible.combinedskill / 10)i"/>
+          </do_if>
+          <do_else>
+            <set_object_hull object="this.defensible.subordinates.{$i}" exact="100"/>
+          </do_else>
+        </do_if>
+      </do_all>
+    </do_if>
+  </add>
+</diff>
+

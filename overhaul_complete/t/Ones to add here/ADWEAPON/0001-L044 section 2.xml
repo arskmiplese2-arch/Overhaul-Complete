@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<language id="49">
+      <page id="9771315"  voice="yes">
+
+<!-- ADDITIONAL WEAPON -->	  
+	 <t id="700">\033RCapitalweapon\033X \033YPrototypes\033X (L-turrets)</t>
+	 	 
+	 <t id="701">\033RGammaraybeamcannon\033X \033YPrototype\033X L</t>
+	 <t id="702">The gamma ray cannon is an \033Yearly prototype\033X. Not much is known about this new and still secret weapon. However, it is now known that it has a long range and, thanks to sophisticated AI control, absolute precision. In the early stages of development, it is believed to be based on the Khaak gamma kyon emitter.\n\nThis beam cannon emits a barely perceptible high-energy beam. The visible portion of the beam is created by ionizing matter along the beam, while the actual gamma beam is invisible. However, the fact that the beam is barely visible very easily belies its destructive effect. This unfolds, as we know, in the invisible range of gamma radiation, which is always absolutely lethal.\n\nExperts believe that at present the effect cannot be effectively stopped by any shield or armor. However, a hit target does not "suffer" because its matter instantly vaporizes.</t>
+
+	 <t id="711">\033RMI M/AM-Cannon\033X \033YPrototype\033X L</t>
+	 <t id="712">After succeeding in bringing forth the 700mm large-caliber gun based on the Targon gun, further tests have been conducted in secret. The result is a \033Ynew prototype\033X.\n\nWhat changes the weapon system has undergone and whether it has anything at all to do with the Targon weapons is not officially known. It is suspected that micro-singularities are being experimented with. They are said to be multiple M/AM projectiles that create microscopic black holes upon impact - a so-called multi-impact M/AM weapon system. M/AM weapons were used on capital ships in the \033Y "Terran Conflict"\033X.\n\nEven then there was no way to defend against them, which was met with rejection by all civilized factions.\n\nIf these reports are confirmed, this will cause conflict again. Even today, there is no effective protection.</t>
+
+	</page>
+	
+</language>

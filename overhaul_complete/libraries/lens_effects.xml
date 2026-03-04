@@ -1,0 +1,28 @@
+<diff>
+  <add sel="/lenseffects">
+
+  <lenseffect name="red_lens">
+    <parameters scale="100" lengthscale="100" distancescale="linear" hueshift="0" sizeinfluence="none"></parameters>
+    <elements>
+      <element name="element1" part="part_glows01" position="1" minsize="0" maxsize="25" inviewvariation="0" inviewduration="0" blendorder="behind" shinebehind="0" distancescale="linear" rotation="0" fadeangle="0" r2dtype="static" active="1" glow="1"></element>
+    </elements>
+  </lenseffect>
+
+  <lenseffect name="blue_lens">
+    <elements>
+      <element name="glow1"	part="part_glows07_2"		position="1" minsize="0" maxsize="12" distancefactor="6"	distancescale="quadratic" inviewvariation="5" inviewduration="0.5" glow="1"></element>
+      <element name="streak1" 	part="part_streak_a04" 		position="1" minsize="0" maxsize="12" 	distancefactor="6"	distancescale="quadratic" inviewvariation="5" inviewduration="0.5" glow="1" rotation="0"></element>
+      <element name="streak2" 	part="part_enginesystems_engine_xs_streak" 	position="1" minsize="0" maxsize="12" 	distancefactor="6"	distancescale="quadratic" inviewvariation="5" inviewduration="0.5" glow="1"></element>
+    </elements>
+  </lenseffect>
+
+  <lenseffect name="yellow_lens">
+    <elements>
+      <element name="glow1"  part="part_glows05" 		position="1" minsize="0" maxsize="10" distancefactor="1"	distancescale="quadratic" inviewvariation="25" inviewduration="0" shinebehind="1" glow="1"></element>
+      <element name="glow2"  part="part_newglow_v1_yellow"	position="1" minsize="0" maxsize="20" distancefactor="1"	distancescale="quadratic" inviewvariation="25" inviewduration="0" shinebehind="1" glow="1"></element>
+    </elements>
+  </lenseffect>
+
+  </add>
+</diff>
+

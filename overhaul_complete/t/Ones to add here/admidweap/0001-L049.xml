@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<language id="49">
+      <page id="9771315"  voice="yes">
+
+<!-- ADDITIONAL WEAPON -->	  
+	 <t id="800">\033RGroßschiffwaffen\033X \033YPrototypen\033X (M-Geschütze)</t>
+	 
+	 <t id="801">\033RGammastrahlenkanone\033X \033YPrototyp\033X M</t>
+	 <t id="802">Nach dem großen Erfolg der großen Gammastrahlenkanone \033Y(früher Prototyp)\033X lag eine Anpassung an die M-Geschütze auf der Hand. Trotzdem, viel ist über diese Waffe noch immer nicht bekannt. Man weiß jedoch inzwischen, dass sie über eine relativ hohe Reichweite und, dank augeklügelter KI-Steuerung, absolute Präzision verfügt - ideal zur Abwehr schneller Jäger und Scoutschiffe. Auch zur Drohnen- und Raketenabwehr stellt dieses System das neue Maß der Dinge dar.\n\nSie basiert in den Anfängen der Entwicklung vermutlich auf dem Gamma Kyonenemitter der Khaak.\n\nDiese Strahlenkanone emittiert einen kaum wahrnehmbaren Hochenergiestrahl. Der sichtbare Teil des Strahls entsteht durch ionisierende Materie entlang des Strahls, während der eigentliche Gammastrahl unsichtbar ist. Dass der Strahl kaum sichtbar ist, täuscht jedoch sehr leicht über seine zerstörerische Wirkung hinweg. Diese entfaltet sich, wie wir wissen, im unsichtbaren Bereich der Gammastrahlung, die immer absolut tötlich ist. Ein getroffenes Ziel "leidet" jedoch nicht, da seine Materie augenblicklich verdampft.</t>
+
+	 <t id="811">\033RMI M/AM-Kanone\033X \033YPrototyp\033X M</t>
+	 <t id="812">Nach dem Gelingen, die 700mm Großkaliberkanone auf Basis des Targongeschützes hervorzubringen und später daraus ein sogenanntes Multi Impact M/AM-Waffensystem zu entwickeln (wir erinnern uns: M/AM-Waffen wurden auf Großkampfschiffen im \033Y"Terran Conflict"\033X eingesetzt), ist nun auch hier eine an die M-Geschütze angepasste Variante adaptiert worden.</t>
+
+	</page>
+	
+</language>

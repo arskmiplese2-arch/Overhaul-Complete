@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+
+<!--Terran mid level goods(AI cores,metallicnanoparticles,silicongrids,forcefieldunits-->
+	<add sel="/baskets">
+		<basket id="aicores"><wares><ware ware="aicores" /></wares></basket>
+		<basket id="metallicnanoparticles"><wares><ware ware="metallicnanoparticles" /></wares></basket>
+		<basket id="forcefieldunits"><wares><ware ware="forcefieldunits" /></wares></basket>
+		<basket id="silicongrids"><wares><ware ware="silicongrids" /></wares></basket>
+	</add>
+	<add sel="//basket[@id='refined']">
+		<ware ware="aicores" />
+		<ware ware="metallicnanoparticles" />
+		<ware ware="forcefieldunits" />
+		<ware ware="silicongrids" />
+	</add>
+
+	<add sel="//basket[@id='pirate_container']">
+		<ware ware="aicores" />
+		<ware ware="metallicnanoparticles" />
+		<ware ware="forcefieldunits" />
+		<ware ware="silicongrids" />
+	</add>
+
+	<add sel="//basket[@id='all']">
+		<ware ware="aicores" />
+		<ware ware="metallicnanoparticles" />
+		<ware ware="forcefieldunits" />
+		<ware ware="silicongrids" />
+	</add>
+
+<!--Glass mod(XCG)-->	
+	 <add sel="//basket[@id='refined']/wares/ware[@ware='refinedmetals']" pos="after">
+    <ware ware="xcg_glass" />
+  </add>
+  <add sel="//basket[@id='pirate_container']/wares/ware[@ware='refinedmetals']" pos="after">
+    <ware ware="xcg_glass" />
+  </add>
+  <add sel="//basket[@id='all']/wares/ware[@ware='refinedmetals']" pos="after">
+    <ware ware="xcg_glass" />
+  </add>
+  <add sel="//basket[@id='all_container']/wares/ware[@ware='refinedmetals']" pos="after">
+    <ware ware="xcg_glass" />
+  </add>
+	
+	
+	
+
+	<replace sel="/baskets/basket[@id='refined_gas_terran']">
+		<basket id="refined_gas_terran" name="Refined Gas Wares" description="Basket for all refined gas wares. High throughput.">
+			<wares>
+				<ware ware="antimattercells" />
+				<ware ware="graphene" />
+				<ware ware="superfluidcoolant" />
+				<ware ware="aicores" />
+				<ware ware="metallicnanoparticles" />
+				<ware ware="forcefieldunits" />
+				<ware ware="silicongrids" />
+			</wares>
+		</basket>
+	</replace>
+
+	<replace sel="/baskets/basket[@id='refined_mineral_terran']">
+		<basket id="refined_mineral_terran" name="Refined Mineral Wares" description="Basket for all refined mineral wares. High throughput.">
+			<wares>
+				<ware ware="aicores" />
+				<ware ware="computronicsubstrate" />
+				<ware ware="metallicnanoparticles" />
+				<ware ware="silicongrids" />
+				<ware ware="refinedmetals" />
+				<ware ware="siliconwafers" />
+				<ware ware="teladianium" />
+			</wares>
+		</basket>
+	</replace> 
+
+	<replace sel="/baskets/basket[@id='all_container_terran']">
+		<basket id="all_container_terran" name="All Container Wares used by Terran race" description="Basket for all Terran container wares">
+			<wares>
+				<ware ware="energycells" />
+				<ware ware="fusionbatteries" />
+				<ware ware="computronicsubstrate" />
+				<ware ware="metallicmicrolattice" />
+				<ware ware="siliconcarbide" />
+				<ware ware="proteinpaste" />
+				<ware ware="terranmre" />
+				<ware ware="medicalsupplies" />
+				<ware ware="stimulants" />
+				<ware ware="aicores" />
+				<ware ware="metallicnanoparticles" />
+				<ware ware="forcefieldunits" />
+				<ware ware="silicongrids" />
+				<ware ware="missilecomponents" />
+			</wares>
+		</basket>
+	</replace> 
+
+	<replace sel="/baskets/basket[@id='equipment']">
+		<basket id="equipment">
+			<wares>
+				<ware ware="fusionbatteries" />
+				<ware ware="computronicsubstrate" />
+				<ware ware="metallicmicrolattice" />
+				<ware ware="siliconcarbide" />
+				<ware ware="aicores" />
+				<ware ware="forcefieldunits" />
+				<ware ware="silicongrids" />
+			</wares>
+		</basket>
+	</replace> 
+
+	<replace sel="/baskets/basket[@id='tech']">
+		<basket id="tech">
+			<wares>
+				<ware ware="aicores" />
+				<ware ware="computronicsubstrate" />
+				<ware ware="metallicmicrolattice" />
+				<ware ware="siliconcarbide" />
+				<ware ware="aicores" />
+				<ware ware="forcefieldunits" />
+				<ware ware="silicongrids" />
+				<ware ware="metallicnanoparticles" />
+				<ware ware="missilecomponents" />
+			</wares>
+		</basket>
+	</replace> 
+
+	<replace sel="/baskets/basket[@id='pirate_container']">
+		<basket id="pirate_container">
+			<wares>
+				<ware ware="aicores" />
+				<ware ware="computronicsubstrate" />
+				<ware ware="metallicmicrolattice" />
+				<ware ware="siliconcarbide" />
+				<ware ware="aicores" />
+				<ware ware="forcefieldunits" />
+				<ware ware="silicongrids" />
+				<ware ware="metallicnanoparticles" />
+				<ware ware="missilecomponents" />
+			</wares>
+		</basket>
+	</replace> 
+
+	<replace sel="/baskets/basket[@id='all']">
+		<basket id="all">
+			<wares>
+				<ware ware="energycells" />
+				<ware ware="fusionbatteries" />
+				<ware ware="computronicsubstrate" />
+				<ware ware="metallicmicrolattice" />
+				<ware ware="siliconcarbide" />
+				<ware ware="proteinpaste" />
+				<ware ware="terranmre" />
+				<ware ware="medicalsupplies" />
+				<ware ware="stimulants" />
+				<ware ware="aicores" />
+				<ware ware="metallicnanoparticles" />
+				<ware ware="forcefieldunits" />
+				<ware ware="silicongrids" />
+				<ware ware="missilecomponents" />
+			</wares>
+		</basket>
+	</replace> 
+
+	<replace sel="/baskets/basket[@id='all_container']">
+		<basket id="all_container">
+			<wares>
+				<ware ware="energycells" />
+				<ware ware="fusionbatteries" />
+				<ware ware="computronicsubstrate" />
+				<ware ware="metallicmicrolattice" />
+				<ware ware="siliconcarbide" />
+				<ware ware="proteinpaste" />
+				<ware ware="terranmre" />
+				<ware ware="medicalsupplies" />
+				<ware ware="stimulants" />
+				<ware ware="aicores" />
+				<ware ware="metallicnanoparticles" />
+				<ware ware="forcefieldunits" />
+				<ware ware="silicongrids" />
+				<ware ware="missilecomponents" />
+			</wares>
+		</basket>
+	</replace>
+
+
+</diff>

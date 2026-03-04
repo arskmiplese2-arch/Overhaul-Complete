@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<diff>
+	<add sel="/god/products">
+<!--Glass station-->
+		<product id="xcg_glass_common" ware="xcg_glass" owner="argon" type="factory">
+			<quotas>
+				<quota galaxy="12" />
+			</quotas>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="ge" matchextension="false" />
+			<module>
+				<select ware="xcg_glass" race="argon" />
+			</module>
+		</product>
+
+    <product id="xcg_glass_teladi" ware="xcg_glass" owner="teladi" type="factory">
+      <quotas>
+        <quota galaxy="8" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="teladi" relation="self" comparison="ge" matchextension="false" />
+      <module>
+        <select ware="xcg_glass" race="teladi" />
+      </module>
+    </product>
+
+    <product id="xcg_glass_paranid" ware="xcg_glass" owner="paranid" type="factory">
+      <quotas>
+        <quota galaxy="6" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="ge" matchextension="false" />
+      <module>
+        <select ware="xcg_glass" race="paranid" />
+      </module>
+    </product>
+
+<!--Terran stations for mid level goods -->
+	<product id="ter_metallicnanoparticles" ware="metallicnanoparticles" owner="terran" type="factory">
+      <quotas>
+        <quota galaxy="8" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="ge" matchextension="false">
+      </location>
+      <module>
+        <select ware="metallicnanoparticles" race="terran"/>
+      </module>
+    </product>
+
+	<product id="ter_aicores" ware="aicores" owner="terran" type="factory">
+      <quotas>
+        <quota galaxy="12" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="ge" matchextension="false">
+      </location>
+      <module>
+        <select ware="aicores" race="terran"/>
+      </module>
+    </product>
+
+	<product id="ter_missilecomponents" ware="missilecomponents" owner="terran" type="factory">
+      <quotas>
+        <quota galaxy="3" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="ge" matchextension="false">
+      </location>
+      <module>
+        <select ware="missilecomponents" race="terran"/>
+      </module>
+    </product>
+
+	<product id="ter_dronecomponents" ware="dronecomponents" owner="terran" type="factory">
+      <quotas>
+        <quota galaxy="4" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="ge" matchextension="false">
+      </location>
+      <module>
+        <select ware="dronecomponents" race="terran"/>
+      </module>
+    </product>
+
+	<product id="ter_forcefieldunits" ware="forcefieldunits" owner="terran" type="factory">
+      <quotas>
+        <quota galaxy="5" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="ge" matchextension="false">
+      </location>
+      <module>
+        <select ware="forcefieldunits" race="terran"/>
+      </module>
+    </product>
+
+	<product id="ter_silicongrids" ware="silicongrids" owner="terran" type="factory">
+      <quotas>
+        <quota galaxy="7" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="ge" matchextension="false">
+      </location>
+      <module>
+        <select ware="silicongrids" race="terran"/>
+      </module>
+    </product>
+
+	<product id="ter_fusionbatteries" ware="fusionbatteries" owner="terran" type="factory">
+      <quotas>
+        <quota galaxy="6" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="ge" matchextension="false">
+      </location>
+      <module>
+        <select ware="fusionbatteries" race="terran"/>
+      </module>
+    </product>	
+
+	<product id="ter_fusionreactors" ware="energycells" owner="terran" type="factory">
+      <quotas>
+        <quota galaxy="2"/>
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="ge" matchextension="false">
+        <sunlight min="0.0" max="0.1" />
+      </location>
+      <module>
+        <select ware="energycells" race="terran" tags="[fusion]"/>
+      </module>
+    </product>		
+
+	<product id="ter_hydrogenextractors" ware="hydrogen" owner="terran" type="factory">
+      <quotas>
+        <quota galaxy="2"/>
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="ge" matchextension="false">
+        <economy min="0.5" maxbound="false" />
+      </location>
+      <module>
+        <select ware="hydrogen" race="terran"/>
+      </module>
+    </product>		
+
+<!-- Pioneers stations for mid level goods-->	
+	<product id="pio_metallicnanoparticles" ware="metallicnanoparticles" owner="pioneers" type="factory">
+      <quotas>
+        <quota galaxy="5" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="ge" matchextension="false">
+      </location>
+      <module>
+        <select ware="metallicnanoparticles" race="terran"/>
+      </module>
+    </product>
+
+	<product id="pio_aicores" ware="aicores" owner="pioneers" type="factory">
+      <quotas>
+        <quota galaxy="9" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="ge" matchextension="false">
+      </location>
+      <module>
+        <select ware="aicores" race="terran"/>
+      </module>
+    </product>
+
+	<product id="pio_missilecomponents" ware="missilecomponents" owner="pioneers" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="ge" matchextension="false">
+      </location>
+      <module>
+        <select ware="missilecomponents" race="terran"/>
+      </module>
+    </product>
+
+	<product id="pio_dronecomponents" ware="dronecomponents" owner="pioneers" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="ge" matchextension="false">
+      </location>
+      <module>
+        <select ware="dronecomponents" race="terran"/>
+      </module>
+    </product>
+
+	<product id="pio_forcefieldunits" ware="forcefieldunits" owner="pioneers" type="factory">
+      <quotas>
+        <quota galaxy="3" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="ge" matchextension="false">
+      </location>
+      <module>
+        <select ware="forcefieldunits" race="terran"/>
+      </module>
+    </product>
+
+	<product id="pio_silicongrids" ware="silicongrids" owner="pioneers" type="factory">
+      <quotas>
+        <quota galaxy="4" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="ge" matchextension="false">
+      </location>
+      <module>
+        <select ware="silicongrids" race="terran"/>
+      </module>
+    </product>
+
+	<product id="pio_fusionbatteries" ware="fusionbatteries" owner="pioneers" type="factory">
+      <quotas>
+        <quota galaxy="4" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="ge" matchextension="false">
+      </location>
+      <module>
+        <select ware="fusionbatteries" race="terran"/>
+      </module>
+    </product>	
+
+	<product id="pio_fusionreactors" ware="energycells" owner="pioneers" type="factory">
+      <quotas>
+        <quota galaxy="2"/>
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="ge" matchextension="false">
+        <sunlight min="0.0" max="0.7" />
+      </location>
+      <module>
+        <select ware="energycells" race="terran" tags="[fusion]"/>
+      </module>
+    </product>	
+
+<product id="pio_hydrogenextractors" ware="hydrogen" owner="pioneers" type="factory">
+      <quotas>
+        <quota galaxy="1"/>
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="ge" matchextension="false">
+        <economy min="0.5" maxbound="false" />
+      </location>
+      <module>
+        <select ware="hydrogen" race="terran"/>
+      </module>
+    </product>		
+	
+</add>
+</diff>

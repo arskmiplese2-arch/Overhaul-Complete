@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="Kyoto_Flagg_Update" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+	<cues>
+	
+		<cue name="EinsamerRiese_Update">			
+			<conditions>
+				<check_any>
+					<event_game_loaded/>
+				</check_any>
+				</conditions>			
+			<actions>
+				<set_value name="$UpdateVersion" exact="233"/>
+				<do_if value="@$UpdateVersion != SavegameVersion">
+				<set_value name="$UpdateVersion" exact="$SavegameVersion" />
+				<show_help duration="8s" custom="'Kyoto Flagg update to version %1 complete.'.[$UpdateVersion]"/>
+				</do_if>	
+				<delay exact="10s"/>
+				<reset_cue cue="this"/>
+				</actions>
+		</cue>		
+
+		<!-- Hier der Versuch, die Setup_Update vom VRO zu adaptieren: -->
+		<!-- --------------------------------------------------------- -->
+		<!--cue name="EinsamerRiese_Update" namespace="this" version="233">	
+			<conditions>
+				<check_any>
+					<event_game_loaded/>
+				</check_any>
+				</conditions>			
+			<actions>
+				<set_value name="$UpdateVersion" exact="233"/>
+				<show_help duration="8s" custom="'Kyoto Flagg update to version %1 complete.'.[$UpdateVersion]"/>
+				<set_value name="$SavegameVersion" exact="$UpdateVersion" />
+				</actions>			
+			<patch sinceversion="233">
+				<reset_cue cue="this"/>
+				</patch>
+		</cue-->
+		<!-- -------------------------------------------- -->
+		<!-- Brachte leider nicht das gewünschte Ergebnis -->
+
+	</cues>
+</mdscript>
+
+<!--	Aus dem VRO Mod -->
+<!--
+				<cue name="Ror_Setup_Update" namespace="this" version="8">
+					<delay exact="40s"/>
+					<actions>
+						<signal_cue_instantly cue="md.Ror_Missions.Ror_Missions_HelpUpdate" param="['HelpUpdate']"/>										
+						<remove_help all="true"/>
+						<show_help custom="'Mod: Rise of the Ossian Raiders was updated.'" position="1" width="220" allowclose="true" duration="4s"/>	
+
+						<set_faction_relation faction="faction.player" otherfaction="faction.ossianraider" value="-1"/>
+						<set_faction_relation faction="faction.ossianraider" otherfaction="faction.player" value="-1"/>
+						<set_faction_relation faction="faction.ossianraider" otherfaction="faction.holyorder" value="-1"/>
+						<set_faction_relation faction="faction.holyorder" otherfaction="faction.ossianraider" value="-1"/>								
+					</actions>
+					<patch sinceversion="8">
+						<reset_cue cue="this"/>
+					</patch>
+				</cue>
+-->

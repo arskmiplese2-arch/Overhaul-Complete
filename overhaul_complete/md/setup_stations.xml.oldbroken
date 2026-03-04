@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="Setup_Test_Stations" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+  <cues>
+    <cue name="Spawn_Stations_On_Start">
+      <conditions>
+        <event_game_started />
+      </conditions>
+      <actions>
+        <debug_text text="'[Setup_Stations] Script Initiated.'" filter="general"/>
+
+        <find_macro name="$StationMacro" class="class.station" tags="production">
+           </find_macro>
+
+        <do_if value="not $StationMacro">
+           <debug_text text="'[Setup_Stations] CRITICAL ERROR: No station macro found via lookup! Aborting.'" filter="error"/>
+           <cancel_cue cue="this" />
+        </do_if>
+        
+        <debug_text text="'[Setup_Stations] Using Station Macro: ' + $StationMacro" filter="general"/>
+
+
+        <find_sector name="$AllSectors" space="player.galaxy" multiple="true" />
+        <debug_text text="'[Setup_Stations] Galaxy Scan Complete. Found ' + $AllSectors.count + ' sectors.'" filter="general"/>
+
+        <do_all exact="$AllSectors.count" counter="$i">
+            <set_value name="$CurrentSector" exact="$AllSectors.{$i}" />
+            
+            <set_value name="$IsMars" exact="false" />
+            <do_if value="$CurrentSector.knownname == 'Mars'">
+                <set_value name="$IsMars" exact="true" />
+            </do_if>
+
+            <do_if value="$IsMars">
+                 <debug_text text="'[Setup_Stations] Target Acquired: Mars. Spawning Dual Stations.'" filter="general"/>
+                 
+                 <get_safe_pos result="$PosPlayer" sector="$CurrentSector" radius="3km" />
+                 <create_station name="$MarsStation1" sector="$CurrentSector" owner="faction.player" macro="$StationMacro">
+                    <position value="$PosPlayer"/>
+                 </create_station>
+                 <set_object_name object="$MarsStation1" name="'TEST BASE ALPHA (Player)'"/>
+
+                 <get_safe_pos result="$PosTerran" sector="$CurrentSector" radius="10km" object="$MarsStation1"/>
+                 <create_station name="$MarsStation2" sector="$CurrentSector" owner="faction.terran" macro="$StationMacro">
+                    <position value="$PosTerran"/>
+                 </create_station>
+                 <set_object_name object="$MarsStation2" name="'TEST BASE BETA (Terran)'"/>
+            </do_if>
+
+            <do_else>
+                 <get_safe_pos result="$GlobalPos" sector="$CurrentSector" radius="5km" />
+                 <create_station name="$GlobalStation" sector="$CurrentSector" owner="faction.player" macro="$StationMacro">
+                    <position value="$GlobalPos"/>
+                 </create_station>
+            </do_else>
+
+        </do_all>
+
+        <debug_text text="'[Setup_Stations] Operations Complete.'" filter="general"/>
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

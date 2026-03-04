@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+	<add sel="/language">
+    
+	<page id="555760" title="Verdandi" descr="Verdandi" voice="yes">
+      <t id="1">Verdandi Modernized</t>
+      <t id="2">(Verdandi Modernized){555760, 1}</t>
+      <t id="3">Ship built in 2936 by a classified shipwright, the Verdandi super-interceptor was a high-speed Terran ship capable of performing deep-space reconnaissance of enemy territory and intercepting priority targets in the blink of an eye. Harking back to age-old Terran designs of the 21st and 22nd centuries, it bolsters a forward-swept wing configuration giving it more incredible speed in atmospheric flight at the cost of maneuverability at such high speeds. Zero-G flight fires up all rear engines and thrusters to provide the maximum mobility possible to give the pilot the edge they need in every combat scenario. It has recently been modernized for Special Rapid Response Force. Modernized ship is available to citizens in good standing with the Terran Secret Service.</t>
+      <t id="4">IG M - Verdandi Internal Generator.</t>
+      <t id="5">(Impulse Autocannon Turret){555760, 6}</t>
+      <t id="6">XS Impulse autocannon</t>
+      <t id="7">High power hitech XS class Impulse autocannon turret.</t>
+      <t id="8">(Gause Autocannon){555760, 9}</t>
+      <t id="9">XS Gause autocannon</t>
+      <t id="10">High power hitech XS class Gause autocannon.</t>
+      <t id="11">(Bombard Machinegun){555760, 12}</t>
+      <t id="12">XS Bombard machinegun</t>
+      <t id="13">High power hitech XS class Bombard machinegun.</t>
+      <t id="14">(Flak Machinegun Turret){555760, 15}</t>
+      <t id="15">XS Flak machinegun</t>
+      <t id="16">High power hitech XS class Flak machinegun turret.</t>
+      <t id="17">(Plasma Railgun Turret){555760, 18}</t>
+      <t id="18">XS Plasma railgun</t>
+      <t id="19">High power hitech XS class Plasma railgun turret.</t>
+      <t id="20">(Verdandi XS Schield){555760, 21}</t>
+      <t id="21">XS Schield</t>
+      <t id="22">High power experimental XS class Verdandi Schield Generator.</t>
+      <t id="23">(Verdandi XM Schield){555760, 24}</t>
+      <t id="24">XM Schield</t>
+      <t id="25">High power experimental XS class Verdandi Schield Generator.</t>
+      <t id="26">(Photon Railgun){555760, 27}</t>
+      <t id="27">XS Photon railgun</t>
+      <t id="28">High power hitech XS class Photon railgun.</t>
+      <t id="29">(XS Verdandi Engine){555760, 30}</t>
+      <t id="30">XS Engine</t>
+      <t id="31">High power experimental XS class Verdandi Engine.</t>
+      <t id="32">(Vulcan Railgun){555760, 33}</t>
+      <t id="33">XS Vulcan railgun</t>
+      <t id="34">High power hitech XS class Vulcan railgun.</t>
+    </page>
+	<page id="9771315" title="Kyoto Flagg and Weapons" descr="Kyoto Flagg and Weapons" voice="yes">
+      
+      <t id="1">\033YKyoto Flag\033X</t>
+      <t id="2">(Kyoto Flag)\033Y{20103,201}\033X</t>
+      <t id="3">This is the \033Yflagship version\033X of the Kyoto - under its now no longer secret project name.</t>
+      <t id="4">\033CISG XXL - Hull Polarization\033X</t>
+      <t id="41"> is now available at \033YTerran\033X. Equip your flagship with it right away, if necessary.</t>
+      <t id="5">(Reinforced Flagship)- \033Y{20111,5444} {20204,6201}\033X</t>
+      <t id="6">\033Y{20111,5212}{20204,6201}\033X</t>
+      <t id="9">Your Kyoto flagship has arrived and is ready. It awaits your commands!</t>
+      <t id="201">\033RHeavy Gammaraycannon\033B \033YPrototype\033X</t>
+      <t id="203">This is the heaviest version of the \033R Gammaraycannon\033B \033Yprototype\033X.\n\nThis weapon emits a coherent beam in the gamma spectrum with enormous range (coherence length). Absolutely lethal.\n\nHowever, the shot should be well placed. The energy flow cannot be interrupted after the weapon is fired. Once fired, the beam remains active until the energy converters are burnt out or the energy cells are empty. This makes it necessary to change the energy converter group after each shot and therefore leads to long reloading times.</t>
+      <t id="301">\033RHeavy MI M/AM-Cannon\033B \033YPrototype\033X</t>
+      <t id="303">This is the heaviest version of the \033RMI M/AM Cannon\033B \033Yprototype\033X.\n\nThis weapon is a so-called Multi Impact M/AM weapon system. It fires a volley of highly accelerated M/AM warheads, which create microscopic black holes on impact. The warheads do not achieve the precision and speed known from railgun weapons, but they are fast enough for stationary targets such as stations or slow large targets. The difficult-to-control firing procedure results in a slight spread.\n\nM/AM weapons were already used as single M/AM systems on capital ships in \033Y "Terran Conflict"\033X. There is no defence against this today, as yesterday, which continues to meet with disapproval from all civilised factions.</t>
+      <t id="700">\033RCapitalweapon\033X \033YPrototypes\033X (L-turrets)</t>
+      <t id="701">\033RGammaraybeamcannon\033X \033YPrototype\033X L</t>
+      <t id="702">The gamma ray cannon is an \033Yearly prototype\033X. Not much is known about this new and still secret weapon. However, it is now known that it has a long range and, thanks to sophisticated AI control, absolute precision. In the early stages of development, it is believed to be based on the Khaak gamma kyon emitter.\n\nThis beam cannon emits a barely perceptible high-energy beam. The visible portion of the beam is created by ionizing matter along the beam, while the actual gamma beam is invisible. However, the fact that the beam is barely visible very easily belies its destructive effect. This unfolds, as we know, in the invisible range of gamma radiation, which is always absolutely lethal.\n\nExperts believe that at present the effect cannot be effectively stopped by any shield or armor. However, a hit target does not "suffer" because its matter instantly vaporizes.</t>
+      <t id="711">\033RMI M/AM-Cannon\033X \033YPrototype\033X L</t>
+      <t id="712">After succeeding in bringing forth the 700mm large-caliber gun based on the Targon gun, further tests have been conducted in secret. The result is a \033Ynew prototype\033X.\n\nWhat changes the weapon system has undergone and whether it has anything at all to do with the Targon weapons is not officially known. It is suspected that micro-singularities are being experimented with. They are said to be multiple M/AM projectiles that create microscopic black holes upon impact - a so-called multi-impact M/AM weapon system. M/AM weapons were used on capital ships in the \033Y "Terran Conflict"\033X.\n\nEven then there was no way to defend against them, which was met with rejection by all civilized factions.\n\nIf these reports are confirmed, this will cause conflict again. Even today, there is no effective protection.</t>
+      <t id="800">\033RCapitalweapon\033X \033YPrototypes\033X (M-turrets)</t>
+      <t id="801">\033RGammaraybeamcannon\033X \033YPrototype\033X M</t>
+      <t id="802">After the great success of the large gamma ray cannon \033Y(early prototype)\033X, an adaptation to the M turrets was obvious. Nevertheless, much is still not known about this weapon. However, it is now known that it has a relatively long range and, thanks to sophisticated AI control, absolute precision - ideal for defense against fast fighters and scout ships. This system also represents the new benchmark for drone and missile defense.\n\nIn the early stages of development, it was probably based on the Khaak gamma kyon emitter.\n\nThis beam cannon emits a barely perceptible high-energy beam. The visible portion of the beam is created by ionizing matter along the beam, while the actual gamma beam is invisible. However, the fact that the beam is barely visible very easily belies its destructive effect. This unfolds, as we know, in the invisible range of the gamma ray, which is always absolutely lethal. However, a hit target does not "suffer" because its matter instantly vaporizes.</t>
+      <t id="811">\033RMI M/AM-Cannon\033X \033YPrototype\033X M</t>
+      <t id="812">After succeeding in creating the 700mm large-caliber cannon based on the Targonturrets and later developing a so-called Multi Impact M/AM weapon system from it (we remember: M/AM weapons were used on capital ships in \033Y "Terran Conflict"\033X), a variant adapted to the M turrets has now been adapted here as well.</t>
+		 <t id="91971">\033RCombatdrone\033X</t>
+		 <t id="91972">\033RCombatdrone\033X</t>
+		 <t id="91973">After a new type of weapon has already been tested extremely successfully on large military ships, gamma ray emitters adapted to the drones' capabilities have now been developed. The high precision as well as the shield penetration of the armament make this drone, deployed in swarms, a serious \033Y"swarm weapon system"\033X. This opens up a wider range of operations for the commander. In addition to the usual defense, the drone can now be used much more effectively for \033Rmissile defense\033X, as well as in larger numbers as an \033Roffensive weapon system\033X. And unlike swarm missiles, the drones are sustainable.\n\nIn essence, this is the standard defense drone model. However, there have been changes to the armament. A major milestone is the high energy efficiency of the armament: the lower energy load on the weapon could be implemented in favor of stronger shields and significantly improved agility as well as speed. A sufficiently large drone swarm flies fast 'hit-and-run' attacks, leaving the enemy little time for countermeasures.\n\The still very high acquisition costs thus pay for themselves relatively quickly only through frequent combat missions.</t>
+		 <t id="91974">\033RCombatdrone\033X</t>
+		 <t id="92971">\033YGammarayemitter\033X</t>
+		 <t id="92972">\033YGammarayemitter\033X</t>
+		 <t id="92973">This is the standard armament of the new \033RCombatdrone\033X.\n\nAfter the great success of the large Gammaraycannon \033Y(early prototype)\033X and later adaptation to the M-turrets, it was only a matter of time when smaller ships could be equipped with it as well.\n\nBut a major problem with gamma radiation generation is that the lethal dose of radiation produced when fired in the vicinity of the weapons precludes its use in fighters or on M-class ships as cockpit armament (at present) - a pilot would hardly survive a skirmish without subsequent radiation death.\n\nThis is where the advantage of using it in combat drones comes into play. Similar to the use as turret armament, no biomatter in the direct radiation environment is affected here.</t>
+		 <t id="92974">\033YGammarayemitter\033X</t>
+	 </page>
+	<page id="97100" title="Names" descr="Module Names" voice="no">
+		 <t id="55501">Solar Powerplant Small</t>	
+		 <t id="55502">Solar Powerplant</t>	
+		 <t id="55503">Solar Powerplant</t>	
+		 <t id="55504">Methane Powerplant</t>	
+		 <t id="55505">Fusion Reactor</t>	
+		 <t id="55506">Hull Part Production Large</t>	
+		 <t id="55507">Refined Metal Production Large</t>	
+		 <t id="55508">Antimatter Cell Production Large</t>	
+		 <t id="55509">Drone Component Production Large</t>	
+		 <t id="55510">Silicon Wafer Production Large</t>	
+		 <t id="55511">Quantum Tube Production Large</t>	
+		 <t id="55512">Superfluid Coolant Production Large</t>	
+		 <t id="55513">Turret Component Production Large</t>	
+		 <t id="55514">Water Production Large</t>	
+		 <t id="55515">Missile Component Production Large</t>	
+		 <t id="55516">Microchip Production Large</t>	
+		 <!-- terran Stuff -->
+		 <t id="55517">AI Cores Production</t>	
+		 <t id="55518">Metallic Nanoparticles Production</t>	
+		 <t id="55519">Force Field Units Production</t>	
+		 <t id="55520">Silicongrids Factory</t>	
+		 <t id="55521">Hydrogen Extractor</t>	
+		 <t id="55522">Fusionbatteries Productions</t>	
+		 <t id="55523">Missilecomponents Productions</t>	
+		 <t id="55524">Hydrogen Extractor</t>	
+	</page>
+	<page id="97101" title="Descriptions" descr="Descriptions" voice="no">
+		 <t id="55501">No information available</t>
+		 <t id="55502">No information available</t>
+		 <t id="55503">No information available</t>
+		 <t id="55504">No information available</t>
+		 <t id="55505">No information available</t>
+		 <t id="55506">No information available</t>
+		 <t id="55517">No information available</t>
+		 <t id="55518">No information available</t>
+		 <t id="55519">No information available</t>
+		 <t id="55520">No information available</t>
+		 <t id="55521">No information available</t>
+		 <t id="55522">No information available</t>
+		 <t id="55523">No information available</t>
+		 <t id="55524">No information available</t>
+		 
+	 </page> 	 
+	<page id="97200" title="Ware Names" descr="Ware Names" voice="no">
+		 <t id="77701">AI Cores</t>
+		 <t id="77702">Metallic Nanoparticles</t>
+		 <t id="77703">Force Field Units</t>
+		 <t id="77704">Silicon Grids</t>
+		 <t id="77705">Fusionbatteries</t>
+	 </page> 
+	<page id="97201" title="Ware Descriptions" descr="Ware Descriptions" voice="no">
+		 <t id="77701">AI Cores</t>
+		 <t id="77702">Metallic Nanoparticles</t>
+		 <t id="77703">Force Field Units</t>
+		 <t id="77704">Silicon Grids</t>
+		 <t id="77705">Fusionbatteries</t>
+	 </page> 	 
+	<page id="97300" title="names" descr="wares" voice="yes">
+		 <t id="704">Power Plant</t>
+	 </page> 
+
+	</add>
+
+	<replace sel="/language/page[@id='20201']/t[@id='704']">
+		 <t id="704">Power Plant</t>
+	</replace>
+
+</diff>

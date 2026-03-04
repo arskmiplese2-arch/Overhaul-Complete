@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/rules/unit/macros">							<macro category="defence" mk="3" macro="ship_ter_combatdrone_macro"	factions="player terran pioneers yaki" /></add>
+  <add sel="/rules/unit/rules/ruleset[@type='player']">		<rule  category="defence" mk="3" weight="100" classes="ship_xl" requiredocking="true" requireundocking="true" purposes="fight " /></add>
+  <add sel="/rules/unit/rules/ruleset[@type='default']">	<rule  category="defence" mk="3" weight="20" classes="ship_xl" requiredocking="true" requireundocking="true" purposes="fight " /></add>
+</diff>

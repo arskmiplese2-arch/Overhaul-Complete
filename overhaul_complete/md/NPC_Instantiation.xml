@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <replace sel="//set_value[@name='this.$RemainingAmount'][contains(@exact, 'this.$WorkforceTotal') and contains(@exact, '.min')]">
+    <set_value name="this.$RemainingAmount" exact="100"/>
+  </replace>
+</diff>

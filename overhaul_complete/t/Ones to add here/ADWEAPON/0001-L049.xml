@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<language id="49">
+      <page id="9771315"  voice="yes">
+
+<!-- ADDITIONAL WEAPON -->	  
+	 <t id="700">\033RGroßschiffwaffen\033X \033YPrototypen\033X (L-Geschütze)</t>
+	 
+	 <t id="701">\033RGammastrahlenkanone\033X \033YPrototyp\033X L</t>
+	 <t id="702">Die Gammastrahlenkanone ist ein \033Yfrüher Prototyp\033X. Viel ist über diese neue und noch geheime Waffe nicht bekannt. Man weiß jedoch inzwischen, dass sie über eine hohe Reichweite und, dank augeklügelter KI-Steuerung, absolute Präzision verfügt. Sie basiert in den Anfängen der Entwicklung vermutlich auf dem Gamma Kyonenemitter der Khaak.\n\nDiese Strahlenkanone emittiert einen kaum wahrnehmbaren Hochenergiestrahl. Der sichtbare Teil des Strahls entsteht durch ionisierende Materie entlang des Strahls, während der eigentliche Gammastrahl unsichtbar ist. Dass der Strahl kaum sichtbar ist, täuscht jedoch sehr leicht über seine zerstörerische Wirkung hinweg. Diese entfaltet sich, wie wir wissen, im unsichtbaren Bereich der Gammastrahlung, die immer absolut tötlich ist.\n\nExperten glauben, dass die Wirkung derzeit durch keinen Schild oder Panzerung wirksam aufgehalten werden kann. Ein getroffenes Ziel "leidet" jedoch nicht, da seine Materie augenblicklich verdampft.</t>
+
+	 <t id="711">\033RMI M/AM-Kanone\033X \033YPrototyp\033X L</t>
+	 <t id="712">Nach dem Gelingen, die 700mm Großkaliberkanone auf Basis des Targongeschützes hervorzubringen, sind weitere Versuche im Geheimen durchgeführt worden. Das Resultat ist ein \033Yneuer Prototyp\033X.\n\nWelche Änderungen das Waffensystem erfahren hat und ob es überhaupt noch etwas mit den Targonwaffen zu tun hat, ist offiziell nicht bekannt. Es wird vermutet, dass mit Mikro-Singularitäten experimentiert wird. Es soll sich um Mehrfach-M/AM-Projektile handeln, welche beim Einschlag mikroskopisch kleine Schwarze Löcher erzeugen - ein sogenanntes Multi Impact M/AM-Waffensystem. M/AM-Waffen wurden auf Großkampfschiffen im \033Y"Terran Conflict"\033X eingesetzt.\n\nDagegen gab es schon damals keinerlei Verteidigungsmöglichkeit, was bei allen zivilisierten Fraktionen auf Ablehnung stieß.\n\nSollten sich diese Berichte bestätigen, wird dies erneut für Konflikte sorgen. Auch heute gibt es keinen wirksamen Schutz.</t>
+
+	</page>
+	
+</language>

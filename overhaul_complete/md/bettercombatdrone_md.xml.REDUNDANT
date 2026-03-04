@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="bettercombatdrone_md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+	<cues>
+
+		<cue name="bettercombatdrone_update">
+			<conditions>
+				<check_any>
+					<event_cue_signalled cue="md.Setup.GameStart" />
+					<event_player_created/>
+				</check_any>
+			</conditions>
+			<actions>
+				<set_value name="$versionNumber" exact="1"/>
+				<do_if value="event.param">
+					<show_help duration="7" custom="'{9771315,91971} update to version %1 complete.'.[$versionNumber]"/>
+				</do_if>
+				<do_else>
+					<show_help duration="6" custom="'{9771315,91971} wurde installiert/aktualisiert.'"/>
+				</do_else>
+			</actions>
+		</cue>
+
+		<library name="Bettercombatdrone">
+		  <cues>
+			<library name="Bettercombatdrone_UnlockBlueprints">
+			  <actions>
+				<set_value name="$bPBettercombatdroneWares" exact="[
+				  ware.ship_ter_combatdrone,
+				  ware.weapon_ter_s_gamma
+				]"/>
+				<add_blueprints wares="$bPBettercombatdroneWares" />
+				<remove_value name="$bPBettercombatdroneWares"/>
+			  </actions>
+			</library>
+		  </cues>
+		</library>
+		
+	</cues>
+</mdscript>

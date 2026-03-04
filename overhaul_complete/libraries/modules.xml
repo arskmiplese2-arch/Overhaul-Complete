@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+
+<!--These are from the Terran mid level goods mod. Need to investigate deeper-->
+	<replace sel="/modules/module[@id='prod_ter_energycells']/category">
+		<category ware="energycells" tags="[production, solar, module]" race="terran" />
+	</replace>		
+ 
+	<add sel="/modules">
+
+<!--Glass mod(XCG)-->
+	<module id="xcg_prod_gen_glass" group="xcg_prod_gen_glass">
+		<category ware="xcg_glass" tags="[production, module]" race="[argon, paranid, teladi, split]" />
+    <compatibilities>
+      <limits production="2"/>
+      <production ware="xcg_glass" chance="50" />
+    </compatibilities>
+  </module>
+
+<!--These are from the Terran mid level goods mod. Need to investigate deeper-->
+	  <module id="prod_ter_metallicnanoparticles" group="prod_ter_metallicnanoparticles">
+		<category ware="metallicnanoparticles" tags="[production, module]" race="terran" />
+		<compatibilities>
+		  <limits production="3"/>
+		   <production ware="metallicnanoparticles" chance="20" />
+		</compatibilities>
+	  </module>
+		
+	  <module id="prod_ter_aicores" group="prod_ter_aicores">
+		<category ware="aicores" tags="[production, module]" race="terran" />
+		<compatibilities>
+		  <limits production="6"/>
+		  <production ware="computronicsubstrate" chance="10" />
+		  <production ware="aicores" chance="25" />
+		</compatibilities>
+	  </module>
+
+	  <module id="prod_ter_missilecomponents" group="prod_ter_missilecomponents">
+		<category ware="missilecomponents" tags="[production, module]" race="terran" />
+		<compatibilities>
+		  <limits production="3"/>
+		  <production ware="siliconcarbide" chance="15" />
+		  <production ware="missilecomponents" chance="35" />
+		</compatibilities>
+	  </module>
+
+	  <module id="prod_ter_dronecomponents" group="prod_ter_dronecomponents">
+		<category ware="dronecomponents" tags="[production, module]" race="terran" />
+		<compatibilities>
+		  <limits production="2"/>
+		  <production ware="dronecomponents" chance="20" />
+		  <production ware="aicores" chance="15" />
+		</compatibilities>
+	  </module>
+	  
+	   <module id="prod_ter_forcefieldunits" group="prod_ter_forcefieldunits">
+		<category ware="forcefieldunits" tags="[production, module]" race="terran" />
+		<compatibilities>
+		  <limits production="4"/>
+		  <production ware="forcefieldunits" chance="30" />
+		</compatibilities>
+	  </module> 
+
+	  <module id="prod_ter_silicongrids" group="prod_ter_silicongrids">
+		<category ware="silicongrids" tags="[production, module]" race="terran" />
+		<compatibilities>
+		  <limits production="5"/>
+		  <production ware="siliconcarbide" chance="15" />
+		  <production ware="silicongrids" chance="25" />
+		</compatibilities>
+	  </module>
+
+	  <module id="prod_ter_fusionreactors" group="prod_ter_fusionreactors">
+		<category ware="energycells" tags="[production, fusion, module]" race="terran" />
+		<compatibilities>
+		  <limits production="1"/>
+		</compatibilities>
+	  </module>  
+
+	  <module id="prod_ter_fusionbatteries" group="prod_ter_fusionbatteries">
+		<category ware="fusionbatteries" tags="[production, module]" race="terran" />
+		<compatibilities>
+		  <limits production="2"/>
+		  <production ware="fusionbatteries" chance="15" />
+		</compatibilities>
+	  </module>   	  
+	  
+	  <module id="prod_ter_hydrogenextractors" group="prod_ter_hydrogenextractors">
+		<category ware="hydrogen" tags="[production, module]" race="terran" />
+		<compatibilities>
+		  <limits production="2"/>
+		  <production ware="hydrogen" chance="25" />
+		</compatibilities>
+	  </module>  
+
+	</add>	
+	
+</diff>

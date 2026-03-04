@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="Kyoto_Flagg_Install" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+	<cues>
+	
+		<cue name="EinsamerRiese_Install">
+
+			<conditions>
+				<check_any>
+					<event_cue_signalled cue="md.Setup.GameStart" />
+					<event_player_created/>
+				</check_any>
+				</conditions>
+
+			<actions>
+				<set_value Name="Kyoto_Flagg_Update.EinsamerRiese_Update.$SavegameVersion" exact="233"/>
+					<show_help duration="6s" custom="'{9771315,9}'"/>
+          <show_help duration="8s" custom="'{9771315,4}{9771315,41}'"/>
+				</actions>
+
+		</cue>			
+	</cues>
+</mdscript>
+

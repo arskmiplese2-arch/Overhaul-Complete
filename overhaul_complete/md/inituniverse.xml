@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+<!--
+<replace sel="/mdscript/cues/library[@name='InitStationActions']/actions/do_if/do_if[@value='$tradestation?']/do_elseif[@value='$modulesets.indexof.{'tradestation_terran'}'"> 
+	<do_elseif value="$modulesets.indexof.{'tradestation_terran'}">
+
+      <add_tradeware object="$controllable" ware="ware.terranmre" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <add_tradeware object="$controllable" ware="ware.proteinpaste" allowbuy="true" allowsell="true" lockavgprice="false" />
+
+      <add_tradeware object="$controllable" ware="ware.medicalsupplies" allowbuy="true" allowsell="true" lockavgprice="false" />
+
+      <add_tradeware object="$controllable" ware="ware.computronicsubstrate" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <add_tradeware object="$controllable" ware="ware.metallicmicrolattice" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <add_tradeware object="$controllable" ware="ware.siliconcarbide" allowbuy="true" allowsell="true" lockavgprice="false" />
+
+      <do_if value="$controllable.owner == faction.pioneers">
+        <add_tradeware object="$controllable" ware="ware.stimulants" allowbuy="true" allowsell="true" lockavgprice="false" />
+      </do_if>
+    </do_elseif>
+</replace>
+-->
+  <add sel="/mdscript/cues/library[@name='InitStationActions']/actions/do_if/do_if[@value='$tradestation?']" pos="before">
+    <do_if value="$modulesets.indexof.{'tradestation_terran'}">
+		<debug_text text="'Init universe Terran tradestations found...'" />
+      <!-- do not set $tradestation to true so non-terran tradewares are not added -->
+	  <remove_tradeware object="$controllable" ware="ware.terranmre"/>
+      <remove_tradeware object="$controllable" ware="ware.proteinpaste"/>
+      <remove_tradeware object="$controllable" ware="ware.medicalsupplies"/>
+      <remove_tradeware object="$controllable" ware="ware.computronicsubstrate"/>
+      <remove_tradeware object="$controllable" ware="ware.metallicmicrolattice" />
+      <remove_tradeware object="$controllable" ware="ware.siliconcarbide"/>
+      <remove_tradeware object="$controllable" ware="ware.stimulants"/>
+
+      <add_tradeware object="$controllable" ware="ware.terranmre" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <add_tradeware object="$controllable" ware="ware.proteinpaste" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <add_tradeware object="$controllable" ware="ware.medicalsupplies" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <add_tradeware object="$controllable" ware="ware.computronicsubstrate" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <add_tradeware object="$controllable" ware="ware.metallicmicrolattice" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <add_tradeware object="$controllable" ware="ware.siliconcarbide" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <do_if value="$controllable.owner == faction.pioneers">
+        <add_tradeware object="$controllable" ware="ware.stimulants" allowbuy="true" allowsell="true" lockavgprice="false" />
+      </do_if>
+	  
+      <add_tradeware object="$controllable" ware="ware.fusionbatteries" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <add_tradeware object="$controllable" ware="ware.aicores" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <add_tradeware object="$controllable" ware="ware.metallicnanoparticles" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <add_tradeware object="$controllable" ware="ware.forcefieldunits" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <add_tradeware object="$controllable" ware="ware.silicongrids" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <add_tradeware object="$controllable" ware="ware.missilecomponents" allowbuy="true" allowsell="true" lockavgprice="false" />
+      <add_tradeware object="$controllable" ware="ware.dronecomponents" allowbuy="true" allowsell="true" lockavgprice="false" />
+    </do_if>
+  </add>
+
+</diff>
