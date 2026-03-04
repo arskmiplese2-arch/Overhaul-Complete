@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="engine_xs_combat_mk4_macro" class="engine">
+    <component ref="engine_xs_combat_mk4" />
+    <properties>
+      <identification name="{555760,29}" basename="{555760,30}" shortname="{555760,30}" makerrace="terran" description="{555760,31}" mk="4" />
+      <boost duration="45" recharge="45" thrust="15" attack="0.5" release="1" />
+      <travel charge="1" thrust="20" attack="2.5" release="2" />
+      <thrust forward="525" reverse="750" />
+      <angular />
+      <hull integrated="1" />
+      <effects>
+        <boosting ref="arg_boost_fx_s" />
+      </effects>
+      <sounds>
+        <enginedetail ref="enginedetail_ship_terran_s_03" />
+      </sounds>
+    </properties>
+  </macro>
+</macros>

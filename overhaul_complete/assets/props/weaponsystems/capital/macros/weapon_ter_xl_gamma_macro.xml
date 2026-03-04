@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Schwere Gammastrahlenkanone (Hauptgeschütz)-->
+
+<macros>
+  <macro name="weapon_ter_xl_gamma_macro" class="weapon">
+    <component ref="weapon_ter_xl_gamma" />
+    <properties>
+      <identification name="{9771315,201}" description="{9771315,203}" icon="weapon_ter_xl_gamma" />
+      <bullet class="bullet_ter_xl_gamma_macro" />
+      <heat overheat="60000" cooldelay="30" coolrate="12000" reenable="0" />
+      <rotationspeed max="10" />
+      <rotationacceleration max="20" />
+	  <reload time="35" />
+      <hull max="32000" integrated="1" />
+      <effects>
+        <firing start="startshooting_atf_xl_beam_01_mk1" stop="stopshooting_atf_xl_beam_01_mk1" />
+      </effects>
+	</properties>
+  </macro>
+</macros>

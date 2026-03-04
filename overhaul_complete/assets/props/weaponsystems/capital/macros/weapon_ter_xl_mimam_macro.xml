@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Schweres MI M/AM Geschütz (Hauptgeschütz)-->
+
+<macros>
+  <macro name="weapon_ter_xl_mimam_macro" class="weapon">
+    <component ref="weapon_ter_xl_mimam" />
+    <properties>
+      <identification name="{9771315,301}" description="{9771315,303}" icon="weapon_ter_xl_mimam" />
+      <bullet class="bullet_ter_xl_mimam_macro" />
+      <heat overheat="60000" cooldelay="13" coolrate="12000" reenable="100" />
+      <rotationspeed max="13" />
+      <rotationacceleration max="25" />
+	  <reload time="23" />
+      <hull max="30000" integrated="1" />
+      <effects>
+        <firing start="startshooting_ter_m_gatling_01_mk1" stop="stopshooting_ter_m_gatling_01_mk1" />
+      </effects>
+	</properties>
+  </macro>
+</macros>
