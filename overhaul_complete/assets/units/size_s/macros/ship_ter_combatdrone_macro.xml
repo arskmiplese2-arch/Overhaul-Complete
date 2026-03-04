@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="ship_ter_combatdrone_macro" class="ship_s">
+    <component ref="ship_ter_combatdrone" />
+    <properties>
+      <identification name="{9771315,91971}" description="{9771315,91973}" unit="1" icon="ship_ter_combatdrone" />
+      <software>
+        <software ware="software_dockmk2" default="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk2" default="1" />
+        <software ware="software_scannerobjectmk2" default="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <storage countermeasure="0" />
+      <hull max="2300" />
+      <!--effects>
+        <explosion ref="explosion_drone_explosive_01" />
+      </effects-->
+      <secrecy level="2" />
+      <purpose primary="fight" />
+      <people capacity="0" />
+      <physics mass="6.395">
+        <inertia pitch="0.823" yaw="0.823" roll="0.759" />
+        <drag forward="2.169" reverse="10.365" horizontal="6.894" vertical="6.894" pitch="3.839" yaw="3.839" roll="3.839" />
+      </physics>
+      <thruster tags="small" />
+      <loadouts>
+        <loadout id="default">
+          <macros>
+            <engine macro="engine_ter_s_combat_01_mk3_macro" path="../con_engine_01" />
+            <weapon macro="weapon_ter_s_gamma_macro" path="../con_weapon_01" /> <!-- optional="1"  -->
+            <shield macro="shield_ter_s_standard_01_mk3_macro" path="../con_shield_01" /> <!-- optional="1"  -->
+          </macros>
+          <virtualmacros>
+            <thruster macro="thruster_gen_s_combat_01_mk3_macro" />
+          </virtualmacros>
+        </loadout>
+      </loadouts>
+      <capture allow="0" />
+      <ship type="smalldrone" />
+      <relation>
+        <attack>
+          <multiplier value="0.017" />
+        </attack>
+        <kill>
+          <multiplier value="0.017" />
+        </kill>
+      </relation>
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_invisible_01_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros>

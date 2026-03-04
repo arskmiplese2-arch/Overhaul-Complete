@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<macros>
+  <macro name="ship_usc_xl_kyoto_flagg_macro" class="ship_xl"> <component ref="ship_usc_xl_kyoto_flagg" />
+
+  <properties>
+		<identification name="{20103,201}" basename="{20103,201}" makerrace="player" description="{9771315,3}" variation="{9771315,5}" shortvariation="{9771315,6}" icon="kyotoflaggicon" />
+		<explosiondamage value="99999" />
+		<storage missile="24630" unit="600" countermeasure="800" deployable="300" />
+		<hull max="7120000" />
+		<secrecy level="3" />
+		<purpose primary="fight" />
+		<people capacity="500" />
+		<physics mass="12637.34">
+			<inertia pitch="870" yaw="870" roll="400" />
+			<!--drag forward="245" reverse="360" horizontal="175" vertical="175" pitch="580" yaw="580" roll="600" /-->
+			<drag forward="600" reverse="1500" horizontal="750" vertical="750" pitch="880" yaw="880" roll="1000" />
+		</physics>
+		<thruster tags="extralarge" />
+		<ship type="battleship" />
+		<sound_occlusion inside="0.3" />
+		<radar range="190000" />
+		<software>
+			<software ware="software_dockmk2" default="1" />
+			<software ware="software_flightassistmk1" default="1" />
+			<software ware="software_scannerlongrangemk2" default="1" />
+			<software ware="software_scannerobjectmk2" default="1" />
+			<software ware="software_targetmk1" default="1" />
+			<software ware="software_trademk1" default="1" />
+		</software>
+		<loadouts>
+			<loadout id="default">
+				<macros>
+					<engine macro="engine_xen_xl_allround_01_mk1_macro" path="../con_engine_xl_engine_1"/>
+					<engine macro="engine_xen_xl_allround_01_mk1_macro" path="../con_engine_xl_engine_2"/>
+					<engine macro="engine_xen_xl_allround_01_mk1_macro" path="../con_engine_xl_engine_3"/>
+					<weapon macro="weapon_ter_xl_mimam_macro" path="../con_weapon_extralarge_left"/>	<!-- weaponmode="defend"-->
+					<weapon macro="weapon_ter_xl_gamma_macro" path="../con_weapon_extralarge_down"/>	<!-- weaponmode="defend"-->
+					<weapon macro="weapon_ter_xl_mimam_macro" path="../con_weapon_extralarge_right"/>	<!-- weaponmode="defend"-->
+					<shield macro="shield_ter_xl_standard_01_mk2_macro" path="../con_shieldgen_xl_xl-shield-template_1"/>
+					<shield macro="shield_ter_xl_standard_01_mk2_macro" path="../con_shieldgen_xl_xl-shield-template_2"/>
+					<shield macro="shield_ter_xl_standard_01_mk2_macro" path="../con_shieldgen_xl_xl-shield-template_3"/>
+					<shield macro="shield_ter_xl_standard_01_mk2_macro" path="../con_shieldgen_xl_xl-shield-template_4"/>
+					<shield macro="shield_ter_xl_standard_01_mk2_macro" path="../con_shieldgen_xl_xl-shield-template_5"/>
+					<shield macro="shield_ter_xl_standard_01_mk2_macro" path="../con_shieldgen_xl_xl-shield-template_6"/>
+					<shield macro="shield_ter_xl_standard_01_mk2_macro" path="../con_shieldgen_xl_xl-shield-template_7"/>
+					<shield macro="shield_ter_xl_standard_01_mk2_macro" path="../con_shieldgen_xl_xl-shield-template_8"/>
+					<shield macro="ishield_kyoto_hp_macro" path="../con_ishield_hp_01"/>
+					<shield macro="ishield_kyoto_hp_macro" path="../con_ishield_hp_02"/>
+				</macros>
+				<virtualmacros>
+					<thruster macro="thruster_gen_xl_allround_01_mk3_macro"/>
+				</virtualmacros>
+				<groups>
+					<shields macro="shield_ter_xl_standard_01_mk2_macro" path=".." group="engine" exact="2"/>
+					<shields macro="shield_ter_m_standard_02_mk3_macro" path=".." group="rightprongsideup" exact="4"/>
+					<shields macro="shield_ter_m_standard_02_mk3_macro" path=".." group="rightprongsidedown" exact="4"/>
+					<shields macro="shield_ter_m_standard_02_mk3_macro" path=".." group="leftprongsideup" exact="4"/>
+					<shields macro="shield_ter_m_standard_02_mk3_macro" path=".." group="leftprongsidedown" exact="4"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="entranceupleft" exact="1"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="entranceupright" exact="1"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="entrancedownleft" exact="1"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="entrancedownright" exact="1"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="bridgefrontleft"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="bridgefrontright"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="bridgeleft" exact="4"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="bridgeright" exact="4"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="broadsideleftup" exact="3"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="broadsideleftdo" exact="3"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="broadsiderightup" exact="3"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="broadsiderightdo" exact="3"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="launchleftup1"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="launchleftup2"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="launchleftdown1"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="launchleftdown2"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="launchrightup1"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="launchrightup2"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="launchrightdown1"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="launchrightdown2"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="frontprongturretsleft"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="frontprongturretsright"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="upsidefrontofbridge" exact="2"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="centerturretsleft" exact="3"/>
+					<shields macro="shield_ter_l_standard_01_mk3_macro" path=".." group="centerturretsright" exact="3"/>
+					<turrets macro="turret_ter_m_mimam_macro" path=".." group="rightprongsideup" exact="5" weaponmode="autoassist"/>
+					<turrets macro="turret_ter_m_mimam_macro" path=".." group="rightprongsidedown" exact="5" weaponmode="autoassist"/>
+					<turrets macro="turret_ter_m_mimam_macro" path=".." group="leftprongsideup" exact="5" weaponmode="autoassist"/>
+					<turrets macro="turret_ter_m_mimam_macro" path=".." group="leftprongsidedown" exact="5" weaponmode="autoassist"/>
+					<turrets macro="turret_ter_l_mimam_macro" path=".." group="entranceupleft" exact="3" weaponmode="attackcapital"/>
+					<turrets macro="turret_ter_l_mimam_macro" path=".." group="entranceupright" exact="3" weaponmode="attackcapital"/>
+					<turrets macro="turret_ter_l_mimam_macro" path=".." group="entrancedownleft" exact="3" weaponmode="attackcapital"/>
+					<turrets macro="turret_ter_l_mimam_macro" path=".." group="entrancedownright" exact="3" weaponmode="attackcapital"/>
+					<turrets macro="turret_ter_m_guided_02_mk1_macro" path=".." group="bridgefrontleft" exact="4" weaponmode="autoassist"/>
+					<turrets macro="turret_ter_m_guided_02_mk1_macro" path=".." group="bridgefrontright" exact="4" weaponmode="autoassist"/>
+					<turrets macro="turret_ter_l_gamma_macro" path=".." group="bridgeleft" exact="8" weaponmode="defend"/>
+					<turrets macro="turret_ter_l_gamma_macro" path=".." group="bridgeright" exact="8" weaponmode="defend"/>
+					<turrets macro="turret_ter_l_gamma_macro" path=".." group="broadsideleftup" exact="4" weaponmode="defend"/>
+					<turrets macro="turret_ter_l_gamma_macro" path=".." group="broadsideleftdo" exact="4" weaponmode="defend"/>
+					<turrets macro="turret_ter_l_gamma_macro" path=".." group="broadsiderightup" exact="4" weaponmode="defend"/>
+					<turrets macro="turret_ter_l_gamma_macro" path=".." group="broadsiderightdo" exact="4" weaponmode="defend"/>
+					<turrets macro="turret_ter_m_gamma_macro" path=".." group="launchleftup1" exact="3" weaponmode="attackfighters"/>
+					<turrets macro="turret_ter_m_gamma_macro" path=".." group="launchleftup2" exact="3" weaponmode="attackfighters"/>
+					<turrets macro="turret_ter_m_gamma_macro" path=".." group="launchleftdown1" exact="3" weaponmode="attackfighters"/>
+					<turrets macro="turret_ter_m_gamma_macro" path=".." group="launchleftdown2" exact="3" weaponmode="attackfighters"/>
+					<turrets macro="turret_ter_m_gamma_macro" path=".." group="launchrightup1" exact="3" weaponmode="attackfighters"/>
+					<turrets macro="turret_ter_m_gamma_macro" path=".." group="launchrightup2" exact="3" weaponmode="attackfighters"/>
+					<turrets macro="turret_ter_m_gamma_macro" path=".." group="launchrightdown1" exact="3" weaponmode="attackfighters"/>
+					<turrets macro="turret_ter_m_gamma_macro" path=".." group="launchrightdown2" exact="3" weaponmode="attackfighters"/>
+					<turrets macro="turret_ter_l_gamma_macro" path=".." group="frontprongturretsleft" exact="2" weaponmode="defend"/>
+					<turrets macro="turret_ter_l_gamma_macro" path=".." group="frontprongturretsright" exact="2" weaponmode="defend"/>
+					<turrets macro="turret_ter_l_gamma_macro" path=".." group="upsidefrontofbridge" exact="4" weaponmode="defend"/>
+					<turrets macro="turret_ter_l_guided_01_mk1_macro" path=".." group="centerturretsleft" exact="4" weaponmode="autoassist"/>
+					<turrets macro="turret_ter_l_guided_01_mk1_macro" path=".." group="centerturretsright" exact="4" weaponmode="autoassist"/>
+				</groups>
+				<ammunition>
+					<ammunition macro="missile_cluster_light_mk1_macro" exact="2000"/>
+					<ammunition macro="missile_smart_light_mk1_macro" exact="2000"/>
+					<ammunition macro="missile_swarm_heavy_mk1_macro" exact="2000"/>
+					<ammunition macro="missile_swarm_light_mk1_macro" exact="2000"/>
+					<ammunition macro="missile_interceptor_light_mk1_macro" exact="5000"/>
+					<ammunition macro="missile_emp_mk1_macro" exact="510"/>
+					<ammunition macro="missile_starburst_heavy_mk1_macro" exact="2000"/>
+					<ammunition macro="missile_guided_heavy_mk1_macro" exact="2000"/>
+					<ammunition macro="missile_guided_light_mk1_macro" exact="2000"/>
+					<ammunition macro="missile_cluster_heavy_mk1_macro" exact="2000"/>
+					<ammunition macro="missile_smart_heavy_mk1_macro" exact="2000"/>
+					<ammunition macro="missile_disruptor_light_mk1_macro" exact="2000"/>
+					<ammunition macro="countermeasure_flares_01_macro" exact="800"/>
+					<ammunition macro="eq_arg_resourceprobe_01_macro" exact="60"/>
+					<ammunition macro="eq_arg_satellite_02_macro" exact="60"/>
+					<ammunition macro="weapon_clustermine_01_macro" exact="120"/>
+					<unit macro="ship_gen_xs_cargodrone_empty_01_a_macro" exact="100"/>
+					<unit macro="ship_gen_xs_repairdrone_01_a_macro" exact="200"/>
+					<unit macro="ship_ter_combatdrone_macro" exact="300"/>
+				</ammunition>
+			</loadout>
+		</loadouts>
+  </properties>
+
+	<connections>
+    <connection ref="con_buildmodule">
+        <macro ref="buildmodule_gen_carrier_macro" connection="object" />
+        </connection>
+    <connection ref="con_cockpit">
+        <macro ref="bridge_par_xl_01_macro" connection="con_cockpit" />
+        </connection>
+
+    <connection ref="con_shipstorage_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+        </connection>
+    <connection ref="con_shipstorage_02">
+        <macro ref="shipstorage_gen_s_02_macro" connection="object" />
+        </connection>
+	  <connection ref="con_shipstorage_03">
+        <macro ref="shipstorage_gen_s_02_macro" connection="object" />
+        </connection>
+	  <connection ref="con_shipstorage_04">
+        <macro ref="shipstorage_gen_m_02_macro" connection="object" />
+        </connection>
+    <connection ref="con_shipstorage_05">
+        <macro ref="shipstorage_gen_m_02_macro" connection="object" />
+        </connection>
+    <connection ref="con_shipstorage_06">
+        <macro ref="shipstorage_gen_m_02_macro" connection="object" />
+        </connection>
+    <connection ref="con_storage_01">
+        <macro ref="storage_ter_xl_resupplier_01_a_macro" connection="ShipConnection" />
+				</connection>
+
+	  <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+			</connection>
+    <connection ref="con_dockarea_m_01">
+        <macro ref="dockarea_usc_xl_kyoto_5m_macro" connection="Connection01" />
+        </connection>
+    <connection ref="con_dockarea_m_02">
+        <macro ref="dockarea_usc_xl_kyoto_5m_macro" connection="Connection01" />
+        </connection>
+    <connection ref="con_dockarea_s_01">
+        <macro ref="dockarea_usc_xl_kyoto_36s_macro" connection="Connection01" />
+        </connection>
+
+	  <connection ref="con_launchtube_s_01">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection01" />
+				</connection>
+    <connection ref="con_launchtube_s_02">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection01" />
+				</connection>
+    <connection ref="con_launchtube_s_03">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection01" />
+				</connection>
+	  <connection ref="con_launchtube_s_04">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection01" />
+				</connection>
+	  <connection ref="con_launchtube_s_05">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection01" />
+				</connection>
+	  <connection ref="con_launchtube_s_06">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection01" />
+				</connection>
+	  <connection ref="con_launchtube_s_07">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection01" />
+				</connection>
+	  <connection ref="con_launchtube_s_08">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection01" />
+				</connection>
+    <connection ref="con_launchtube_s_09">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection01" />
+				</connection>
+    <connection ref="con_launchtube_s_10">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection01" />
+				</connection>
+	  <connection ref="con_launchtube_s_11">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection01" />
+				</connection>
+	  <connection ref="con_launchtube_s_12">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection01" />
+				</connection>
+	  <connection ref="con_launchtube_m_01">
+        <macro ref="launchtube_arg_m_01_macro" connection="Connection01" />
+				</connection>
+	  <connection ref="con_launchtube_m_02">
+        <macro ref="launchtube_arg_m_01_macro" connection="Connection01" />
+				</connection>
+	  <connection ref="con_launchtube_m_03">
+        <macro ref="launchtube_arg_m_01_macro" connection="Connection01" />
+				</connection>
+	  <connection ref="con_launchtube_m_04">
+        <macro ref="launchtube_arg_m_01_macro" connection="Connection01" />
+				</connection>
+	  <connection ref="con_launchtube_m_05">
+        <macro ref="launchtube_arg_m_01_macro" connection="Connection01" />
+				</connection>
+	  <connection ref="con_launchtube_m_06">
+        <macro ref="launchtube_arg_m_01_macro" connection="Connection01" /> 
+				</connection>
+  </connections>
+  </macro>
+</macros>

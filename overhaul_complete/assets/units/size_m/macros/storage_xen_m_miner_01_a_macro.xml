@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="//macro[@name='storage_xen_m_miner_01_a_macro']/properties/cargo/@tags">container solid liquid</replace>
+</diff>
